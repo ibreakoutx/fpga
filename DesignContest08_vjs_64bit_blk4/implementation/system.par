@@ -1,0 +1,265 @@
+Release 7.1.01i par H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+LTOP::  Thu May 05 15:07:55 2005
+
+par -w -ol high system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+WARNING:Par:331 - You are using an evaluation version of Xilinx Software. In 75
+   days, this program will not operate. For more information about this product,
+   please refer to the Evaluation Agreement, which was shipped to you along with
+   the Evaluation CDs.
+   To purchase an annual license for this software, please contact your local
+   Field Applications Engineer (FAE) or salesperson. If you have any questions,
+   or if we can assist in any way, please send an email to: eval@xilinx.com
+   Thank You!
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:/Xilinx.
+   "system" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 1.500 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+WARNING:Timing:2798 - The output clock dcm_0/dcm_0/CLKFX_BUF from DCM
+   dcm_0/dcm_0/DCM_INST has a period (frequency) specification of 3333 ps
+   (300.00 Mhz).  This violates the minimum period (maximum frequency) of 4166
+   ps (240.04 Mhz).
+
+Device speed data version:  "PRODUCTION 1.91 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                  5 out of 16     31%
+   Number of DCMs                      2 out of 8      25%
+   Number of External IOBs           114 out of 556    20%
+      Number of LOCed IOBs           114 out of 114   100%
+
+   Number of JTAGPPCs                  1 out of 1     100%
+   Number of PPC405s                   2 out of 2     100%
+   Number of RAMB16s                   6 out of 136     4%
+   Number of SLICEs                 5938 out of 13696  43%
+
+
+Overall effort level (-ol):   High (set by user)
+Placer effort level (-pl):    High (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High (set by user)
+
+Starting initial Timing Analysis.  REAL time: 18 secs 
+Finished initial Timing Analysis.  REAL time: 18 secs 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9a3fcf) REAL time: 22 secs 
+
+Phase 2.31
+WARNING:Place:479 - Use of the left PPC405 has been detected. The left processor
+   requires specialdesign considerations when operating above 350 MHz in the -7
+   speed grade part.Please see Xilinx Application Note XAPP755 for details.
+Phase 2.31 (Checksum:1312cfe) REAL time: 22 secs 
+
+Phase 3.2
+......
+
+
+Phase 3.2 (Checksum:98de91) REAL time: 40 secs 
+
+Phase 4.30
+Phase 4.30 (Checksum:26259fc) REAL time: 40 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 40 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 41 secs 
+
+Phase 7.8
+.............................................................................................................................
+........
+.............................................................................
+................
+.............
+Phase 7.8 (Checksum:14ff0a2) REAL time: 2 mins 36 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 2 mins 37 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 4 mins 5 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 4 mins 5 secs 
+
+Phase 11.27
+Phase 11.27 (Checksum:68e7775) REAL time: 4 mins 14 secs 
+
+Phase 12.24
+Phase 12.24 (Checksum:7270df4) REAL time: 4 mins 14 secs 
+
+Writing design to file system.ncd
+
+
+Total REAL time to Placer completion: 4 mins 24 secs 
+Total CPU time to Placer completion: 4 mins 22 secs 
+
+Starting Router
+
+Phase 1: 56372 unrouted;       REAL time: 4 mins 38 secs 
+
+Phase 2: 51812 unrouted;       REAL time: 4 mins 40 secs 
+
+Phase 3: 16052 unrouted;       REAL time: 5 mins 15 secs 
+
+Phase 4: 16052 unrouted; (168750)      REAL time: 5 mins 17 secs 
+
+Phase 5: 16752 unrouted; (10066)      REAL time: 5 mins 30 secs 
+
+Phase 6: 16800 unrouted; (9520)      REAL time: 5 mins 34 secs 
+
+Phase 7: 16800 unrouted; (9520)      REAL time: 7 mins 45 secs 
+
+Phase 8: 0 unrouted; (29523)      REAL time: 8 mins 23 secs 
+
+Phase 9: 0 unrouted; (29523)      REAL time: 8 mins 33 secs 
+
+Phase 10: 0 unrouted; (29523)      REAL time: 14 mins 31 secs 
+
+Phase 11: 0 unrouted; (29135)      REAL time: 15 mins 1 secs 
+
+Phase 12: 0 unrouted; (28485)      REAL time: 15 mins 36 secs 
+
+Phase 13: 0 unrouted; (21229)      REAL time: 15 mins 52 secs 
+
+Phase 14: 0 unrouted; (19859)      REAL time: 16 mins 41 secs 
+
+Phase 15: 0 unrouted; (19859)      REAL time: 16 mins 44 secs 
+
+Phase 16: 0 unrouted; (19859)      REAL time: 2 hrs 38 mins 54 secs 
+
+Phase 17: 0 unrouted; (19859)      REAL time: 2 hrs 39 mins 10 secs 
+
+
+Total REAL time to Router completion: 2 hrs 39 mins 10 secs 
+Total CPU time to Router completion: 25 mins 45 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|isocm_porta_BRAM_Clk |              |      |      |            |             |
+|                     |     BUFGMUX6P| No   | 3338 |  0.280     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|            clk_90_s |     BUFGMUX1S| No   |   50 |  0.145     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|        ddr_clk_90_s |     BUFGMUX7P| No   |  330 |  0.151     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|          proc_clk_s |     BUFGMUX4P| No   |    1 |  0.000     |  1.132      |
++---------------------+--------------+------+------+------------+-------------+
+|jtagppc_0_0_JTGC405T |              |      |      |            |             |
+|                  CK |         Local|      |    2 |  1.792     |  4.602      |
++---------------------+--------------+------+------+------------+-------------+
+
+
+   The Delay Summary Report
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        1.186
+   The MAXIMUM PIN DELAY IS:                               6.150
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   5.075
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 1.00   < d < 2.00  < d < 3.00  < d < 4.00  < d < 7.00  d >= 7.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+       25064       19287        7421        2266         379           0
+
+Timing Score: 19859
+
+INFO:Par:62 - Your design did not meet timing.  The following are some
+   suggestions to assist you to meet timing in your design.
+   
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place
+   & Route Static Timing Report").  Go to the failing constraint(s) and select
+   the "Timing Improvement Wizard" link for suggestions to correct each problem.
+
+   Rerun Map with "-timing" (ISE process "Perform Timing -Driven Packing and
+Placement"
+
+   Run Multi-Pass Place and Route in PAR using at least 5 "PAR Iterations"
+   (ISE process "Multi Pass Place & Route").
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go
+   to either "Troubleshoot->Tech Tips->Timing & Constraints" or
+   " TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+  TSCLK2CLK90_DDR_512MB_64Mx64_rank2_row13_ | 2.500ns    | 2.497ns    | 1    
+  col10_cl2_5 = MAXDELAY FROM TIMEGRP       |            |            |      
+     "PLB_Clk_DDR_512MB_64Mx64_rank2_row13_ |            |            |      
+  col10_cl2_5" TO TIMEGRP         "Clk90_in |            |            |      
+  _DDR_512MB_64Mx64_rank2_row13_col10_cl2_5 |            |            |      
+  " 2.5 ns                                  |            |            |      
+--------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A        | N/A        | N/A  
+  pin" 10 ns HIGH 50%                       |            |            |      
+--------------------------------------------------------------------------------
+* TS_dcm_0_dcm_0_CLK0_BUF = PERIOD TIMEGRP  | 10.000ns   | 10.961ns   | 66   
+  "dcm_0_dcm_0_CLK0_BUF" TS_sys_clk_pin     |            |            |      
+       HIGH 50%                             |            |            |      
+--------------------------------------------------------------------------------
+  TS_dcm_0_dcm_0_CLK90_BUF = PERIOD TIMEGRP | 10.000ns   | 6.794ns    | 0    
+   "dcm_0_dcm_0_CLK90_BUF"         TS_sys_c |            |            |      
+  lk_pin PHASE 2.5 ns HIGH 50%              |            |            |      
+--------------------------------------------------------------------------------
+  TS_dcm_0_dcm_0_CLKFX_BUF = PERIOD TIMEGRP | 3.333ns    | 2.471ns    | 0    
+   "dcm_0_dcm_0_CLKFX_BUF"         TS_sys_c |            |            |      
+  lk_pin / 3 HIGH 50%                       |            |            |      
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the
+   constraint does not cover any paths or that it has no requested value.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 hrs 39 mins 20 secs 
+Total CPU time to PAR completion: 25 mins 54 secs 
+
+Peak Memory Usage:  390 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - 110 errors found.
+
+Number of error messages: 0
+Number of warning messages: 3
+Number of info messages: 1
+
+Writing design to file system.ncd
+
+
+
+PAR done!

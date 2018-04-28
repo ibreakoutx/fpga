@@ -1,0 +1,22 @@
+microblaze_0
+ENCRYPT_APP_SOURCES = /cygdrive/g/work/dcc_v5/encrypt_app/src/check_result.c /cygdrive/g/work/dcc_v5/encrypt_app/src/host_setup.c /cygdrive/g/work/dcc_v5/encrypt_app/src/main.c /cygdrive/g/work/dcc_v5/encrypt_app/src/queue.c /cygdrive/g/work/dcc_v5/drivers/aes_accel_v1_00_a/src/aes_accel_fsl.c /cygdrive/g/work/dcc_v5/drivers/aes_accel_v1_00_a/src/aes_core.c /cygdrive/g/work/dcc_v5/drivers/aes_accel_v1_00_a/src/encryption_work_item.c /cygdrive/g/work/dcc_v5/drivers/aes_accel_v1_00_a/src/work_setup.c /cygdrive/g/work/dcc_v5/drivers/aes_accel_v1_00_a/src/lfsr_random.c /cygdrive/g/work/dcc_v5/drivers/tlb_bram_v1_00_a/src/tlb_bram_fsl.c /cygdrive/g/work/dcc_v5/drivers/tlb_bram_v1_00_a/src/mmu.c 
+ENCRYPT_APP_HEADERS = /cygdrive/g//work/dcc_v5/encrypt_app/src/check_result.h /cygdrive/g//work/dcc_v5/encrypt_app/src/host_setup.h /cygdrive/g//work/dcc_v5/encrypt_app/src/queue.h /cygdrive/g//work/dcc_v5/drivers/aes_accel_v1_00_a/src/aes_core.h /cygdrive/g//work/dcc_v5/drivers/aes_accel_v1_00_a/src/encryption_work_item.h /cygdrive/g//work/dcc_v5/drivers/aes_accel_v1_00_a/src/lfsr_random.h /cygdrive/g//work/dcc_v5/drivers/aes_accel_v1_00_a/src/work_setup.h /cygdrive/g//work/dcc_v5/drivers/aes_accel_v1_00_a/src/aes_accel_fsl.h /cygdrive/g//work/dcc_v5/drivers/tlb_bram_v1_00_a/src/tlb_bram_fsl.h /cygdrive/g//work/dcc_v5/drivers/tlb_bram_v1_00_a/src/mmu.h 
+ENCRYPT_APP_CC = mb-gcc
+ENCRYPT_APP_CC_SIZE = mb-size
+ENCRYPT_APP_CC_OPT = -O2
+ENCRYPT_APP_CFLAGS = 
+ENCRYPT_APP_CC_SEARCH = # -B
+ENCRYPT_APP_LIBPATH = -L./microblaze_0/lib/ # -L
+ENCRYPT_APP_INCLUDES = -I./microblaze_0/include/  -Iencrypt_app/src/ -Idrivers/aes_accel_v1_00_a/src/ -Idrivers/tlb_bram_v1_00_a/src/ # -I
+ENCRYPT_APP_LFLAGS = # -l
+ENCRYPT_APP_LINKER_SCRIPT = /cygdrive/g/work/dcc_v5/encrypt_app/encrypt_app_linker_script.ld
+ENCRYPT_APP_CC_DEBUG_FLAG =  -g 
+ENCRYPT_APP_CC_PROFILE_FLAG = # -pg
+ENCRYPT_APP_CC_GLOBPTR_FLAG= # -mxl-gp-opt
+ENCRYPT_APP_MODE = executable
+ENCRYPT_APP_LIBG_OPT = -$(ENCRYPT_APP_MODE) microblaze_0
+ENCRYPT_APP_CC_INFERRED_FLAGS= -mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.10.d 
+ENCRYPT_APP_CC_START_ADDR_FLAG=  #  # -Wl,-defsym -Wl,_TEXT_START_ADDR=
+ENCRYPT_APP_CC_STACK_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_STACK_SIZE=
+ENCRYPT_APP_CC_HEAP_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(ENCRYPT_APP_CC_INFERRED_FLAGS)  \

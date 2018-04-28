@@ -1,0 +1,48 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\microblaze_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\microblaze_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\mb_opb.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\mb_opb.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\mb_opb.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\debug_module.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\debug_module.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\debug_module.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\ilmb.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\ilmb.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\ilmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\dlmb.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\dlmb.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\dlmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\dlmb_cntlr.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\dlmb_cntlr.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\dlmb_cntlr.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\ilmb_cntlr.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\ilmb_cntlr.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\ilmb_cntlr.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\lmb_bram.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\lmb_bram.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\lmb_bram.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\RS232_Uart_1.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\RS232_Uart_1.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\RS232_Uart_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\DDR_512MB_64Mx64_rank2_row13_col10_cl2_5.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\DDR_512MB_64Mx64_rank2_row13_col10_cl2_5.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\DDR_512MB_64Mx64_rank2_row13_col10_cl2_5.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\sysclk_inv.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\sysclk_inv.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\sysclk_inv.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\clk90_inv.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\clk90_inv.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\clk90_inv.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\ddr_clk90_inv.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\ddr_clk90_inv.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\ddr_clk90_inv.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\dcm_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\dcm_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\dcm_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\dcm_1.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\dcm_1.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\dcm_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\aes_accel_0_to_microblaze_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\aes_accel_0_to_microblaze_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\aes_accel_0_to_microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\aes_accel_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\aes_accel_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\aes_accel_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\microblaze_0_to_aes_accel_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\microblaze_0_to_aes_accel_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\microblaze_0_to_aes_accel_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\tlb_bram_0_to_microblaze_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\tlb_bram_0_to_microblaze_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\tlb_bram_0_to_microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\tlb_bram_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\tlb_bram_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\tlb_bram_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\microblaze_0_to_tlb_bram_0.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\microblaze_0_to_tlb_bram_0.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\microblaze_0_to_tlb_bram_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\work\fpga\dcc_v2p\report\imgs\system_blkd.jpg" SVGNAME="C:\work\fpga\dcc_v2p\report\imgs\system_blkd.svg" TMPSVGFN="C:\work\fpga\dcc_v2p\report\.dswkshop\system_blkd.svg"/>
+
+</RENDERBATCH>

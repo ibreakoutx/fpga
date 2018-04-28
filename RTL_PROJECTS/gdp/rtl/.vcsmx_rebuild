@@ -1,0 +1,1 @@
+vcs "gdp.v" "+v2k" "-sverilog" "+define+TEST"

@@ -1,0 +1,354 @@
+Release 9.1.02i - libgen Xilinx EDK 9.1.02
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs C:/work/ringbuf/system.mhs -p xc3s1600efg320-4 -xmpdir
+C:/work/ringbuf -pe microblaze_0 -od
+C:/work/ringbuf/SDK_projects/microblaze_0_sw_platform
+C:/work/ringbuf/SDK_projects/microblaze_0_sw_platform/system.mss 
+
+Output Directory (-od)		: C:\work\ringbuf\SDK_projects\microblaze_0_sw_platform\
+Part (-p)			: spartan3e
+
+Software Specification file	:
+C:/work/ringbuf/SDK_projects/microblaze_0_sw_platform/system.mss
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v6_00_b/data/microblaze_v2_1_0.
+tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/opb_mdm_v2_00_a/data/opb_mdm_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/data/lmb_v10_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v2_00_a/data/lmb_bram_if
+_cntlr_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/mch_opb_emc_v1_01_a/data/mch_opb_emc_v2_1_
+0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/mch_opb_ddr_v1_00_c/data/mch_opb_ddr_v2_1_
+0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/opb_ethernet_v1_04_a/data/opb_ethernet_v2_
+1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/dcm_module_v1_00_c/data/dcm_module_v2_1_0.
+tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_10_a/data/fsl_v20_v2_1_0.tcl
+...
+
+Overriding IP level properties ...
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 66 - microblaze_0 (microblaze) tool is overriding PARAMETER
+   C_FAMILY value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 67 - microblaze_0 (microblaze) tool is overriding PARAMETER
+   C_INSTANCE value to microblaze_0
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 102 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_ADDR_TAG_BITS value to 0
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 110 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_DCACHE_ADDR_TAG value to 0
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_mdm_v2_00_a\data\opb_mdm_v2_1_0.mpd
+   line 41 - debug_module (opb_mdm) tool is overriding PARAMETER C_FAMILY value
+   to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1
+   _0.mpd line 41 - lmb_bram (bram_block) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - LEDs_6Bit (opb_gpio) tool is overriding PARAMETER C_FAMILY value
+   to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - LEDs_1Bit (opb_gpio) tool is overriding PARAMETER C_FAMILY value
+   to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - DIP_Switches_4Bit (opb_gpio) tool is overriding PARAMETER
+   C_FAMILY value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - Buttons_3Bit (opb_gpio) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - Character_LCD_2x16 (opb_gpio) tool is overriding PARAMETER
+   C_FAMILY value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - J4_IO_4Bit (opb_gpio) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 40 - Rotary_Encoder (opb_gpio) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\mch_opb_emc_v1_01_a\data\mch_opb_emc_v2
+   _1_0.mpd line 41 - FLASH_16Mx8 (mch_opb_emc) tool is overriding PARAMETER
+   C_FAMILY value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\mch_opb_ddr_v1_00_c\data\mch_opb_ddr_v2
+   _1_0.mpd line 42 - DDR_SDRAM_32Mx16 (mch_opb_ddr) tool is overriding
+   PARAMETER C_FAMILY value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_ethernet_v1_04_a\data\opb_ethernet_
+   v2_1_0.mpd line 54 - Ethernet_MAC (opb_ethernet) tool is overriding PARAMETER
+   C_FAMILY value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_c\data\dcm_module_v2_1
+   _0.mpd line 59 - dcm_0 (dcm_module) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_c\data\dcm_module_v2_1
+   _0.mpd line 59 - dcm_1 (dcm_module) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_c\data\dcm_module_v2_1
+   _0.mpd line 59 - dcm_2 (dcm_module) tool is overriding PARAMETER C_FAMILY
+   value to spartan3e
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v2_01_b/data/emc_common_v2_1_0.
+tcl ...
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) dlmb_cntlr	dlmb
+  (0000000000-0x0000ffff) ilmb_cntlr	ilmb
+  (0x40000000-0x4000ffff) LEDs_6Bit	mb_opb
+  (0x40020000-0x4002ffff) LEDs_1Bit	mb_opb
+  (0x40040000-0x4004ffff) DIP_Switches_4Bit	mb_opb
+  (0x40060000-0x4006ffff) Buttons_3Bit	mb_opb
+  (0x40080000-0x4008ffff) Character_LCD_2x16	mb_opb
+  (0x400a0000-0x400affff) J4_IO_4Bit	mb_opb
+  (0x400c0000-0x400cffff) Rotary_Encoder	mb_opb
+  (0x40600000-0x4060ffff) RS232_DTE	mb_opb
+  (0x40620000-0x4062ffff) RS232_DCE	mb_opb
+  (0x40c00000-0x40c0ffff) Ethernet_MAC	mb_opb
+  (0x41400000-0x4140ffff) debug_module	mb_opb
+  (0x44000000-0x44ffffff) FLASH_16Mx8	mb_opb
+  (0x46000000-0x47ffffff) DDR_SDRAM_32Mx16	mb_opb
+
+Check platform address map ...
+
+Overriding system level properties ...
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 69 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_D_OPB value to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 70 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_D_LMB value to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 71 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_I_OPB value to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 72 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_I_LMB value to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 92 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_INTERRUPT_IS_EDGE value to 0
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v6_00_b\data\microblaze_v2_1
+   _0.mpd line 93 - microblaze_0 (microblaze) tcl is overriding PARAMETER
+   C_EDGE_IS_POSITIVE value to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd
+   line 36 - mb_opb (opb_v20) tool is overriding PARAMETER C_OPB_AWIDTH value to
+   32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd
+   line 37 - mb_opb (opb_v20) tool is overriding PARAMETER C_OPB_DWIDTH value to
+   32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd
+   line 38 - mb_opb (opb_v20) tool is overriding PARAMETER C_NUM_MASTERS value
+   to 2
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd
+   line 39 - mb_opb (opb_v20) tool is overriding PARAMETER C_NUM_SLAVES value to
+   13
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v10_v2_1_0.mpd
+   line 38 - ilmb (lmb_v10) tool is overriding PARAMETER C_LMB_NUM_SLAVES value
+   to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v10_v2_1_0.mpd
+   line 39 - ilmb (lmb_v10) tool is overriding PARAMETER C_LMB_AWIDTH value to
+   32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v10_v2_1_0.mpd
+   line 40 - ilmb (lmb_v10) tool is overriding PARAMETER C_LMB_DWIDTH value to
+   32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v10_v2_1_0.mpd
+   line 38 - dlmb (lmb_v10) tool is overriding PARAMETER C_LMB_NUM_SLAVES value
+   to 1
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v10_v2_1_0.mpd
+   line 39 - dlmb (lmb_v10) tool is overriding PARAMETER C_LMB_AWIDTH value to
+   32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v10_v2_1_0.mpd
+   line 40 - dlmb (lmb_v10) tool is overriding PARAMETER C_LMB_DWIDTH value to
+   32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_00_a\data\lmb_bram
+   _if_cntlr_v2_1_0.mpd line 44 - dlmb_cntlr (lmb_bram_if_cntlr) tool is
+   overriding PARAMETER C_MASK value to 0x40000000
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_00_a\data\lmb_bram
+   _if_cntlr_v2_1_0.mpd line 45 - dlmb_cntlr (lmb_bram_if_cntlr) tool is
+   overriding PARAMETER C_LMB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_00_a\data\lmb_bram
+   _if_cntlr_v2_1_0.mpd line 46 - dlmb_cntlr (lmb_bram_if_cntlr) tool is
+   overriding PARAMETER C_LMB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_00_a\data\lmb_bram
+   _if_cntlr_v2_1_0.mpd line 44 - ilmb_cntlr (lmb_bram_if_cntlr) tool is
+   overriding PARAMETER C_MASK value to 0x40000000
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_00_a\data\lmb_bram
+   _if_cntlr_v2_1_0.mpd line 45 - ilmb_cntlr (lmb_bram_if_cntlr) tool is
+   overriding PARAMETER C_LMB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_00_a\data\lmb_bram
+   _if_cntlr_v2_1_0.mpd line 46 - ilmb_cntlr (lmb_bram_if_cntlr) tool is
+   overriding PARAMETER C_LMB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1
+   _0.mpd line 37 - lmb_bram (bram_block) tool is overriding PARAMETER C_MEMSIZE
+   value to 0x10000
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1
+   _0.mpd line 38 - lmb_bram (bram_block) tool is overriding PARAMETER
+   C_PORT_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1
+   _0.mpd line 39 - lmb_bram (bram_block) tool is overriding PARAMETER
+   C_PORT_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1
+   _0.mpd line 40 - lmb_bram (bram_block) tool is overriding PARAMETER C_NUM_WE
+   value to 4
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_uartlite_v1_00_b\data\opb_uartlite_
+   v2_1_0.mpd line 37 - RS232_DTE (opb_uartlite) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_uartlite_v1_00_b\data\opb_uartlite_
+   v2_1_0.mpd line 38 - RS232_DTE (opb_uartlite) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_uartlite_v1_00_b\data\opb_uartlite_
+   v2_1_0.mpd line 37 - RS232_DCE (opb_uartlite) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_uartlite_v1_00_b\data\opb_uartlite_
+   v2_1_0.mpd line 38 - RS232_DCE (opb_uartlite) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - LEDs_6Bit (opb_gpio) tool is overriding PARAMETER C_OPB_AWIDTH
+   value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - LEDs_6Bit (opb_gpio) tool is overriding PARAMETER C_OPB_DWIDTH
+   value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - LEDs_1Bit (opb_gpio) tool is overriding PARAMETER C_OPB_AWIDTH
+   value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - LEDs_1Bit (opb_gpio) tool is overriding PARAMETER C_OPB_DWIDTH
+   value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - DIP_Switches_4Bit (opb_gpio) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - DIP_Switches_4Bit (opb_gpio) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - Buttons_3Bit (opb_gpio) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - Buttons_3Bit (opb_gpio) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - Character_LCD_2x16 (opb_gpio) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - Character_LCD_2x16 (opb_gpio) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - J4_IO_4Bit (opb_gpio) tool is overriding PARAMETER C_OPB_AWIDTH
+   value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - J4_IO_4Bit (opb_gpio) tool is overriding PARAMETER C_OPB_DWIDTH
+   value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 38 - Rotary_Encoder (opb_gpio) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.m
+   pd line 39 - Rotary_Encoder (opb_gpio) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_ethernet_v1_04_a\data\opb_ethernet_
+   v2_1_0.mpd line 51 - Ethernet_MAC (opb_ethernet) tool is overriding PARAMETER
+   C_OPB_AWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_ethernet_v1_04_a\data\opb_ethernet_
+   v2_1_0.mpd line 52 - Ethernet_MAC (opb_ethernet) tool is overriding PARAMETER
+   C_OPB_DWIDTH value to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\fsl_v20_v2_10_a\data\fsl_v20_v2_1_0.mpd
+   line 40 - fsl_v20_0 (fsl_v20) tool is overriding PARAMETER C_FSL_DWIDTH value
+   to 32
+INFO:MDT -
+   C:\EDK\hw\XilinxProcessorIPLib\pcores\fsl_v20_v2_10_a\data\fsl_v20_v2_1_0.mpd
+   line 40 - fsl_v20_1 (fsl_v20) tool is overriding PARAMETER C_FSL_DWIDTH value
+   to 32
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ddr_v2_01_c/data/ddr_v2_1_0.tcl ...
+ERROR:MDT - issued from TCL procedure
+   "::hw_fsl_v20_v2_10_a::check_syslevel_settings" line 14
+    fsl_v20_0 (fsl_v20) - FSL_Clk is unconnected. 
+ERROR:MDT - issued from TCL procedure
+   "::hw_fsl_v20_v2_10_a::check_syslevel_settings" line 14
+    fsl_v20_1 (fsl_v20) - FSL_Clk is unconnected. 
+ERROR:MDT - Errors occured while creating Hardware System

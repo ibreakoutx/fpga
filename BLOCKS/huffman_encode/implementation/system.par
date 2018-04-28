@@ -1,0 +1,212 @@
+Release 7.1.01i par H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+LTOP::  Sun Apr 17 19:16:19 2005
+
+par -w -ol high system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+WARNING:Par:331 - You are using an evaluation version of Xilinx Software. In 92
+   days, this program will not operate. For more information about this product,
+   please refer to the Evaluation Agreement, which was shipped to you along with
+   the Evaluation CDs.
+   To purchase an annual license for this software, please contact your local
+   Field Applications Engineer (FAE) or salesperson. If you have any questions,
+   or if we can assist in any way, please send an email to: eval@xilinx.com
+   Thank You!
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:/Xilinx.
+   "system" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 1.500 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.91 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                  1 out of 16      6%
+   Number of DCMs                      1 out of 8      12%
+   Number of External IOBs            12 out of 556     2%
+      Number of LOCed IOBs            12 out of 12    100%
+
+   Number of JTAGPPCs                  1 out of 1     100%
+   Number of MULT18X18s                2 out of 136     1%
+   Number of PPC405s                   2 out of 2     100%
+   Number of RAMB16s                  66 out of 136    48%
+   Number of SLICEs                 1599 out of 13696  11%
+
+
+Overall effort level (-ol):   High (set by user)
+Placer effort level (-pl):    High (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High (set by user)
+
+Starting initial Timing Analysis.  REAL time: 9 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:991037) REAL time: 10 secs 
+
+Phase 2.31
+WARNING:Place:479 - Use of the left PPC405 has been detected. The left processor
+   requires specialdesign considerations when operating above 350 MHz in the -7
+   speed grade part.Please see Xilinx Application Note XAPP755 for details.
+Phase 2.31 (Checksum:1312cfe) REAL time: 10 secs 
+
+Phase 3.2
+
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 19 secs 
+
+Phase 4.30
+Phase 4.30 (Checksum:26259fc) REAL time: 19 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 19 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 19 secs 
+
+Phase 7.8
+..................................................
+.........
+..........................................
+....
+....
+Phase 7.8 (Checksum:f53187) REAL time: 36 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 36 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 46 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 46 secs 
+
+Phase 11.27
+Phase 11.27 (Checksum:68e7775) REAL time: 46 secs 
+
+Phase 12.24
+Phase 12.24 (Checksum:7270df4) REAL time: 46 secs 
+
+Writing design to file system.ncd
+
+
+Total REAL time to Placer completion: 49 secs 
+Total CPU time to Placer completion: 47 secs 
+
+Starting Router
+
+Phase 1: 16416 unrouted;       REAL time: 1 mins 3 secs 
+
+Phase 2: 13987 unrouted;       REAL time: 1 mins 5 secs 
+
+Phase 3: 3027 unrouted;       REAL time: 1 mins 55 secs 
+
+Phase 4: 3027 unrouted; (113149)      REAL time: 1 mins 56 secs 
+
+Phase 5: 3119 unrouted; (21)      REAL time: 2 mins 7 secs 
+
+Phase 6: 3121 unrouted; (0)      REAL time: 2 mins 7 secs 
+
+Phase 7: 0 unrouted; (144)      REAL time: 2 mins 23 secs 
+
+Phase 8: 0 unrouted; (3013)      REAL time: 2 mins 25 secs 
+
+Phase 9: 0 unrouted; (426)      REAL time: 2 mins 46 secs 
+
+Phase 10: 0 unrouted; (268)      REAL time: 2 mins 54 secs 
+
+Phase 11: 0 unrouted; (0)      REAL time: 3 mins 1 secs 
+
+Phase 12: 0 unrouted; (0)      REAL time: 3 mins 4 secs 
+
+
+Total REAL time to Router completion: 3 mins 7 secs 
+Total CPU time to Router completion: 3 mins 3 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|plb_bram_if_cntlr_1_ |              |      |      |            |             |
+|       port_BRAM_Clk |     BUFGMUX7S| No   | 1215 |  0.268     |  1.250      |
++---------------------+--------------+------+------+------------+-------------+
+|jtagppc_0_0_JTGC405T |              |      |      |            |             |
+|                  CK |         Local|      |    2 |  1.792     |  4.602      |
++---------------------+--------------+------+------+------------+-------------+
+
+
+   The Delay Summary Report
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        1.105
+   The MAXIMUM PIN DELAY IS:                               8.364
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   6.586
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 2.00   < d < 4.00  < d < 6.00  < d < 8.00  < d < 9.00  d >= 9.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+       11531        1542         196          36           2           0
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A        | N/A        | N/A  
+  pin" 10 ns HIGH 50%                       |            |            |      
+--------------------------------------------------------------------------------
+  TS_dcm_0_dcm_0_CLK0_BUF = PERIOD TIMEGRP  | 10.000ns   | 9.972ns    | 9    
+  "dcm_0_dcm_0_CLK0_BUF" TS_sys_clk_pin     |            |            |      
+       HIGH 50%                             |            |            |      
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the
+   constraint does not cover any paths or that it has no requested value.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 3 mins 10 secs 
+Total CPU time to PAR completion: 3 mins 6 secs 
+
+Peak Memory Usage:  245 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 2
+Number of info messages: 0
+
+Writing design to file system.ncd
+
+
+
+PAR done!

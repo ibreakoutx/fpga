@@ -1,0 +1,37 @@
+
+bitinit version Xilinx EDK 10.1.03 Build EDK_K_SP3.6
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+WARNING:MDT - Option "CORE_STATE" in
+   E:\work\FPGA_PROJECTS\BLOCKS\integer_divider\pcores\huffman_encode_testharnes
+   s_v1_00_a\data\huffman_encode_testharness_v2_1_0.mpd line 24  is deprecated.
+   Please use Option ARCH_SUPPORT_MAP instead. 
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc405_0
+  (0b0000010000-0b0000010011) ppc405_0	
+  (0b0000100000-0b0000100011) ppc405_0	
+  (0x40000000-0x4000ffff) LEDs_4Bit	plb->plb2opb->opb
+  (0x40020000-0x4002ffff) DIPSWs_4Bit	plb->plb2opb->opb
+  (0x40600000-0x4060ffff) RS232_Uart_1	plb->plb2opb->opb
+  (0x7ea00000-0x7ea0ffff) huffman_encode_testharness_0	plb->plb2opb->opb
+  (0xfffe0000-0xffffffff) plb_bram_if_cntlr_1	plb
+Address Map for Processor ppc405_1
+  (0b0000010000-0b0000010011) ppc405_1	
+  (0b0000100000-0b0000100011) ppc405_1	
+
+Initializing Memory...
+Checking ELFs associated with PPC405 instance ppc405_0 for overlap...
+
+
+Analyzing file bootloops/ppc405_0.elf...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/system_bd" -bt "implementation/system.bit"  -bd
+"bootloops/ppc405_0.elf" tag ppc405_0  -o b implementation/download.bit 
+Memory Initialization completed successfully.
+

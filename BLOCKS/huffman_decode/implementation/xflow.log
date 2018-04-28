@@ -1,0 +1,557 @@
+Release 7.1.01i Xflow H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc2vp30ff896-7 -implement fast_runtime.opt
+system.ngc  
+
+Using Flow File: F:/fpga/proj/huffman_decode/implementation/fpga.flw 
+Using Option File(s): 
+ F:/fpga/proj/huffman_decode/implementation/fast_runtime.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc2vp30ff896-7 -nt timestamp -bm system.bmm
+F:/fpga/proj/huffman_decode/implementation/system.ngc -uc system.ucf system.ngd 
+#----------------------------------------------#
+Release 7.1.01i - ngdbuild H.40
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -p xc2vp30ff896-7 -nt timestamp -bm system.bmm -uc
+system.ucf F:/fpga/proj/huffman_decode/implementation/system.ngc system.ngd 
+
+Reading NGO file 'F:/fpga/proj/huffman_decode/implementation/system.ngc' ...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/huffman_decoder_0_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/dcm_0_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/plb_bram_if_cntlr_1_bram_wrapper.ngc
+"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/plb_bram_if_cntlr_1_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/reset_block_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/jtagppc_0_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/ppc405_1_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/ppc405_0_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/dipsws_4bit_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/leds_4bit_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/rs232_uart_1_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/plb2opb_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/opb_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/huffman_decode/implementation/plb_wrapper.ngc"...
+
+Applying constraints in "system.ucf" to the design...
+
+Checking timing specifications ...
+INFO:XdmHelpers:851 - TNM "sys_clk_pin", used in period specification
+   "TS_sys_clk_pin", was traced into DCM instance "dcm_0/dcm_0/DCM_INST". The
+   following new TNM groups and period specifications were generated at the DCM
+   output(s):
+   CLK0: TS_dcm_0_dcm_0_CLK0_BUF=PERIOD dcm_0_dcm_0_CLK0_BUF
+TS_sys_clk_pin*1.000000 HIGH 50.000000%
+
+Processing BMM file ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I6' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I0/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I7' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I3/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I2/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I1/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I9/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I8/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I7/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I6/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I5/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_VAC_CALC/Counter_Bit_I4/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I11' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I8' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I10' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I9' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I4' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_DELAY_MUX/FDRE_I5' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I1/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I0/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I9/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I8/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I7/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I6/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I5/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I4/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I3/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_VAC_CALC/Counter_Bit_I2/FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output
+   pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output
+   pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_RDFIFO/I_DP_CONTR
+   OLLER/I_MARKREG_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'huffman_decoder_0/huffman_decoder_0/OPB_IPIF_I/OPB_BAM_I/I_WRPFIFO_TOP/I_DP_
+   CONTROLLER/I_MARKREG_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_ADDR
+   ESS_COUNTER/I_SIZE_S_H_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_ADDR
+   ESS_COUNTER/I_SIZE_S_H_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_CS_SIZE_REG2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_CS_SIZE_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_CS_SIZE_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_BKEND_WRCE_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_BKEND_RDCE_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_BKEND_CE_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_ADDR_S_H_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_ADDR_S_H_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plb_bram_if_cntlr_1/plb_bram_if_cntlr_1/I_PLB_IPIF/I_SLAVE_ATTACHMENT/I_DECO
+   DER/I_ADDR_S_H_REG2' has unconnected output pin
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  48
+
+Writing NGD file "system.ngd" ...
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b system.ngd system.pcf 
+#----------------------------------------------#
+Release 7.1.01i - Map H.40
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+Using target part "2vp30ff896-7".
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Writing design file "system_map.ncd"...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    8
+Logic Utilization:
+  Number of Slice Flip Flops:       1,477 out of  27,392    5%
+  Number of 4 input LUTs:           1,979 out of  27,392    7%
+Logic Distribution:
+  Number of occupied Slices:        1,720 out of  13,696   12%
+  Number of Slices containing only related logic:   1,720 out of   1,720  100%
+  Number of Slices containing unrelated logic:          0 out of   1,720    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:          2,349 out of  27,392    8%
+  Number used as logic:             1,979
+  Number used as a route-thru:        114
+  Number used for Dual Port RAMs:     204
+    (Two LUTs used per Dual Port RAM)
+  Number used as Shift registers:      52
+
+  Number of bonded IOBs:               12 out of     556    2%
+    IOB Flip Flops:                    10
+  Number of PPC405s:                   2 out of       2  100%
+  Number of JTAGPPCs:                  1 out of       1  100%
+  Number of Block RAMs:                66 out of     136   48%
+  Number of GCLKs:                      1 out of      16    6%
+  Number of DCMs:                       1 out of       8   12%
+  Number of GTs:                        0 out of       8    0%
+  Number of GT10s:                      0 out of       0    0%
+
+Total equivalent gate count for design:  4,387,329
+Additional JTAG gate count for IOBs:  576
+Peak Memory Usage:  198 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+
+
+
+#----------------------------------------------#
+# Starting program par
+# par -w -ol high system_map.ncd system.ncd system.pcf 
+#----------------------------------------------#
+Release 7.1.01i - par H.40
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+
+
+Constraints file: system.pcf.
+WARNING:Par:331 - You are using an evaluation version of Xilinx Software. In 86
+   days, this program will not operate. For more information about this product,
+   please refer to the Evaluation Agreement, which was shipped to you along with
+   the Evaluation CDs.
+   To purchase an annual license for this software, please contact your local
+   Field Applications Engineer (FAE) or salesperson. If you have any questions,
+   or if we can assist in any way, please send an email to: eval@xilinx.com
+   Thank You!
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:/Xilinx.
+   "system" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 1.500 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.91 2005-03-25".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                  1 out of 16      6%
+   Number of DCMs                      1 out of 8      12%
+   Number of External IOBs            12 out of 556     2%
+      Number of LOCed IOBs            12 out of 12    100%
+
+   Number of JTAGPPCs                  1 out of 1     100%
+   Number of PPC405s                   2 out of 2     100%
+   Number of RAMB16s                  66 out of 136    48%
+   Number of SLICEs                 1720 out of 13696  12%
+
+
+Overall effort level (-ol):   High (set by user)
+Placer effort level (-pl):    High (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High (set by user)
+
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:990c0f) REAL time: 10 secs 
+
+Phase 2.31
+WARNING:Place:479 - Use of the left PPC405 has been detected. The left processor
+   requires specialdesign considerations when operating above 350 MHz in the -7
+   speed grade part.Please see Xilinx Application Note XAPP755 for details.
+Phase 2.31 (Checksum:1312cfe) REAL time: 10 secs 
+
+Phase 3.2
+
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 19 secs 
+
+Phase 4.30
+Phase 4.30 (Checksum:26259fc) REAL time: 19 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 19 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 19 secs 
+
+Phase 7.8
+...........................................................................................
+........
+......................................................
+....
+....
+Phase 7.8 (Checksum:f3dc47) REAL time: 40 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 40 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 51 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 51 secs 
+
+Phase 11.27
+Phase 11.27 (Checksum:68e7775) REAL time: 52 secs 
+
+Phase 12.24
+Phase 12.24 (Checksum:7270df4) REAL time: 52 secs 
+
+Writing design to file system.ncd
+
+
+Total REAL time to Placer completion: 56 secs 
+Total CPU time to Placer completion: 50 secs 
+
+Starting Router
+
+Phase 1: 17145 unrouted;       REAL time: 1 mins 11 secs 
+
+Phase 2: 14775 unrouted;       REAL time: 1 mins 12 secs 
+
+Phase 3: 3197 unrouted;       REAL time: 2 mins 4 secs 
+
+Phase 4: 3197 unrouted; (248037)      REAL time: 2 mins 4 secs 
+
+Phase 5: 3530 unrouted; (1386)      REAL time: 2 mins 8 secs 
+
+Phase 6: 3533 unrouted; (1457)      REAL time: 2 mins 9 secs 
+
+Phase 7: 3477 unrouted; (89)      REAL time: 2 mins 16 secs 
+
+Phase 8: 3417 unrouted; (0)      REAL time: 2 mins 26 secs 
+
+Phase 9: 3417 unrouted; (0)      REAL time: 2 mins 26 secs 
+
+Phase 10: 0 unrouted; (153)      REAL time: 2 mins 42 secs 
+
+Phase 11: 0 unrouted; (5418)      REAL time: 2 mins 44 secs 
+
+Phase 12: 0 unrouted; (890)      REAL time: 3 mins 45 secs 
+
+Phase 13: 0 unrouted; (539)      REAL time: 3 mins 54 secs 
+
+Phase 14: 0 unrouted; (368)      REAL time: 4 mins 2 secs 
+
+Phase 15: 0 unrouted; (73)      REAL time: 4 mins 8 secs 
+
+Phase 16: 0 unrouted; (0)      REAL time: 4 mins 26 secs 
+
+Phase 17: 0 unrouted; (0)      REAL time: 4 mins 29 secs 
+
+
+Total REAL time to Router completion: 4 mins 32 secs 
+Total CPU time to Router completion: 4 mins 17 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|plb_bram_if_cntlr_1_ |              |      |      |            |             |
+|       port_BRAM_Clk |     BUFGMUX7S| No   | 1192 |  0.277     |  1.254      |
++---------------------+--------------+------+------+------------+-------------+
+|jtagppc_0_0_JTGC405T |              |      |      |            |             |
+|                  CK |         Local|      |    2 |  1.792     |  4.602      |
++---------------------+--------------+------+------+------------+-------------+
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A        | N/A        | N/A  
+  pin" 10 ns HIGH 50%                       |            |            |      
+--------------------------------------------------------------------------------
+  TS_dcm_0_dcm_0_CLK0_BUF = PERIOD TIMEGRP  | 10.000ns   | 9.907ns    | 10   
+  "dcm_0_dcm_0_CLK0_BUF" TS_sys_clk_pin     |            |            |      
+       HIGH 50%                             |            |            |      
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the
+   constraint does not cover any paths or that it has no requested value.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 4 mins 35 secs 
+Total CPU time to PAR completion: 4 mins 20 secs 
+
+Peak Memory Usage:  241 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 2
+Number of info messages: 0
+
+Writing design to file system.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 3 -xml system.twx system.ncd system.pcf 
+#----------------------------------------------#
+Release 7.1.01i - Trace H.40
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:/Xilinx.
+   "system" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+--------------------------------------------------------------------------------
+Release 7.1.01i Trace H.40
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+trce -e 3 -xml system.twx system.ncd system.pcf
+
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,speed:             xc2vp30,-7 (PRODUCTION 1.91 2005-03-25)
+Report level:             error report
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 415119 paths, 0 nets, and 13552 connections
+
+Design statistics:
+   Minimum period:   9.907ns (Maximum frequency: 100.939MHz)
+
+
+Analysis completed Sun Apr 24 15:10:31 2005
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 1
+Total time: 10 secs 
+
+

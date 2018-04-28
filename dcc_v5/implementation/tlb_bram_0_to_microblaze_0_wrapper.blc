@@ -1,0 +1,31 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: g:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc5vlx110tff1136-1 -intstyle silent -uc tlb_bram_0_to_microblaze_0_wrapper.ucf
+-sd .. tlb_bram_0_to_microblaze_0_wrapper.ngc
+../tlb_bram_0_to_microblaze_0_wrapper.ngc
+
+Reading NGO file
+"G:/work/dcc_v5/implementation/tlb_bram_0_to_microblaze_0_wrapper/tlb_bram_0_to_
+microblaze_0_wrapper.ngc" ...
+
+Applying constraints in "tlb_bram_0_to_microblaze_0_wrapper.ucf" to the
+design...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 78492 kilobytes
+
+Writing NGC file "../tlb_bram_0_to_microblaze_0_wrapper.ngc" ...
+
+Writing NGCBUILD log file "../tlb_bram_0_to_microblaze_0_wrapper.blc"...

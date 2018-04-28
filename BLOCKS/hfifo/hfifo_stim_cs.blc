@@ -1,0 +1,17 @@
+Release 7.1.02i ngcbuild H.40
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild -dd f:\fpga\proj\hfifo/_ngo -p xc2vp30-ff896-7 -i
+f:\fpga\proj\hfifo\hfifo_stim.ngc f:\fpga\proj\hfifo\hfifo_stim_cs.ngc 
+
+Reading NGO file 'f:/fpga/proj/hfifo/hfifo_stim.ngc' ...
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 62876 kilobytes
+
+Writing NGC file "f:/fpga/proj/hfifo/hfifo_stim_cs.ngc" ...
+
+Writing NGCBUILD log file "f:/fpga/proj/hfifo/hfifo_stim_cs.blc"...

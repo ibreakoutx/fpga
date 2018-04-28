@@ -1,0 +1,431 @@
+Release 9.1.03i - xst J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "synth.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "synth"
+Output Format                      : NGC
+Target Device                      : xc2vp30-7-ff896
+
+---- Source Options
+Top Module Name                    : hfifo_sync_read
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : synth.lso
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Verilog 2001                       : YES
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "./hfifo_sync_read.v" in library work
+Module <hfifo_sync_read> compiled
+No errors in compilation
+Analysis of file <"synth.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <hfifo_sync_read> in library <work> with parameters.
+	dwidth = "00000000000000000000000000001000"
+	pwidth = "00000000000000000000000000001000"
+	size = "00000000000000000000000100000000"
+	swidth = "00000000000000000000000000001001"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <hfifo_sync_read>.
+	dwidth = 32'sb00000000000000000000000000001000
+	pwidth = 32'sb00000000000000000000000000001000
+	size = 32'sb00000000000000000000000100000000
+	swidth = 32'sb00000000000000000000000000001001
+Module <hfifo_sync_read> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <hfifo_sync_read>.
+    Related source file is "./hfifo_sync_read.v".
+    Found 256x8-bit dual-port RAM <Mram_fmem> for signal <fmem>.
+WARNING:Xst - Property "use_dsp48" is not applicable for this technology.
+    Found 8-bit register for signal <dout>.
+    Found 9-bit register for signal <cnt>.
+    Found 9-bit addsub for signal <cnt$addsub0000>.
+    Found 8-bit up counter for signal <rd_ptr>.
+    Found 8-bit up counter for signal <wr_ptr>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <hfifo_sync_read> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx91i.
+INFO:Xst:2691 - Unit <hfifo_sync_read> : The RAM <Mram_fmem> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>.
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <wr_ptr>        |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <rd_ptr>        |          |
+    |     doB            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit dual-port block RAM                         : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <hfifo_sync_read> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block hfifo_sync_read, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : synth.ngr
+Top Level Output File Name         : synth
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 82
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 14
+#      LUT2                        : 3
+#      LUT2_D                      : 2
+#      LUT3                        : 9
+#      LUT3_L                      : 1
+#      LUT4                        : 16
+#      LUT4_D                      : 1
+#      MUXCY                       : 14
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 14
+# FlipFlops/Latches                : 25
+#      FDC                         : 9
+#      FDCE                        : 16
+# RAMS                             : 1
+#      RAMB16_S9_S9                : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 11
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                      25  out of  13696     0%  
+ Number of Slice Flip Flops:            25  out of  27392     0%  
+ Number of 4 input LUTs:                48  out of  27392     0%  
+ Number of IOs:                         22
+ Number of bonded IOBs:                 22  out of    556     3%  
+ Number of BRAMs:                        1  out of    136     0%  
+ Number of GCLKs:                        1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 25    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 3.184ns (Maximum Frequency: 314.056MHz)
+   Minimum input arrival time before clock: 3.823ns
+   Maximum output required time after clock: 5.583ns
+   Maximum combinational path delay: 6.149ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.184ns (frequency: 314.056MHz)
+  Total number of paths / destination ports: 159 / 41
+-------------------------------------------------------------------------
+Delay:               3.184ns (Levels of Logic = 4)
+  Source:            cnt_2 (FF)
+  Destination:       cnt_6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_2 to cnt_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.370   0.614  cnt_2 (cnt_2)
+     LUT2_D:I0->O          1   0.275   0.369  Maddsub_cnt_addsub0000_cy<4>119 (Maddsub_cnt_addsub0000_cy<4>1_map8)
+     LUT4:I3->O            1   0.275   0.000  cnt_mux0000<6>11_G (N154)
+     MUXF5:I1->O           3   0.303   0.495  cnt_mux0000<6>11 (N5)
+     LUT2:I1->O            1   0.275   0.000  cnt_mux0000<6>2 (cnt_mux0000<6>)
+     FDC:D                     0.208          cnt_6
+    ----------------------------------------
+    Total                      3.184ns (1.706ns logic, 1.478ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 55 / 34
+-------------------------------------------------------------------------
+Offset:              3.823ns (Levels of Logic = 5)
+  Source:            push (PAD)
+  Destination:       cnt_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: push to cnt_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   0.878   0.745  push_IBUF (push_IBUF)
+     LUT3:I0->O            1   0.275   0.369  Maddsub_cnt_addsub0000_cy<4>127_SW0 (N144)
+     LUT4:I3->O            1   0.275   0.000  cnt_mux0000<6>11_F (N153)
+     MUXF5:I0->O           3   0.303   0.495  cnt_mux0000<6>11 (N5)
+     LUT2:I1->O            1   0.275   0.000  cnt_mux0000<6>2 (cnt_mux0000<6>)
+     FDC:D                     0.208          cnt_6
+    ----------------------------------------
+    Total                      3.823ns (2.214ns logic, 1.609ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 49 / 10
+-------------------------------------------------------------------------
+Offset:              5.583ns (Levels of Logic = 5)
+  Source:            cnt_0 (FF)
+  Destination:       not_full (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cnt_0 to not_full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.370   0.619  cnt_0 (cnt_0)
+     LUT4:I1->O            1   0.275   0.000  not_full572 (N156)
+     MUXF5:I0->O           2   0.303   0.514  not_full57_f5 (not_full_map20)
+     LUT4:I0->O            1   0.275   0.000  not_full971 (N159)
+     MUXF5:I1->O           1   0.303   0.332  not_full97_f5 (not_full_OBUF)
+     OBUF:I->O                 2.592          not_full_OBUF (not_full)
+    ----------------------------------------
+    Total                      5.583ns (4.118ns logic, 1.465ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Delay:               6.149ns (Levels of Logic = 5)
+  Source:            pop (PAD)
+  Destination:       rdy (PAD)
+
+  Data Path: pop to rdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   0.878   0.685  pop_IBUF (pop_IBUF)
+     LUT3:I1->O            1   0.275   0.369  not_empty22 (not_empty_map10)
+     LUT4:I3->O            1   0.275   0.467  not_empty31_SW0 (N149)
+     LUT4:I0->O            1   0.275   0.332  not_empty31 (rdy_OBUF)
+     OBUF:I->O                 2.592          rdy_OBUF (rdy)
+    ----------------------------------------
+    Total                      6.149ns (4.295ns logic, 1.854ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+CPU : 10.91 / 10.98 s | Elapsed : 11.00 / 11.00 s
+ 
+--> 
+
+Total memory usage is 192280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

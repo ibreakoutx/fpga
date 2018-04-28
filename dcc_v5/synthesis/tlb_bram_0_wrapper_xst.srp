@@ -1,0 +1,433 @@
+Release 9.1.02i - xst J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "tlb_bram_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\work\fpga\dcc_v2p\pcores\" "C:\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\EDK\hw\XilinxReferenceDesigns\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc2vp30ff896-7
+Output File Name                   : "../implementation/tlb_bram_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : tlb_bram_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\tlb_bram_v1_00_a/hdl/verilog/tlb_bram.v" in library tlb_bram_v1_00_a
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\tlb_bram_v1_00_a/hdl/verilog/smem.v" in library tlb_bram_v1_00_a
+Module <tlb_bram> compiled
+Module <smem> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\/../hdl/tlb_bram_0_wrapper.v" in library work
+Module <tlb_bram_0_wrapper> compiled
+No errors in compilation
+Analysis of file <"tlb_bram_0_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <tlb_bram_0_wrapper> in library <work>.
+
+Analyzing hierarchy for module <tlb_bram> in library <tlb_bram_v1_00_a> with parameters.
+	NUMBER_OF_INPUT_WORDS = "00000000000000000000000000001000"
+	NUMBER_OF_OUTPUT_WORDS = "00000000000000000000000000001000"
+	awidth = "00000000000000000000000000001011"
+	cache_read = "00000000000000000000000000000010"
+	cache_write = "00000000000000000000000000000001"
+	dwidth = "00000000000000000000000000100000"
+	init = "00000000000000000000000000000000"
+	size = "00000000000000000000100000000000"
+
+Analyzing hierarchy for module <smem> in library <tlb_bram_v1_00_a> with parameters.
+	awidth = "00000000000000000000000000001011"
+	dwidth = "00000000000000000000000000100000"
+	size = "00000000000000000000100000000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <tlb_bram_0_wrapper>.
+Module <tlb_bram_0_wrapper> is correct for synthesis.
+ 
+Analyzing module <tlb_bram> in library <tlb_bram_v1_00_a>.
+	NUMBER_OF_INPUT_WORDS = 32'sb00000000000000000000000000001000
+	NUMBER_OF_OUTPUT_WORDS = 32'sb00000000000000000000000000001000
+	awidth = 32'sb00000000000000000000000000001011
+	cache_read = 32'sb00000000000000000000000000000010
+	cache_write = 32'sb00000000000000000000000000000001
+	dwidth = 32'sb00000000000000000000000000100000
+	init = 32'sb00000000000000000000000000000000
+	size = 32'sb00000000000000000000100000000000
+Module <tlb_bram> is correct for synthesis.
+ 
+Analyzing module <smem> in library <tlb_bram_v1_00_a>.
+	awidth = 32'sb00000000000000000000000000001011
+	dwidth = 32'sb00000000000000000000000000100000
+	size = 32'sb00000000000000000000100000000000
+WARNING:Xst:1464 - "C:\work\fpga\dcc_v2p\pcores\tlb_bram_v1_00_a/hdl/verilog/smem.v" line 32: Exactly equal expression will be synthesized as an equal expression, simulation mismatch is possible.
+Module <smem> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <smem>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\tlb_bram_v1_00_a/hdl/verilog/smem.v".
+    Found 2048x32-bit single-port RAM <Mram_mem> for signal <mem>.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <smem> synthesized.
+
+
+Synthesizing Unit <tlb_bram>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\tlb_bram_v1_00_a/hdl/verilog/tlb_bram.v".
+WARNING:Xst:1305 - Output <FSL_M_Clk> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <FSL_S_Clk> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <FSL_M_Control> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <FSL_M_Data_wd> is never used or assigned.
+WARNING:Xst:646 - Signal <s_read_rc> is assigned but never used.
+WARNING:Xst:646 - Signal <m_write_rc> is assigned but never used.
+WARNING:Xst:737 - Found 32-bit latch for signal <din>.
+    Found 11-bit register for signal <addr_rd>.
+    Found 2-bit register for signal <fsm_cs>.
+    Found 4-bit register for signal <way_rc>.
+    Found 4-bit register for signal <wr_rc>.
+    Summary:
+	inferred  21 D-type flip-flop(s).
+Unit <tlb_bram> synthesized.
+
+
+Synthesizing Unit <tlb_bram_0_wrapper>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\/../hdl/tlb_bram_0_wrapper.v".
+Unit <tlb_bram_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 2048x32-bit single-port RAM                           : 4
+# Registers                                            : 8
+ 11-bit register                                       : 1
+ 2-bit register                                        : 1
+ 32-bit register                                       : 4
+ 4-bit register                                        : 2
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx91i.
+INFO:Xst:2691 - Unit <smem> : The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>.
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 32-bit                  |          |
+    |     mode           | no-change                           |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 2048x32-bit single-port block RAM                     : 4
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <tlb_bram_0_wrapper> ...
+
+Optimizing unit <tlb_bram> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/tlb_bram_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 74
+
+Cell Usage :
+# BELS                             : 138
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 13
+#      LUT3_D                      : 1
+#      LUT4                        : 107
+#      LUT4_L                      : 4
+#      MUXF5                       : 7
+#      VCC                         : 1
+# FlipFlops/Latches                : 53
+#      FDE                         : 11
+#      FDR                         : 9
+#      FDRS                        : 1
+#      LDE                         : 32
+# RAMS                             : 16
+#      RAMB16_S9                   : 16
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                      72  out of  13696     0%  
+ Number of Slice Flip Flops:            53  out of  27392     0%  
+ Number of 4 input LUTs:               129  out of  27392     0%  
+ Number of IOs:                         74
+ Number of bonded IOBs:                  0  out of    556     0%  
+ Number of BRAMs:                       16  out of    136    11%  
+ Number of GCLKs:                        1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                  | Clock buffer(FF name)     | Load  |
+--------------------------------------------------------------+---------------------------+-------+
+tlb_bram_0/fsm_cs_cmp_eq00011(tlb_bram_0/fsm_cs_cmp_eq00011:O)| BUFG(*)(tlb_bram_0/din_10)| 32    |
+FSL_Clk                                                       | NONE(tlb_bram_0/addr_rd_1)| 21    |
+--------------------------------------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 2.355ns (Maximum Frequency: 424.683MHz)
+   Minimum input arrival time before clock: 1.426ns
+   Maximum output required time after clock: 3.194ns
+   Maximum combinational path delay: 1.806ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FSL_Clk'
+  Clock period: 2.355ns (frequency: 424.683MHz)
+  Total number of paths / destination ports: 67 / 22
+-------------------------------------------------------------------------
+Delay:               2.355ns (Levels of Logic = 2)
+  Source:            tlb_bram_0/fsm_cs_1 (FF)
+  Destination:       tlb_bram_0/addr_rd_10 (FF)
+  Source Clock:      FSL_Clk rising
+  Destination Clock: FSL_Clk rising
+
+  Data Path: tlb_bram_0/fsm_cs_1 to tlb_bram_0/addr_rd_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.370   0.657  tlb_bram_0/fsm_cs_1 (tlb_bram_0/fsm_cs_1)
+     LUT3_D:I0->O         14   0.275   0.570  tlb_bram_0/addr_wd<0>11 (tlb_bram_0/N0)
+     LUT4:I2->O            1   0.275   0.000  tlb_bram_0/way_wc<3>1 (tlb_bram_0/way_wc<3>)
+     FDR:D                     0.208          tlb_bram_0/way_rc_3
+    ----------------------------------------
+    Total                      2.355ns (1.128ns logic, 1.227ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'tlb_bram_0/fsm_cs_cmp_eq00011'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              0.263ns (Levels of Logic = 0)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       tlb_bram_0/din_31 (LATCH)
+  Destination Clock: tlb_bram_0/fsm_cs_cmp_eq00011 falling
+
+  Data Path: FSL_S_Exists to tlb_bram_0/din_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:GE                    0.263          tlb_bram_0/din_31
+    ----------------------------------------
+    Total                      0.263ns (0.263ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 73 / 43
+-------------------------------------------------------------------------
+Offset:              1.426ns (Levels of Logic = 2)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       tlb_bram_0/addr_rd_10 (FF)
+  Destination Clock: FSL_Clk rising
+
+  Data Path: FSL_S_Exists to tlb_bram_0/addr_rd_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3_D:I1->O         14   0.275   0.570  tlb_bram_0/addr_wd<0>11 (tlb_bram_0/N0)
+     LUT4:I2->O            1   0.275   0.000  tlb_bram_0/way_wc<3>1 (tlb_bram_0/way_wc<3>)
+     FDR:D                     0.208          tlb_bram_0/way_rc_3
+    ----------------------------------------
+    Total                      1.426ns (0.856ns logic, 0.570ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 316 / 34
+-------------------------------------------------------------------------
+Offset:              3.194ns (Levels of Logic = 3)
+  Source:            tlb_bram_0/way_rc_1 (FF)
+  Destination:       FSL_M_Data<1> (PAD)
+  Source Clock:      FSL_Clk rising
+
+  Data Path: tlb_bram_0/way_rc_1 to FSL_M_Data<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             34   0.370   0.810  tlb_bram_0/way_rc_1 (tlb_bram_0/way_rc_1)
+     LUT4:I0->O           25   0.275   0.759  tlb_bram_0/FSL_M_Data<0>111 (tlb_bram_0/N35)
+     LUT4:I1->O            1   0.275   0.429  tlb_bram_0/FSL_M_Data<9>24 (tlb_bram_0/FSL_M_Data<9>_map9)
+     LUT4:I1->O            0   0.275   0.000  tlb_bram_0/FSL_M_Data<9>39 (FSL_M_Data<9>)
+    ----------------------------------------
+    Total                      3.194ns (1.195ns logic, 1.999ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 41 / 34
+-------------------------------------------------------------------------
+Delay:               1.806ns (Levels of Logic = 3)
+  Source:            FSL_M_Full (PAD)
+  Destination:       FSL_M_Data<0> (PAD)
+
+  Data Path: FSL_M_Full to FSL_M_Data<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O           39   0.275   0.817  tlb_bram_0/FSL_M_Data<0>21 (FSL_M_Write)
+     LUT4:I0->O            1   0.275   0.000  tlb_bram_0/FSL_M_Data<15>441 (N1003)
+     MUXF5:I1->O           0   0.303   0.000  tlb_bram_0/FSL_M_Data<15>44_f5 (FSL_M_Data<15>)
+    ----------------------------------------
+    Total                      1.806ns (0.989ns logic, 0.817ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+CPU : 11.58 / 11.67 s | Elapsed : 12.00 / 12.00 s
+ 
+--> 
+
+Total memory usage is 193344 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,3 @@
+set ADucfFile {hfifo_stim.ucf}
+set ADbmmFile {}
+set ADcdcFile {hfifio.cdc}

@@ -1,0 +1,39 @@
+import mypkg::*;
+
+class monitor extends uvm_monitor ;
+
+  `uvm_component_utils(monitor)
+  heartbeat hbt ;
+
+  virtual shiftreg_mon_intf #(.width(8)) mon ;
+
+  function new(string name, uvm_component parent);
+      super.new(name,parent);
+  endfunction: new
+  
+  function void build_phase( uvm_phase phase);
+      super.build_phase(phase);
+      uvm_resource_db#(virtual shiftreg_mon_intf #(.width(8)) )::read_by_name("monitor", "intf", mon,null);
+      uvm_resource_db#(heartbeat)::read_by_name("top","hbt",hbt,null);                  
+  endfunction
+
+  function void connect_phase(uvm_phase phase) ;
+      super.connect_phase(phase);
+  endfunction
+
+  task main_phase(uvm_phase phase);
+      fork
+	 forever
+	   begin
+	      @(mon.p_clk);
+	      if ( mon.valid_out == 1 )
+		begin
+		`uvm_info("MONITOR",$sformatf("dataout = %x",mon.dout), UVM_NONE);
+		 hbt.tick();
+		end
+	   end
+     join_none
+  endtask // reset_phase
+
+endclass
+

@@ -1,0 +1,8 @@
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/aes_accel.v
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/fifo_rd_32_to_128.v
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/fifo_wr_128_to_32.v
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/aes_cipher_top.v
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/aes_key_expand_128.v
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/aes_rcon.v
+verilog aes_accel_v1_00_a G:\work\dcc_v5\pcores\aes_accel_v1_00_a/hdl/verilog/aes_sbox.v
+verilog work ../hdl/aes_accel_0_wrapper.v

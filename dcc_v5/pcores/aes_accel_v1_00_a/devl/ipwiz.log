@@ -1,0 +1,59 @@
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+Start Creating ISE project 
+Start Creating drver source 
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard!
+
+Peripheral summary
+
+  top name       : aes_accel
+  version        : 1.00.a
+  type           : FSL master slave
+  features       : 
+
+File Summary
+
+  - HDL source -
+  C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a\hdl\vhdl
+  top level      : aes_accel.vhd
+
+  - XPS interface -
+  C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a\data
+  mpd            : aes_accel_v2_1_0.mpd
+  pao            : aes_accel_v2_1_0.pao
+
+  - ISE project -
+  C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a\devl\projnav
+  ise project    : aes_accel.npl
+  cli command    : aes_accel.cli
+
+
+  - XST synthesis -
+  C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a\devl\synthesis
+  xst script     : aes_accel_xst.scr
+  xst project    : aes_accel_xst.prj
+
+  - Misc file -
+  C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a\devl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+  - Driver source -
+  C:\work\fpga\dcc_v2p\drivers\aes_accel_v1_00_a\src
+  makefile       : Makefile
+  header         : aes_accel.h
+  source         : aes_accel.c
+
+  - Driver interface -
+  C:\work\fpga\dcc_v2p\drivers\aes_accel_v1_00_a\data
+  mdd            : aes_accel_v2_1_0.mdd
+  tcl            : aes_accel_v2_1_0.tcl
+
+

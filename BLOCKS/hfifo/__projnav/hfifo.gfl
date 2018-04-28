@@ -1,0 +1,1455 @@
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo_stim.ngc
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# xst flow : RunXST
+hfifo_stim_summary.html
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# Configure Device (iMPACT)
+hfifo_stim.prm
+hfifo_stim.isc
+hfifo_stim.svf
+xilinx.sys
+hfifo_stim.mcs
+hfifo_stim.exo
+hfifo_stim.hex
+hfifo_stim.tek
+hfifo_stim.dst
+hfifo_stim.dst_compressed
+hfifo_stim.mpm
+_impact.cmd
+_impact.log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo_stim.ngc
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo_stim.ngc
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo_stim.ngc
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo.lso
+# xst flow : RunXST
+hfifo_summary.html
+# xst flow : RunXST
+hfifo.syr
+hfifo.prj
+hfifo.sprj
+hfifo.ana
+hfifo.stx
+hfifo.cmd_log
+hfifo.ngc
+hfifo.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo.ngd
+hfifo_ngdbuild.nav
+hfifo.bld
+.untf
+hfifo.cmd_log
+# Implementation : Map
+hfifo_summary.html
+# Implementation : Map
+hfifo_map.ncd
+hfifo.ngm
+hfifo.pcf
+hfifo.nc1
+hfifo.mrp
+hfifo_map.mrp
+hfifo.mdf
+hfifo.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo"
+hfifo_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo.twr
+hfifo.twx
+hfifo.tsi
+hfifo.cmd_log
+# Implementation : Place & Route
+hfifo_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo.ncd
+hfifo.par
+hfifo.pad
+hfifo_pad.txt
+hfifo_pad.csv
+hfifo.pad_txt
+hfifo.dly
+reportgen.log
+hfifo.xpi
+hfifo.grf
+hfifo.itr
+hfifo_last_par.ncd
+hfifo.placed_ncd_tracker
+hfifo.routed_ncd_tracker
+hfifo.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo"
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo.ngd
+hfifo_ngdbuild.nav
+hfifo.bld
+.untf
+hfifo.cmd_log
+# Implementation : Map
+hfifo_summary.html
+# Implementation : Map
+hfifo_map.ncd
+hfifo.ngm
+hfifo.pcf
+hfifo.nc1
+hfifo.mrp
+hfifo_map.mrp
+hfifo.mdf
+hfifo.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo"
+hfifo_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo.twr
+hfifo.twx
+hfifo.tsi
+hfifo.cmd_log
+# Implementation : Place & Route
+hfifo_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo.ncd
+hfifo.par
+hfifo.pad
+hfifo_pad.txt
+hfifo_pad.csv
+hfifo.pad_txt
+hfifo.dly
+reportgen.log
+hfifo.xpi
+hfifo.grf
+hfifo.itr
+hfifo_last_par.ncd
+hfifo.placed_ncd_tracker
+hfifo.routed_ncd_tracker
+hfifo.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo"
+# Generate Programming File
+__projnav/hfifo_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo.ut
+# Generate Programming File
+hfifo.bgn
+hfifo.rbt
+hfifo.ll
+hfifo.msk
+hfifo.drc
+hfifo.nky
+hfifo.bit
+hfifo.bin
+hfifo.isc
+hfifo.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim_summary.html
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# Configure Device (iMPACT)
+hfifo_stim.prm
+hfifo_stim.isc
+hfifo_stim.svf
+xilinx.sys
+hfifo_stim.mcs
+hfifo_stim.exo
+hfifo_stim.hex
+hfifo_stim.tek
+hfifo_stim.dst
+hfifo_stim.dst_compressed
+hfifo_stim.mpm
+_impact.cmd
+_impact.log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim_summary.html
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim_summary.html
+# XST (Creating Lso File) : 
+hfifo_stim.lso
+# xst flow : RunXST
+hfifo_stim_summary.html
+# xst flow : RunXST
+hfifo_stim.syr
+hfifo_stim.prj
+hfifo_stim.sprj
+hfifo_stim.ana
+hfifo_stim.stx
+hfifo_stim.cmd_log
+hfifo.ngc
+hfifo_stim.ngc
+hfifo.ngr
+hfifo_stim.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log
+# Implementation : Map
+hfifo_stim_summary.html
+# Implementation : Map
+hfifo_stim_map.ncd
+hfifo_stim.ngm
+hfifo_stim.pcf
+hfifo_stim.nc1
+hfifo_stim.mrp
+hfifo_stim_map.mrp
+hfifo_stim.mdf
+hfifo_stim.cmd_log
+MAP_NO_GUIDE_FILE_CPF "hfifo_stim"
+hfifo_stim_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+hfifo_stim.twr
+hfifo_stim.twx
+hfifo_stim.tsi
+hfifo_stim.cmd_log
+# Implementation : Place & Route
+hfifo_stim_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+hfifo_stim.ncd
+hfifo_stim.par
+hfifo_stim.pad
+hfifo_stim_pad.txt
+hfifo_stim_pad.csv
+hfifo_stim.pad_txt
+hfifo_stim.dly
+reportgen.log
+hfifo_stim.xpi
+hfifo_stim.grf
+hfifo_stim.itr
+hfifo_stim_last_par.ncd
+hfifo_stim.placed_ncd_tracker
+hfifo_stim.routed_ncd_tracker
+hfifo_stim.cmd_log
+PAR_NO_GUIDE_FILE_CPF "hfifo_stim"
+# Generate Programming File
+__projnav/hfifo_stim_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+hfifo_stim.ut
+# Generate Programming File
+hfifo_stim.bgn
+hfifo_stim.rbt
+hfifo_stim.ll
+hfifo_stim.msk
+hfifo_stim.drc
+hfifo_stim.nky
+hfifo_stim.bit
+hfifo_stim.bin
+hfifo_stim.isc
+hfifo_stim.cmd_log
+# Configure Device (iMPACT)
+hfifo_stim.prm
+hfifo_stim.isc
+hfifo_stim.svf
+xilinx.sys
+hfifo_stim.mcs
+hfifo_stim.exo
+hfifo_stim.hex
+hfifo_stim.tek
+hfifo_stim.dst
+hfifo_stim.dst_compressed
+hfifo_stim.mpm
+_impact.cmd
+_impact.log
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"f:\fpga\proj\hfifo/_ngo"
+hfifo_stim.ngd
+hfifo_stim_ngdbuild.nav
+hfifo_stim.bld
+hfifo_stim.ucf.untf
+hfifo_stim.cmd_log

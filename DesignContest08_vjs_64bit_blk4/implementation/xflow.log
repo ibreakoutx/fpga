@@ -1,0 +1,1628 @@
+Release 7.1.01i Xflow H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc2vp30ff896-7 -implement fast_runtime.opt
+system.ngc  
+
+Using Flow File:
+F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/fpga.flw 
+Using Option File(s): 
+ F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/fast_runtime.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc2vp30ff896-7 -nt timestamp -bm system.bmm
+F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/system.ngc -uc
+system.ucf system.ngd 
+#----------------------------------------------#
+Release 7.1.01i - ngdbuild H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -p xc2vp30ff896-7 -nt timestamp -bm system.bmm -uc
+system.ucf F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/system.ngc
+system.ngd 
+
+Reading NGO file
+'F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/system.ngc' ...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/plb_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/opb_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/plb2opb_wrapper.ngc"
+...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/rs232_uart_1_wrapper
+.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/ddr_512mb_64mx64_ran
+k2_row13_col10_cl2_5_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/sysclk_inv_wrapper.n
+gc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/clk90_inv_wrapper.ng
+c"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/ddr_clk90_inv_wrappe
+r.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/dcm_0_wrapper.ngc"..
+.
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/dcm_1_wrapper.ngc"..
+.
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/accel_sort_plb_0_wra
+pper.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/ppc405_0_wrapper.ngc
+"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/ppc405_1_wrapper.ngc
+"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/jtagppc_0_wrapper.ng
+c"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/reset_block_wrapper.
+ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/iocm_wrapper.ngc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/iocm_cntlr_wrapper.n
+gc"...
+Loading design module
+"F:/fpga/proj/DesignContest08_vjs_64bit_blk4/implementation/isocm_bram_wrapper.n
+gc"...
+
+Applying constraints in "system.ucf" to the design...
+
+Checking timing specifications ...
+INFO:XdmHelpers:851 - TNM "sys_clk_pin", used in period specification
+   "TS_sys_clk_pin", was traced into DCM instance "dcm_0/dcm_0/DCM_INST". The
+   following new TNM groups and period specifications were generated at the DCM
+   output(s):
+   CLK0: TS_dcm_0_dcm_0_CLK0_BUF=PERIOD dcm_0_dcm_0_CLK0_BUF
+TS_sys_clk_pin*1.000000 HIGH 50.000000%
+   CLK90: TS_dcm_0_dcm_0_CLK90_BUF=PERIOD dcm_0_dcm_0_CLK90_BUF
+TS_sys_clk_pin*1.000000 PHASE + 2.500000 nS HIGH 50.000000%
+   CLKFX: TS_dcm_0_dcm_0_CLKFX_BUF=PERIOD dcm_0_dcm_0_CLKFX_BUF
+TS_sys_clk_pin/3.000000 HIGH 50.000000%
+
+Processing BMM file ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DW64_RD_I/ADDR28_SYNC_FIFO_I/I_VAC_CALC/Counter_Bit_I0/FDRE_
+   I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DW64_RD_I/ADDR28_SYNC_FIFO_I/I_VAC_CALC/Counter_Bit_I4/FDRE_
+   I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DW64_RD_I/ADDR28_SYNC_FIFO_I/I_VAC_CALC/Counter_Bit_I3/FDRE_
+   I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DW64_RD_I/ADDR28_SYNC_FIFO_I/I_VAC_CALC/Counter_Bit_I2/FDRE_
+   I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DW64_RD_I/ADDR28_SYNC_FIFO_I/I_VAC_CALC/Counter_Bit_I1/FDRE_
+   I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DW64_RD_I/ADDR28_SYNC_FIFO_I/I_ADDR_CNTR/I_UP_DWN_COUNTER/I_
+   CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/I_U
+   P_DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/I_UP
+   _DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I2/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I1/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I0/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I6/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I5/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I4/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I3/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM0REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM1REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM2REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM3REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM4REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM5REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM6REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM7REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM8REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM9REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM10REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM11REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM12REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM13REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM14REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/mem/distmem/dist_mem/DPRAM/DPRAM0/DPRAM15REG_SP/REG' has unconnected
+   output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/read_blk/read_cnt/empty_blk/empty_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/RDDATA_PATH_I/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapp
+   er_V2_ASYNCH_FIFO_I7/ddr_512mb_64mx64_rank2_row13_col10_cl2_5_wrapper_async_f
+   ifo_v4_0/control/write_blk/write_cnt/full_blk/full_flag_logic/almst_flag_blk/
+   module_gen/2/carry_gen/skip_one/spacer_fdce' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_SIZE_S_H_REG0'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_SIZE_S_H_REG1'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE4to77' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE4to76' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE4to75' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE4to74' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE0to33' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE0to32' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE0to31' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/I_FLEX_ADDR_CNTR/I_
+   FDRSE_BE0to30' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_CS_SIZE_REG2' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_ADDR_S_H_REG1' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_ADDR_S_H_REG0' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_ADDR_S_H_REG2' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_CS_SIZE_REG1' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_CS_SIZE_REG0' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_BKEND_WRCE_REG1' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_BKEND_RDCE_REG1' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_BKEND_CE_REG1' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_BKEND_WRCE_REG0' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_BKEND_RDCE_REG0' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_BKEND_CE_REG0' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/DDR_CTRL_I/DATASM_I/READCNTR_I/CARRY_OUT_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/I_SIZE_S_H_REG0'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ddr_512mb_64mx64_rank2_row13_col10_cl2_5/ddr_512mb_64mx64_rank2_row13_col10_
+   cl2_5/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/I_SIZE_S_H_REG1'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I5' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I4' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CS_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_SIZE_S_H_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I7' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I8' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I6' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_SIZE_S_H_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   CS_SIZE_REG2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   CS_SIZE_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   CS_SIZE_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG9' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG8' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CS_REG4' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CS_REG3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG7' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CS_REG2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG6' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG5' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG4' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CE_REG3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   ADDR_S_H_REG2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   ADDR_S_H_REG3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   ADDR_S_H_REG4' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/I_
+   BKEND_CS_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_STEER_ADDR
+   ESS_COUNTER/I_SIZE_S_H_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _DELAY_MUX/FDRE_I9' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_STEER_ADDR
+   ESS_COUNTER/I_SIZE_S_H_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_WRPFIFO_TOP/I_DP_CONTROLLER/I
+   _READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_RDFIFO/I_DP_CONTROLLER/I_WRIT
+   E_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_RDFIFO/I_DP_CONTROLLER/I_READ
+   _ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE4to77' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE4to76' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE4to75' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE4to74' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE0to33' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE0to32' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE0to31' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRES
+   S_COUNTER/I_FLEX_ADDR_CNTR/I_FDRSE_BE0to30' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BURST_SUPP
+   ORT/RESPONSE_DBEAT_CNTR_I/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'accel_sort_plb_0/accel_sort_plb_0/PLB_IPIF_I/I_SLAVE_ATTACHMENT/I_BURST_SUPP
+   ORT/CONTROL_DBEAT_CNTR_I/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected output
+   pin
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 225
+
+Writing NGD file "system.ngd" ...
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b system.ngd system.pcf 
+#----------------------------------------------#
+Release 7.1.01i - Map H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+Using target part "2vp30ff896-7".
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Writing design file "system_map.ncd"...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    9
+Logic Utilization:
+  Number of Slice Flip Flops:       4,625 out of  27,392   16%
+  Number of 4 input LUTs:           8,991 out of  27,392   32%
+Logic Distribution:
+  Number of occupied Slices:        5,938 out of  13,696   43%
+  Number of Slices containing only related logic:   5,938 out of   5,938  100%
+  Number of Slices containing unrelated logic:          0 out of   5,938    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:          9,711 out of  27,392   35%
+  Number used as logic:             8,991
+  Number used as a route-thru:        110
+  Number used for Dual Port RAMs:     436
+    (Two LUTs used per Dual Port RAM)
+  Number used as Shift registers:     174
+
+  Number of bonded IOBs:              114 out of     556   20%
+    IOB Flip Flops:                   230
+    IOB Dual-Data Rate Flops:          87
+  Number of PPC405s:                   2 out of       2  100%
+  Number of JTAGPPCs:                  1 out of       1  100%
+  Number of Block RAMs:                 6 out of     136    4%
+  Number of GCLKs:                      5 out of      16   31%
+  Number of DCMs:                       2 out of       8   25%
+  Number of GTs:                        0 out of       8    0%
+  Number of GT10s:                      0 out of       0    0%
+
+Total equivalent gate count for design:  579,196
+Additional JTAG gate count for IOBs:  5,472
+Peak Memory Usage:  287 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+
+
+
+#----------------------------------------------#
+# Starting program par
+# par -w -ol high system_map.ncd system.ncd system.pcf 
+#----------------------------------------------#
+Release 7.1.01i - par H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+
+
+Constraints file: system.pcf.
+WARNING:Par:331 - You are using an evaluation version of Xilinx Software. In 75
+   days, this program will not operate. For more information about this product,
+   please refer to the Evaluation Agreement, which was shipped to you along with
+   the Evaluation CDs.
+   To purchase an annual license for this software, please contact your local
+   Field Applications Engineer (FAE) or salesperson. If you have any questions,
+   or if we can assist in any way, please send an email to: eval@xilinx.com
+   Thank You!
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:/Xilinx.
+   "system" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 1.500 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+WARNING:Timing:2798 - The output clock dcm_0/dcm_0/CLKFX_BUF from DCM
+   dcm_0/dcm_0/DCM_INST has a period (frequency) specification of 3333 ps
+   (300.00 Mhz).  This violates the minimum period (maximum frequency) of 4166
+   ps (240.04 Mhz).
+
+Device speed data version:  "PRODUCTION 1.91 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                  5 out of 16     31%
+   Number of DCMs                      2 out of 8      25%
+   Number of External IOBs           114 out of 556    20%
+      Number of LOCed IOBs           114 out of 114   100%
+
+   Number of JTAGPPCs                  1 out of 1     100%
+   Number of PPC405s                   2 out of 2     100%
+   Number of RAMB16s                   6 out of 136     4%
+   Number of SLICEs                 5938 out of 13696  43%
+
+
+Overall effort level (-ol):   High (set by user)
+Placer effort level (-pl):    High (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High (set by user)
+
+Starting initial Timing Analysis.  REAL time: 18 secs 
+Finished initial Timing Analysis.  REAL time: 18 secs 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9a3fcf) REAL time: 22 secs 
+
+Phase 2.31
+WARNING:Place:479 - Use of the left PPC405 has been detected. The left processor
+   requires specialdesign considerations when operating above 350 MHz in the -7
+   speed grade part.Please see Xilinx Application Note XAPP755 for details.
+Phase 2.31 (Checksum:1312cfe) REAL time: 22 secs 
+
+Phase 3.2
+......
+
+
+Phase 3.2 (Checksum:98de91) REAL time: 40 secs 
+
+Phase 4.30
+Phase 4.30 (Checksum:26259fc) REAL time: 40 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 40 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 41 secs 
+
+Phase 7.8
+.............................................................................................................................
+........
+.............................................................................
+................
+.............
+Phase 7.8 (Checksum:14ff0a2) REAL time: 2 mins 36 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 2 mins 37 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 4 mins 5 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 4 mins 5 secs 
+
+Phase 11.27
+Phase 11.27 (Checksum:68e7775) REAL time: 4 mins 14 secs 
+
+Phase 12.24
+Phase 12.24 (Checksum:7270df4) REAL time: 4 mins 14 secs 
+
+Writing design to file system.ncd
+
+
+Total REAL time to Placer completion: 4 mins 24 secs 
+Total CPU time to Placer completion: 4 mins 22 secs 
+
+Starting Router
+
+Phase 1: 56372 unrouted;       REAL time: 4 mins 38 secs 
+
+Phase 2: 51812 unrouted;       REAL time: 4 mins 40 secs 
+
+Phase 3: 16052 unrouted;       REAL time: 5 mins 15 secs 
+
+Phase 4: 16052 unrouted; (168750)      REAL time: 5 mins 17 secs 
+
+Phase 5: 16752 unrouted; (10066)      REAL time: 5 mins 30 secs 
+
+Phase 6: 16800 unrouted; (9520)      REAL time: 5 mins 34 secs 
+
+Phase 7: 16800 unrouted; (9520)      REAL time: 7 mins 45 secs 
+
+Phase 8: 0 unrouted; (29523)      REAL time: 8 mins 23 secs 
+
+Phase 9: 0 unrouted; (29523)      REAL time: 8 mins 33 secs 
+
+Phase 10: 0 unrouted; (29523)      REAL time: 14 mins 31 secs 
+
+Phase 11: 0 unrouted; (29135)      REAL time: 15 mins 1 secs 
+
+Phase 12: 0 unrouted; (28485)      REAL time: 15 mins 36 secs 
+
+Phase 13: 0 unrouted; (21229)      REAL time: 15 mins 52 secs 
+
+Phase 14: 0 unrouted; (19859)      REAL time: 16 mins 41 secs 
+
+Phase 15: 0 unrouted; (19859)      REAL time: 16 mins 44 secs 
+
+Phase 16: 0 unrouted; (19859)      REAL time: 2 hrs 38 mins 54 secs 
+
+Phase 17: 0 unrouted; (19859)      REAL time: 2 hrs 39 mins 10 secs 
+
+
+Total REAL time to Router completion: 2 hrs 39 mins 10 secs 
+Total CPU time to Router completion: 25 mins 45 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|isocm_porta_BRAM_Clk |              |      |      |            |             |
+|                     |     BUFGMUX6P| No   | 3338 |  0.280     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|            clk_90_s |     BUFGMUX1S| No   |   50 |  0.145     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|        ddr_clk_90_s |     BUFGMUX7P| No   |  330 |  0.151     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|          proc_clk_s |     BUFGMUX4P| No   |    1 |  0.000     |  1.132      |
++---------------------+--------------+------+------+------------+-------------+
+|jtagppc_0_0_JTGC405T |              |      |      |            |             |
+|                  CK |         Local|      |    2 |  1.792     |  4.602      |
++---------------------+--------------+------+------+------------+-------------+
+
+Timing Score: 19859
+
+INFO:Par:62 - Your design did not meet timing.  The following are some
+   suggestions to assist you to meet timing in your design.
+   
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place
+   & Route Static Timing Report").  Go to the failing constraint(s) and select
+   the "Timing Improvement Wizard" link for suggestions to correct each problem.
+
+   Rerun Map with "-timing" (ISE process "Perform Timing -Driven Packing and
+Placement"
+
+   Run Multi-Pass Place and Route in PAR using at least 5 "PAR Iterations"
+   (ISE process "Multi Pass Place & Route").
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go
+   to either "Troubleshoot->Tech Tips->Timing & Constraints" or
+   " TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+  TSCLK2CLK90_DDR_512MB_64Mx64_rank2_row13_ | 2.500ns    | 2.497ns    | 1    
+  col10_cl2_5 = MAXDELAY FROM TIMEGRP       |            |            |      
+     "PLB_Clk_DDR_512MB_64Mx64_rank2_row13_ |            |            |      
+  col10_cl2_5" TO TIMEGRP         "Clk90_in |            |            |      
+  _DDR_512MB_64Mx64_rank2_row13_col10_cl2_5 |            |            |      
+  " 2.5 ns                                  |            |            |      
+--------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A        | N/A        | N/A  
+  pin" 10 ns HIGH 50%                       |            |            |      
+--------------------------------------------------------------------------------
+* TS_dcm_0_dcm_0_CLK0_BUF = PERIOD TIMEGRP  | 10.000ns   | 10.961ns   | 66   
+  "dcm_0_dcm_0_CLK0_BUF" TS_sys_clk_pin     |            |            |      
+       HIGH 50%                             |            |            |      
+--------------------------------------------------------------------------------
+  TS_dcm_0_dcm_0_CLK90_BUF = PERIOD TIMEGRP | 10.000ns   | 6.794ns    | 0    
+   "dcm_0_dcm_0_CLK90_BUF"         TS_sys_c |            |            |      
+  lk_pin PHASE 2.5 ns HIGH 50%              |            |            |      
+--------------------------------------------------------------------------------
+  TS_dcm_0_dcm_0_CLKFX_BUF = PERIOD TIMEGRP | 3.333ns    | 2.471ns    | 0    
+   "dcm_0_dcm_0_CLKFX_BUF"         TS_sys_c |            |            |      
+  lk_pin / 3 HIGH 50%                       |            |            |      
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the
+   constraint does not cover any paths or that it has no requested value.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 hrs 39 mins 20 secs 
+Total CPU time to PAR completion: 25 mins 54 secs 
+
+Peak Memory Usage:  390 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - 110 errors found.
+
+Number of error messages: 0
+Number of warning messages: 3
+Number of info messages: 1
+
+Writing design to file system.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 3 -xml system.twx system.ncd system.pcf 
+#----------------------------------------------#
+Release 7.1.01i - Trace H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+c:/Xilinx.
+   "system" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+WARNING:Timing:2798 - The output clock dcm_0/dcm_0/CLKFX_BUF from DCM
+   dcm_0/dcm_0/DCM_INST has a period (frequency) specification of 3333 ps
+   (300.00 Mhz).  This violates the minimum period (maximum frequency) of 4166
+   ps (240.04 Mhz).
+--------------------------------------------------------------------------------
+Release 7.1.01i Trace H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+trce -e 3 -xml system.twx system.ncd system.pcf
+
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,speed:             xc2vp30,-7 (PRODUCTION 1.91 2005-07-22)
+Report level:             error report
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Timing summary:
+---------------
+
+Timing errors: 110  Score: 19859
+
+Constraints cover 811287 paths, 0 nets, and 50926 connections
+
+Design statistics:
+   Minimum period:  10.961ns (Maximum frequency:  91.233MHz)
+   Maximum path delay from/to any node:   2.497ns
+
+
+Analysis completed Thu May 05 17:47:47 2005
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 1
+Number of info messages: 1
+Total time: 24 secs 
+
+

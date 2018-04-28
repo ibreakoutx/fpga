@@ -1,0 +1,8 @@
+##############################################################################
+## Filename:          C:\work\fpga\dcc_v2p\pcores/tlb_bram_v1_00_a/data/tlb_bram_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sat Oct 25 09:45:07 2008 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib tlb_bram_v1_00_a tlb_bram verilog
+lib tlb_bram_v1_00_a smem verilog

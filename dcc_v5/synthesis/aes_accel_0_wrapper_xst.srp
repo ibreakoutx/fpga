@@ -1,0 +1,1232 @@
+Release 9.1.02i - xst J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "aes_accel_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\work\fpga\dcc_v2p\pcores\" "C:\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\EDK\hw\XilinxReferenceDesigns\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc2vp30ff896-7
+Output File Name                   : "../implementation/aes_accel_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : aes_accel_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_accel.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/fifo_rd_32_to_128.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Module <aes_accel> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/fifo_wr_128_to_32.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Module <fifo_rd_32_to_128> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_cipher_top.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Module <fifo_wr_128_to_32> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_key_expand_128.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Module <aes_cipher_top> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_rcon.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Module <aes_key_expand_128> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_sbox.v" in library aes_accel_v1_00_a
+Compiling verilog include file "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/timescale.v"
+Module <aes_rcon> compiled
+Module <aes_sbox> compiled
+Compiling verilog file "C:\work\fpga\dcc_v2p\pcores\/../hdl/aes_accel_0_wrapper.v" in library work
+Module <aes_accel_0_wrapper> compiled
+No errors in compilation
+Analysis of file <"aes_accel_0_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <aes_accel_0_wrapper> in library <work>.
+
+Analyzing hierarchy for module <aes_accel> in library <aes_accel_v1_00_a> with parameters.
+	NUMBER_OF_INPUT_WORDS = "00000000000000000000000000010000"
+	NUMBER_OF_OUTPUT_WORDS = "00000000000000000000000000010000"
+	init = "00"
+	wait_for_done = "01"
+	wait_for_rdy = "10"
+
+Analyzing hierarchy for module <fifo_rd_32_to_128> in library <aes_accel_v1_00_a> with parameters.
+	i_r_width = "00000000000000000000000000100000"
+	init = "000"
+	o_r_width = "00000000000000000000000010000000"
+	stage1 = "001"
+	stage2 = "010"
+	stage3 = "011"
+	stage4 = "100"
+
+Analyzing hierarchy for module <aes_cipher_top> in library <aes_accel_v1_00_a>.
+
+Analyzing hierarchy for module <fifo_wr_128_to_32> in library <aes_accel_v1_00_a> with parameters.
+	i_w_width = "00000000000000000000000010000000"
+	init = "000"
+	o_w_width = "00000000000000000000000000100000"
+	stage1 = "001"
+	stage2 = "010"
+	stage3 = "011"
+	stage4 = "100"
+	stage5 = "101"
+
+Analyzing hierarchy for module <aes_key_expand_128> in library <aes_accel_v1_00_a>.
+
+Analyzing hierarchy for module <aes_sbox> in library <aes_accel_v1_00_a>.
+
+Analyzing hierarchy for module <aes_rcon> in library <aes_accel_v1_00_a>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <aes_accel_0_wrapper>.
+Module <aes_accel_0_wrapper> is correct for synthesis.
+ 
+Analyzing module <aes_accel> in library <aes_accel_v1_00_a>.
+	NUMBER_OF_INPUT_WORDS = 32'sb00000000000000000000000000010000
+	NUMBER_OF_OUTPUT_WORDS = 32'sb00000000000000000000000000010000
+	init = 2'b00
+	wait_for_done = 2'b01
+	wait_for_rdy = 2'b10
+Module <aes_accel> is correct for synthesis.
+ 
+Analyzing module <fifo_rd_32_to_128> in library <aes_accel_v1_00_a>.
+	i_r_width = 32'sb00000000000000000000000000100000
+	init = 3'b000
+	o_r_width = 32'sb00000000000000000000000010000000
+	stage1 = 3'b001
+	stage2 = 3'b010
+	stage3 = 3'b011
+	stage4 = 3'b100
+Module <fifo_rd_32_to_128> is correct for synthesis.
+ 
+Analyzing module <aes_cipher_top> in library <aes_accel_v1_00_a>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+Module <aes_cipher_top> is correct for synthesis.
+ 
+Analyzing module <aes_key_expand_128> in library <aes_accel_v1_00_a>.
+Module <aes_key_expand_128> is correct for synthesis.
+ 
+Analyzing module <aes_rcon> in library <aes_accel_v1_00_a>.
+	Calling function <frcon>.
+"C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_rcon.v" line 90: Found Parallel Case directive in module <aes_rcon>.
+Module <aes_rcon> is correct for synthesis.
+ 
+Analyzing module <aes_sbox> in library <aes_accel_v1_00_a>.
+"C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_sbox.v" line 77: Found FullParallel Case directive in module <aes_sbox>.
+Module <aes_sbox> is correct for synthesis.
+ 
+Analyzing module <fifo_wr_128_to_32> in library <aes_accel_v1_00_a>.
+	i_w_width = 32'sb00000000000000000000000010000000
+	init = 3'b000
+	o_w_width = 32'sb00000000000000000000000000100000
+	stage1 = 3'b001
+	stage2 = 3'b010
+	stage3 = 3'b011
+	stage4 = 3'b100
+	stage5 = 3'b101
+Module <fifo_wr_128_to_32> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <fifo_rd_32_to_128>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/fifo_rd_32_to_128.v".
+WARNING:Xst:646 - Signal <o_rdy_rc> is assigned but never used.
+WARNING:Xst:646 - Signal <pop_rc> is assigned but never used.
+    Found finite state machine <FSM_0> for signal <fsm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <o_control_rd>.
+    Found 128-bit register for signal <odata_rd>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 129 D-type flip-flop(s).
+Unit <fifo_rd_32_to_128> synthesized.
+
+
+Synthesizing Unit <fifo_wr_128_to_32>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/fifo_wr_128_to_32.v".
+    Found finite state machine <FSM_1> for signal <fsm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 128-bit register for signal <idata_rd>.
+    Found 128-bit 4-to-1 multiplexer for signal <idata_wd>.
+    Found 1-bit register for signal <o_push_rc>.
+    Found 32-bit register for signal <odata_rd>.
+    Found 1-bit register for signal <rdy_rc>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 162 D-type flip-flop(s).
+	inferred 128 Multiplexer(s).
+Unit <fifo_wr_128_to_32> synthesized.
+
+
+Synthesizing Unit <aes_sbox>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_sbox.v".
+    Found 256x8-bit ROM for signal <d>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <aes_sbox> synthesized.
+
+
+Synthesizing Unit <aes_rcon>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_rcon.v".
+WARNING:Xst - Property "use_dsp48" is not applicable for this technology.
+    Found 16x32-bit ROM for signal <frcon/1/frcon>.
+    Found 32-bit register for signal <out>.
+    Found 4-bit up counter for signal <rcnt>.
+    Found 4-bit adder for signal <rcnt_next>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <aes_rcon> synthesized.
+
+
+Synthesizing Unit <aes_key_expand_128>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_key_expand_128.v".
+    Found 128-bit register for signal <w>.
+    Found 32-bit xor3 for signal <w_0$xor0000> created at line 85.
+    Found 32-bit xor2 for signal <w_1$xor0000> created at line 86.
+    Found 32-bit xor2 for signal <w_2$xor0000> created at line 87.
+    Found 32-bit xor2 for signal <w_3$xor0000> created at line 88.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred  32 Xor(s).
+Unit <aes_key_expand_128> synthesized.
+
+
+Synthesizing Unit <aes_cipher_top>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_cipher_top.v".
+    Found 128-bit register for signal <text_out>.
+    Found 1-bit register for signal <done>.
+    Found 4-bit down counter for signal <dcnt>.
+    Found 1-bit register for signal <ld_r>.
+    Found 32-bit xor4 for signal <mix_col/1/mix_col>.
+    Found 32-bit xor4 for signal <mix_col/2/mix_col>.
+    Found 32-bit xor4 for signal <mix_col/3/mix_col>.
+    Found 32-bit xor4 for signal <mix_col/4/mix_col>.
+    Found 1-bit xor2 for signal <mix_col_10$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_10$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_10$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_10$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_11$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_11$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_11$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_11$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_12$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_12$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_12$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_12$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_13$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_13$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_13$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_13$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_14$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_14$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_14$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_14$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_15$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_15$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_15$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_15$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_24$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_24$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_24$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_24$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_25$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_25$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_25$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_25$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_26$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_26$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_26$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_26$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_27$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_27$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_27$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_27$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_28$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_28$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_28$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_28$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_29$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_29$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_29$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_29$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_30$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_30$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_30$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_30$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_31$xor0000> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_31$xor0001> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_31$xor0002> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_31$xor0003> created at line 224.
+    Found 1-bit xor2 for signal <mix_col_8$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_8$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_8$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_8$xor0003> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_9$xor0000> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_9$xor0001> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_9$xor0002> created at line 226.
+    Found 1-bit xor2 for signal <mix_col_9$xor0003> created at line 226.
+    Found 8-bit register for signal <sa00>.
+    Found 8-bit xor2 for signal <sa00$xor0000> created at line 149.
+    Found 8-bit xor2 for signal <sa00_next>.
+    Found 8-bit register for signal <sa01>.
+    Found 8-bit xor2 for signal <sa01$xor0000> created at line 145.
+    Found 8-bit xor2 for signal <sa01_next>.
+    Found 8-bit register for signal <sa02>.
+    Found 8-bit xor2 for signal <sa02$xor0000> created at line 141.
+    Found 8-bit xor2 for signal <sa02_next>.
+    Found 8-bit register for signal <sa03>.
+    Found 8-bit xor2 for signal <sa03$xor0000> created at line 137.
+    Found 8-bit xor2 for signal <sa03_next>.
+    Found 8-bit register for signal <sa10>.
+    Found 8-bit xor2 for signal <sa10$xor0000> created at line 148.
+    Found 8-bit xor2 for signal <sa10_next>.
+    Found 8-bit register for signal <sa11>.
+    Found 8-bit xor2 for signal <sa11$xor0000> created at line 144.
+    Found 8-bit xor2 for signal <sa11_next>.
+    Found 8-bit register for signal <sa12>.
+    Found 8-bit xor2 for signal <sa12$xor0000> created at line 140.
+    Found 8-bit xor2 for signal <sa12_next>.
+    Found 8-bit register for signal <sa13>.
+    Found 8-bit xor2 for signal <sa13$xor0000> created at line 136.
+    Found 8-bit xor2 for signal <sa13_next>.
+    Found 8-bit register for signal <sa20>.
+    Found 8-bit xor2 for signal <sa20$xor0000> created at line 147.
+    Found 8-bit xor2 for signal <sa20_next>.
+    Found 8-bit register for signal <sa21>.
+    Found 8-bit xor2 for signal <sa21$xor0000> created at line 143.
+    Found 8-bit xor2 for signal <sa21_next>.
+    Found 8-bit register for signal <sa22>.
+    Found 8-bit xor2 for signal <sa22$xor0000> created at line 139.
+    Found 8-bit xor2 for signal <sa22_next>.
+    Found 8-bit register for signal <sa23>.
+    Found 8-bit xor2 for signal <sa23$xor0000> created at line 135.
+    Found 8-bit xor2 for signal <sa23_next>.
+    Found 8-bit register for signal <sa30>.
+    Found 8-bit xor2 for signal <sa30$xor0000> created at line 146.
+    Found 8-bit xor2 for signal <sa30_next>.
+    Found 8-bit register for signal <sa31>.
+    Found 8-bit xor2 for signal <sa31$xor0000> created at line 142.
+    Found 8-bit xor2 for signal <sa31_next>.
+    Found 8-bit register for signal <sa32>.
+    Found 8-bit xor2 for signal <sa32$xor0000> created at line 138.
+    Found 8-bit xor2 for signal <sa32_next>.
+    Found 8-bit register for signal <sa33>.
+    Found 8-bit xor2 for signal <sa33$xor0000> created at line 134.
+    Found 8-bit xor2 for signal <sa33_next>.
+    Found 128-bit register for signal <text_in_r>.
+    Found 1-bit xor2 for signal <text_out_0$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_1$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_10$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_100$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_101$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_102$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_103$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_104$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_105$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_106$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_107$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_108$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_109$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_11$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_110$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_111$xor0000> created at line 206.
+    Found 1-bit xor2 for signal <text_out_112$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_113$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_114$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_115$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_116$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_117$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_118$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_119$xor0000> created at line 202.
+    Found 1-bit xor2 for signal <text_out_12$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_120$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_121$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_122$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_123$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_124$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_125$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_126$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_127$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_13$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_14$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_15$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_16$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_17$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_18$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_19$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_2$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_20$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_21$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_22$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_23$xor0000> created at line 205.
+    Found 1-bit xor2 for signal <text_out_24$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_25$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_26$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_27$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_28$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_29$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_3$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_30$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_31$xor0000> created at line 201.
+    Found 1-bit xor2 for signal <text_out_32$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_33$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_34$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_35$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_36$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_37$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_38$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_39$xor0000> created at line 212.
+    Found 1-bit xor2 for signal <text_out_4$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_40$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_41$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_42$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_43$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_44$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_45$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_46$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_47$xor0000> created at line 208.
+    Found 1-bit xor2 for signal <text_out_48$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_49$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_5$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_50$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_51$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_52$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_53$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_54$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_55$xor0000> created at line 204.
+    Found 1-bit xor2 for signal <text_out_56$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_57$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_58$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_59$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_6$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_60$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_61$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_62$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_63$xor0000> created at line 200.
+    Found 1-bit xor2 for signal <text_out_64$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_65$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_66$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_67$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_68$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_69$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_7$xor0000> created at line 213.
+    Found 1-bit xor2 for signal <text_out_70$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_71$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <text_out_72$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_73$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_74$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_75$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_76$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_77$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_78$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_79$xor0000> created at line 207.
+    Found 1-bit xor2 for signal <text_out_8$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_80$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_81$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_82$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_83$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_84$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_85$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_86$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_87$xor0000> created at line 203.
+    Found 1-bit xor2 for signal <text_out_88$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_89$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_9$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <text_out_90$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_91$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_92$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_93$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_94$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_95$xor0000> created at line 199.
+    Found 1-bit xor2 for signal <text_out_96$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_97$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_98$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <text_out_99$xor0000> created at line 210.
+    Found 1-bit xor2 for signal <xtime$xor0000> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0001> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0002> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0003> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0004> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0005> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0006> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0007> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0008> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0009> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0010> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0011> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0012> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0013> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0014> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0015> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0016> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0017> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0018> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0019> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0020> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0021> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0022> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0023> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0024> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0025> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0026> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0027> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0028> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0029> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0030> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0031> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0032> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0033> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0034> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0035> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0036> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0037> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0038> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0039> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0040> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0041> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0042> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0043> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0044> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0045> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0046> created at line 232.
+    Found 1-bit xor2 for signal <xtime$xor0047> created at line 232.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 386 D-type flip-flop(s).
+	inferred 128 Xor(s).
+Unit <aes_cipher_top> synthesized.
+
+
+Synthesizing Unit <aes_accel>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\aes_accel_v1_00_a/hdl/verilog/aes_accel.v".
+WARNING:Xst:1305 - Output <FSL_M_Clk> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <FSL_S_Clk> is never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <rd_pull_rc> is assigned but never used.
+WARNING:Xst:1780 - Signal <nr_of_writes> is never used or assigned.
+WARNING:Xst:1780 - Signal <nr_of_reads> is never used or assigned.
+    Found finite state machine <FSM_2> for signal <fsm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 128-bit register for signal <key_rd>.
+    Found 1-bit register for signal <ld_rc>.
+    Found 128-bit register for signal <text_in_rd>.
+    Found 128-bit register for signal <text_out_rd>.
+    Found 128-bit 4-to-1 multiplexer for signal <text_out_wd>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 385 D-type flip-flop(s).
+	inferred 128 Multiplexer(s).
+Unit <aes_accel> synthesized.
+
+
+Synthesizing Unit <aes_accel_0_wrapper>.
+    Related source file is "C:\work\fpga\dcc_v2p\pcores\/../hdl/aes_accel_0_wrapper.v".
+Unit <aes_accel_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 21
+ 16x32-bit ROM                                         : 1
+ 256x8-bit ROM                                         : 20
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 161
+ 1-bit register                                        : 134
+ 128-bit register                                      : 5
+ 32-bit register                                       : 6
+ 8-bit register                                        : 16
+# Multiplexers                                         : 2
+ 128-bit 4-to-1 multiplexer                            : 2
+# Xors                                                 : 404
+ 1-bit xor2                                            : 240
+ 1-bit xor4                                            : 128
+ 32-bit xor2                                           : 3
+ 32-bit xor3                                           : 1
+ 8-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <aes_accel_0/fsm_cs> on signal <fsm_cs[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <aes_accel_0/fifo_wr/fsm_cs> on signal <fsm_cs[1:3]> with johnson encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 111
+ 100   | 110
+ 101   | 100
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <aes_accel_0/fifo_rd/fsm_cs> on signal <fsm_cs[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx91i.
+INFO:Xst:2506 - Unit <aes_rcon> : In order to maximize performance and save block RAM resources, the small ROM <Mrom_frcon_1_frcon> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us33/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa33>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us32/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa32>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us31/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa31>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us30/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa30>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us23/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa23>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us22/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa22>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us21/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa21>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us20/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa20>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us13/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa13>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us12/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa12>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us11/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa11>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us10/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa10>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us03/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa03>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us02/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa02>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us01/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa01>.
+INFO:Xst:2694 - Unit <aes_cipher_top> : The ROM <us00/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa00>.
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa33_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa32_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa31_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa30_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa23_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa22_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa21_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa20_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa13_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa12_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa11_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa10_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa03_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa02_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa01_sub>      |          |
+    -----------------------------------------------------------------------
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <sa00_sub>      |          |
+    -----------------------------------------------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# RAMs                                                 : 16
+ 256x8-bit single-port block RAM                       : 16
+# ROMs                                                 : 5
+ 16x32-bit ROM                                         : 1
+ 256x8-bit ROM                                         : 4
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 974
+ Flip-Flops                                            : 974
+# Multiplexers                                         : 2
+ 128-bit 4-to-1 multiplexer                            : 2
+# Xors                                                 : 404
+ 1-bit xor2                                            : 240
+ 1-bit xor4                                            : 128
+ 32-bit xor2                                           : 3
+ 32-bit xor3                                           : 1
+ 8-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us33/Mrom_d1>, <us32/Mrom_d1> are packed into the single block RAM <us33/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us31/Mrom_d1>, <us30/Mrom_d1> are packed into the single block RAM <us31/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us23/Mrom_d1>, <us22/Mrom_d1> are packed into the single block RAM <us23/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us21/Mrom_d1>, <us12/Mrom_d1> are packed into the single block RAM <us21/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us20/Mrom_d1>, <us13/Mrom_d1> are packed into the single block RAM <us20/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us11/Mrom_d1>, <us10/Mrom_d1> are packed into the single block RAM <us11/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us03/Mrom_d1>, <us02/Mrom_d1> are packed into the single block RAM <us03/Mrom_d11>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us01/Mrom_d1>, <us00/Mrom_d1> are packed into the single block RAM <us01/Mrom_d11>
+WARNING:Xst:1710 - FF/Latch  <out_23> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_22> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_21> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_20> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_19> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_18> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_17> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_16> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_15> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_14> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_13> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_12> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_11> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_10> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_9> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_8> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_7> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_6> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_5> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_4> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_3> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_2> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_1> (without init value) has a constant value of 0 in block <aes_rcon>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <out_0> (without init value) has a constant value of 0 in block <aes_rcon>.
+
+Optimizing unit <aes_accel_0_wrapper> ...
+
+Optimizing unit <fifo_rd_32_to_128> ...
+
+Optimizing unit <fifo_wr_128_to_32> ...
+
+Optimizing unit <aes_rcon> ...
+
+Optimizing unit <aes_key_expand_128> ...
+
+Optimizing unit <aes_cipher_top> ...
+
+Optimizing unit <aes_accel> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+FlipFlop aes_accel_0/cipher_i/u0/w_3_0 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_1 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_10 has been replicated 5 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_11 has been replicated 5 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_12 has been replicated 3 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_13 has been replicated 5 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_14 has been replicated 1 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_16 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_17 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_18 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_19 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_2 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_20 has been replicated 1 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_24 has been replicated 4 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_25 has been replicated 4 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_26 has been replicated 4 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_27 has been replicated 4 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_3 has been replicated 2 time(s)
+FlipFlop aes_accel_0/cipher_i/u0/w_3_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1011
+ Flip-Flops                                            : 1011
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/aes_accel_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 74
+
+Cell Usage :
+# BELS                             : 2625
+#      GND                         : 1
+#      INV                         : 5
+#      LUT2                        : 239
+#      LUT2_D                      : 8
+#      LUT3                        : 523
+#      LUT3_D                      : 2
+#      LUT4                        : 1183
+#      LUT4_D                      : 2
+#      LUT4_L                      : 12
+#      MUXF5                       : 425
+#      MUXF6                       : 128
+#      MUXF7                       : 64
+#      MUXF8                       : 32
+#      VCC                         : 1
+# FlipFlops/Latches                : 1011
+#      FD                          : 130
+#      FDC                         : 40
+#      FDE                         : 641
+#      FDR                         : 85
+#      FDRE                        : 1
+#      FDRSE                       : 3
+#      FDS                         : 111
+# RAMS                             : 8
+#      RAMB16_S9_S9                : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                    1059  out of  13696     7%  
+ Number of Slice Flip Flops:          1011  out of  27392     3%  
+ Number of 4 input LUTs:              1974  out of  27392     7%  
+ Number of IOs:                         74
+ Number of bonded IOBs:                  0  out of    556     0%  
+ Number of BRAMs:                        8  out of    136     5%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+FSL_Clk                            | NONE(aes_accel_0/fifo_rd/odata_rd_62)| 1019  |
+-----------------------------------+--------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+FSL_Rst                            | NONE                   | 40    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 4.213ns (Maximum Frequency: 237.369MHz)
+   Minimum input arrival time before clock: 1.665ns
+   Maximum output required time after clock: 1.208ns
+   Maximum combinational path delay: 0.411ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FSL_Clk'
+  Clock period: 4.213ns (frequency: 237.369MHz)
+  Total number of paths / destination ports: 20251 / 1468
+-------------------------------------------------------------------------
+Delay:               4.213ns (Levels of Logic = 6)
+  Source:            aes_accel_0/cipher_i/u0/w_3_16_2 (FF)
+  Destination:       aes_accel_0/cipher_i/u0/w_1_24 (FF)
+  Source Clock:      FSL_Clk rising
+  Destination Clock: FSL_Clk rising
+
+  Data Path: aes_accel_0/cipher_i/u0/w_3_16_2 to aes_accel_0/cipher_i/u0/w_1_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             32   0.370   0.807  aes_accel_0/cipher_i/u0/w_3_16_2 (aes_accel_0/cipher_i/u0/w_3_16_2)
+     LUT4:I0->O            1   0.275   0.000  aes_accel_0/cipher_i/u0/u0/Mrom_d14 (aes_accel_0/cipher_i/u0/N399)
+     MUXF5:I0->O           1   0.303   0.000  aes_accel_0/cipher_i/u0/u0/Mrom_d_f5_5 (aes_accel_0/cipher_i/u0/u0/Mrom_d_f56)
+     MUXF6:I1->O           1   0.288   0.000  aes_accel_0/cipher_i/u0/u0/Mrom_d_f6_2 (aes_accel_0/cipher_i/u0/u0/Mrom_d_f63)
+     MUXF7:I0->O           1   0.288   0.000  aes_accel_0/cipher_i/u0/u0/Mrom_d_f7_0 (aes_accel_0/cipher_i/u0/u0/Mrom_d_f71)
+     MUXF8:I0->O           4   0.288   0.451  aes_accel_0/cipher_i/u0/u0/Mrom_d_f8 (aes_accel_0/cipher_i/u0/u0/Mrom_d)
+     LUT4:I3->O            1   0.275   0.331  aes_accel_0/cipher_i/u0/Mxor_w_1_xor0000_Result<24>1 (aes_accel_0/cipher_i/u0/w_1_xor0000<24>)
+     FDS:S                     0.536          aes_accel_0/cipher_i/u0/w_1_24
+    ----------------------------------------
+    Total                      4.213ns (2.623ns logic, 1.590ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 854 / 692
+-------------------------------------------------------------------------
+Offset:              1.665ns (Levels of Logic = 2)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       aes_accel_0/fifo_rd/odata_rd_0 (FF)
+  Destination Clock: FSL_Clk rising
+
+  Data Path: FSL_S_Exists to aes_accel_0/fifo_rd/odata_rd_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O           33   0.275   0.771  aes_accel_0/fifo_rd/odata_wd_0_mux000011 (aes_accel_0/fifo_rd/N11)
+     LUT3:I1->O            1   0.275   0.000  aes_accel_0/fifo_rd/odata_wd_9_mux00001 (aes_accel_0/fifo_rd/odata_wd<9>)
+     FDE:D                     0.208          aes_accel_0/fifo_rd/odata_rd_9
+    ----------------------------------------
+    Total                      1.665ns (0.894ns logic, 0.771ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 36 / 34
+-------------------------------------------------------------------------
+Offset:              1.208ns (Levels of Logic = 1)
+  Source:            aes_accel_0/fifo_rd/fsm_cs_FFd2 (FF)
+  Destination:       FSL_S_Read (PAD)
+  Source Clock:      FSL_Clk rising
+
+  Data Path: aes_accel_0/fifo_rd/fsm_cs_FFd2 to FSL_S_Read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.370   0.563  aes_accel_0/fifo_rd/fsm_cs_FFd2 (aes_accel_0/fifo_rd/fsm_cs_FFd2)
+     LUT4:I1->O            0   0.275   0.000  aes_accel_0/fifo_rd/pop_wc1 (FSL_S_Read)
+    ----------------------------------------
+    Total                      1.208ns (0.645ns logic, 0.563ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.411ns (Levels of Logic = 1)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       FSL_S_Read (PAD)
+
+  Data Path: FSL_S_Exists to FSL_S_Read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            0   0.275   0.000  aes_accel_0/fifo_rd/pop_wc1 (FSL_S_Read)
+    ----------------------------------------
+    Total                      0.411ns (0.411ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+CPU : 60.05 / 60.17 s | Elapsed : 60.00 / 61.00 s
+ 
+--> 
+
+Total memory usage is 228672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :   26 (   0 filtered)
+

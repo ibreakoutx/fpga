@@ -1,0 +1,409 @@
+Release 10.1.03 par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+X1000::  Mon Mar 29 01:20:50 2010
+
+par -w -ol high system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '5vlx110t.nph' in environment c:\Xilinx\10.1\ISE.
+   "system" is an NCD, version 3.2, device xc5vlx110t, package ff1136, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more information see the TSI report.
+
+Device speed data version:  "PRODUCTION 1.62 2008-08-19".
+
+
+
+Device Utilization Summary:
+
+   Number of BSCANs                          1 out of 4      25%
+   Number of BUFGs                           7 out of 32     21%
+   Number of BUFIOs                          8 out of 80     10%
+   Number of DSP48Es                         3 out of 64      4%
+   Number of IDELAYCTRLs                     3 out of 22     13%
+      Number of LOCed IDELAYCTRLs            3 out of 3     100%
+
+   Number of ILOGICs                        74 out of 800     9%
+      Number of LOCed ILOGICs                8 out of 74     10%
+
+   Number of External IOBs                 120 out of 640    18%
+      Number of LOCed IOBs                 120 out of 120   100%
+
+   Number of IODELAYs                       80 out of 800    10%
+      Number of LOCed IODELAYs               8 out of 80     10%
+
+   Number of OLOGICs                       117 out of 800    14%
+   Number of PLL_ADVs                        1 out of 6      16%
+   Number of RAMB18X2s                       3 out of 148     2%
+   Number of RAMB18X2SDPs                    1 out of 148     1%
+   Number of RAMB36_EXPs                    35 out of 148    23%
+   Number of Slice Registers              6943 out of 69120   9%
+      Number used as Flip Flops           6894
+      Number used as Latches                48
+      Number used as LatchThrus              1
+
+   Number of Slice LUTS                   8212 out of 69120  11%
+   Number of Slice LUT-Flip Flop pairs   11172 out of 69120  16%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 52 secs 
+Finished initial Timing Analysis.  REAL time: 54 secs 
+
+Starting Router
+
+INFO:Route - One or more directed routing (DIRT) constraints generated for a specific device have been found. Note that
+   DIRT strings are guaranteed to work only on the same device they were created for. If the DIRT constraints fail,
+   verify that the same connectivity is available in the target device for this implementation. 
+
+# of EXACT MODE DIRECTED ROUTING found:128, SUCCESS:128, FAILED:0
+
+Phase 1: 56046 unrouted;       REAL time: 1 mins 7 secs 
+
+Phase 2: 48358 unrouted;       REAL time: 1 mins 12 secs 
+
+Phase 3: 17689 unrouted;       REAL time: 2 mins 4 secs 
+
+Phase 4: 17689 unrouted; (1994682)      REAL time: 2 mins 16 secs 
+
+Phase 5: 18324 unrouted; (1258720)      REAL time: 2 mins 37 secs 
+
+Phase 6: 18305 unrouted; (1209314)      REAL time: 2 mins 53 secs 
+
+Phase 7: 0 unrouted; (1718771)      REAL time: 12 mins 16 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase 8: 0 unrouted; (1478825)      REAL time: 22 mins 27 secs 
+
+Phase 9: 0 unrouted; (1478825)      REAL time: 22 mins 28 secs 
+
+Phase 10: 0 unrouted; (1459526)      REAL time: 22 mins 52 secs 
+
+Total REAL time to Router completion: 23 mins 
+Total CPU time to Router completion: 22 mins 40 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|  dlmb_port_BRAM_Clk | BUFGCTRL_X0Y5| No   | 2480 |  0.595     |  2.126      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM_MPMC_Clk_ |              |      |      |            |             |
+|                Div2 | BUFGCTRL_X0Y4| No   |  457 |  0.313     |  2.075      |
++---------------------+--------------+------+------+------------+-------------+
+|debug_module/Dbg_Clk |              |      |      |            |             |
+|                  _1 | BUFGCTRL_X0Y3| No   |   70 |  0.489     |  2.012      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM_mpmc_clk_ |              |      |      |            |             |
+|                90_s | BUFGCTRL_X0Y0| No   |  160 |  0.247     |  2.046      |
++---------------------+--------------+------+------+------------+-------------+
+|canscid_dpi_0/cansci |              |      |      |            |             |
+|d_dpi_0/USER_LOGIC_I |              |      |      |            |             |
+|/tag_parser_i/STATE_ |              |      |      |            |             |
+|            FSM_FFd6 | BUFGCTRL_X0Y6| No   |    8 |  0.112     |  1.732      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<0> |        IO Clk| No   |   18 |  0.095     |  0.419      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<1> |        IO Clk| No   |   18 |  0.083     |  0.380      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<2> |        IO Clk| No   |   18 |  0.101     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<3> |        IO Clk| No   |   18 |  0.107     |  0.404      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<5> |        IO Clk| No   |   18 |  0.101     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<4> |        IO Clk| No   |   18 |  0.101     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<6> |        IO Clk| No   |   18 |  0.096     |  0.393      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM/DDR2_SDRA |              |      |      |            |             |
+|M/mpmc_core_0/gen_v5 |              |      |      |            |             |
+|_ddr2_phy.mpmc_phy_i |              |      |      |            |             |
+|f_0/u_phy_io_0/delay |              |      |      |            |             |
+|           ed_dqs<7> |        IO Clk| No   |   18 |  0.101     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|        clk_200mhz_s | BUFGCTRL_X0Y1| No   |    3 |  0.077     |  1.896      |
++---------------------+--------------+------+------+------------+-------------+
+|xps_central_dma_0/xp |              |      |      |            |             |
+|s_central_dma_0/SLAV |              |      |      |            |             |
+|E_ATTACHMENT_I/da_re |              |      |      |            |             |
+|            g_load_n |         Local|      |   34 |  0.000     |  1.858      |
++---------------------+--------------+------+------+------------+-------------+
+|xps_central_dma_0/xp |              |      |      |            |             |
+|s_central_dma_0/SLAV |              |      |      |            |             |
+|E_ATTACHMENT_I/sa_re |              |      |      |            |             |
+|            g_load_n |         Local|      |   34 |  0.000     |  1.698      |
++---------------------+--------------+------+------+------------+-------------+
+|canscid_dpi_0/cansci |              |      |      |            |             |
+|d_dpi_0/USER_LOGIC_I |              |      |      |            |             |
+|/tag_parser_i/catego |              |      |      |            |             |
+|ry_mem_wdata_wd_8_no |              |      |      |            |             |
+|               t0001 |         Local|      |    3 |  0.346     |  0.955      |
++---------------------+--------------+------+------+------------+-------------+
+|debug_module/Dbg_Upd |              |      |      |            |             |
+|               ate_1 |         Local|      |   16 |  2.090     |  3.203      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 1459526
+
+WARNING:Par:62 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in
+   your design.
+
+      Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+      Route Static Timing Report").  Go to the failing constraint(s) and select
+      the "Timing Improvement Wizard" link for suggestions to correct each problem.
+
+   Try the Design Goal and Strategies for Timing Performance (In ISE select Project -> Design Goals & Strategies) to
+   ensure the best options are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+* TS_clock_generator_0_clock_generator_0_PL | SETUP   |    -3.462ns|    11.462ns|     763|     1459526
+  L0_CLK_OUT_0_ = PERIOD TIMEGRP         "c | HOLD    |     0.001ns|            |       0|           0
+  lock_generator_0_clock_generator_0_PLL0_C |         |            |            |        |            
+  LK_OUT_0_" TS_sys_clk_pin /         1.25  |         |            |            |        |            
+  HIGH 50%                                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.012ns|     0.838ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[7].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.012ns|     0.838ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[6].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.012ns|     0.838ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[4].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.012ns|     0.838ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[3].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.012ns|     0.838ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[2].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.015ns|     0.835ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[5].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.015ns|     0.835ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[0].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.015ns|     0.835ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/gen_dqs[1].u_iob_dqs/en_dqs_sync"   |         |            |            |        |            
+         MAXDELAY = 0.85 ns                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP   |     0.018ns|     1.882ns|       0|           0
+  CE_IDDR" TO TIMEGRP "TNM_DQS_FLOPS"       | HOLD    |     1.020ns|            |       0|           0
+     1.9 ns                                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.069ns|     0.531ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<1>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.073ns|     0.527ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<6>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.073ns|     0.527ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<3>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.079ns|     0.521ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<0>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.079ns|     0.521ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<2>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.079ns|     0.521ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<4>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.079ns|     0.521ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<5>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET         "DDR2_SDRAM/DDR2_SDRAM/mpmc_c | MAXDELAY|     0.079ns|     0.521ns|       0|           0
+  ore_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy |         |            |            |        |            
+  _io_0/en_dqs<7>"         MAXDELAY = 0.6 n |         |            |            |        |            
+  s                                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_PL | SETUP   |     0.474ns|    15.052ns|       0|           0
+  L0_CLK_OUT_3_ = PERIOD TIMEGRP         "c | HOLD    |     0.272ns|            |       0|           0
+  lock_generator_0_clock_generator_0_PLL0_C |         |            |            |        |            
+  LK_OUT_3_" TS_sys_clk_pin /         0.625 |         |            |            |        |            
+   HIGH 50%                                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_PL | SETUP   |     1.766ns|     5.645ns|       0|           0
+  L0_CLK_OUT_1_ = PERIOD TIMEGRP         "c | HOLD    |     0.405ns|            |       0|           0
+  lock_generator_0_clock_generator_0_PLL0_C |         |            |            |        |            
+  LK_OUT_1_" TS_sys_clk_pin /         1.25  |         |            |            |        |            
+  PHASE 2 ns HIGH 50%                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP   |    14.073ns|     5.927ns|       0|           0
+  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO      | HOLD    |     0.284ns|            |       0|           0
+      TIMEGRP "FFS" TS_sys_clk_pin * 2      |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_RD_DATA_SEL = MAXDELAY FROM TIMEGRP | SETUP   |    15.107ns|     4.893ns|       0|           0
+   "TNM_RD_DATA_SEL" TO TIMEGRP "FFS"       | HOLD    |     0.240ns|            |       0|           0
+     TS_sys_clk_pin * 2                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP   |    16.198ns|     3.802ns|       0|           0
+  NM_GATE_DLY" TO TIMEGRP "FFS"         TS_ | HOLD    |     0.140ns|            |       0|           0
+  sys_clk_pin * 2                           |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP   |    18.043ns|     1.957ns|       0|           0
+  P "TNM_CAL_RDEN_DLY" TO TIMEGRP "FFS"     | HOLD    |     0.177ns|            |       0|           0
+       TS_sys_clk_pin * 2                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP   |    18.062ns|     1.938ns|       0|           0
+  NM_RDEN_DLY" TO TIMEGRP "FFS"         TS_ | HOLD    |     0.108ns|            |       0|           0
+  sys_clk_pin * 2                           |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A     |         N/A|         N/A|     N/A|         N/A
+  pin" 10 ns HIGH 50%                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | N/A     |         N/A|         N/A|     N/A|         N/A
+   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO       |         |            |            |        |            
+     TIMEGRP "FFS" TS_sys_clk_pin * 2       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|          N/A|     14.328ns|            0|          763|            0|      2975773|
+| TS_MC_RD_DATA_SEL             |     20.000ns|      4.893ns|          N/A|            0|            0|          384|            0|
+| TS_MC_PHY_INIT_DATA_SEL_0     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_MC_PHY_INIT_DATA_SEL_90    |     20.000ns|      5.927ns|          N/A|            0|            0|           34|            0|
+| TS_MC_GATE_DLY                |     20.000ns|      3.802ns|          N/A|            0|            0|           40|            0|
+| TS_MC_RDEN_DLY                |     20.000ns|      1.938ns|          N/A|            0|            0|            5|            0|
+| TS_MC_CAL_RDEN_DLY            |     20.000ns|      1.957ns|          N/A|            0|            0|            5|            0|
+| TS_clock_generator_0_clock_gen|      8.000ns|     11.462ns|          N/A|          763|            0|      2957519|            0|
+| erator_0_PLL0_CLK_OUT_0_      |             |             |             |             |             |             |             |
+| TS_clock_generator_0_clock_gen|      8.000ns|      5.645ns|          N/A|            0|            0|          894|            0|
+| erator_0_PLL0_CLK_OUT_1_      |             |             |             |             |             |             |             |
+| TS_clock_generator_0_clock_gen|     16.000ns|     15.052ns|          N/A|            0|            0|        16892|            0|
+| erator_0_PLL0_CLK_OUT_3_      |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment c:\Xilinx\10.1\ISE.
+INFO:ParHelpers:197 - Number of "Exact" mode Directed Routing Constraints: 128
+INFO:ParHelpers:199 - All "EXACT" mode Directed Routing constrained nets successfully routed. The number of constraints
+   found: 128, number successful: 128
+Total REAL time to PAR completion: 23 mins 45 secs 
+Total CPU time to PAR completion: 23 mins 5 secs 
+
+Peak Memory Usage:  609 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 763 errors found.
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 5
+
+Writing design to file system.ncd
+
+
+
+PAR done!

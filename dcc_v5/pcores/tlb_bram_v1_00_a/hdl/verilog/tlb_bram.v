@@ -1,0 +1,332 @@
+//----------------------------------------------------------------------------
+// tlb_bram - module
+//----------------------------------------------------------------------------
+// IMPORTANT:
+// DO NOT MODIFY THIS FILE EXCEPT IN THE DESIGNATED SECTIONS.
+//
+// SEARCH FOR --USER TO DETERMINE WHERE CHANGES ARE ALLOWED.
+//
+// TYPICALLY, THE ONLY ACCEPTABLE CHANGES INVOLVE ADDING NEW
+// PORTS AND GENERICS THAT GET PASSED THROUGH TO THE INSTANTIATION
+// OF THE USER_LOGIC ENTITY.
+//----------------------------------------------------------------------------
+//
+// ***************************************************************************
+// ** Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.            **
+// **                                                                       **
+// ** Xilinx, Inc.                                                          **
+// ** XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS"         **
+// ** AS A COURTESY TO YOU, SOLELY FOR USE IN DEVELOPING PROGRAMS AND       **
+// ** SOLUTIONS FOR XILINX DEVICES.  BY PROVIDING THIS DESIGN, CODE,        **
+// ** OR INFORMATION AS ONE POSSIBLE IMPLEMENTATION OF THIS FEATURE,        **
+// ** APPLICATION OR STANDARD, XILINX IS MAKING NO REPRESENTATION           **
+// ** THAT THIS IMPLEMENTATION IS FREE FROM ANY CLAIMS OF INFRINGEMENT,     **
+// ** AND YOU ARE RESPONSIBLE FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE      **
+// ** FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY DISCLAIMS ANY              **
+// ** WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE               **
+// ** IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR        **
+// ** REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF       **
+// ** INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS       **
+// ** FOR A PARTICULAR PURPOSE.                                             **
+// **                                                                       **
+// ***************************************************************************
+//
+//----------------------------------------------------------------------------
+// Filename:          tlb_bram
+// Version:           1.00.a
+// Description:       Example FSL core (Verilog).
+// Date:              Sat Oct 25 09:45:07 2008 (by Create and Import Peripheral Wizard)
+// Verilog Standard:  Verilog-2001
+//----------------------------------------------------------------------------
+// Naming Conventions:
+//   active low signals:                    "*_n"
+//   clock signals:                         "clk", "clk_div#", "clk_#x"
+//   reset signals:                         "rst", "rst_n"
+//   generics:                              "C_*"
+//   user defined types:                    "*_TYPE"
+//   state machine next state:              "*_ns"
+//   state machine current state:           "*_cs"
+//   combinatorial signals:                 "*_com"
+//   pipelined or register delay signals:   "*_d#"
+//   counter signals:                       "*cnt*"
+//   clock enable signals:                  "*_ce"
+//   internal version of output port:       "*_i"
+//   device pins:                           "*_pin"
+//   ports:                                 "- Names begin with Uppercase"
+//   processes:                             "*_PROCESS"
+//   component instantiations:              "<ENTITY_>I_<#|FUNC>"
+//----------------------------------------------------------------------------
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//
+// Definition of Ports
+// FSL_Clk             : Synchronous clock
+// FSL_Rst           : System reset, should always come from FSL bus
+// FSL_S_Clk       : Slave asynchronous clock
+// FSL_S_Read      : Read signal, requiring next available input to be read
+// FSL_S_Data      : Input data
+// FSL_S_Control   : Control Bit, indicating the input data are control word
+// FSL_S_Exists    : Data Exist Bit, indicating data exist in the input FSL bus
+// FSL_M_Clk       : Master asynchronous clock
+// FSL_M_Write     : Write signal, enabling writing to output FSL bus
+// FSL_M_Data      : Output data
+// FSL_M_Control   : Control Bit, indicating the output data are contol word
+// FSL_M_Full      : Full Bit, indicating output FSL bus is full
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//----------------------------------------
+// Module Section
+//----------------------------------------
+module tlb_bram 
+	(
+		// ADD USER PORTS BELOW THIS LINE 
+		// -- USER ports added here 
+		// ADD USER PORTS ABOVE THIS LINE 
+
+		// DO NOT EDIT BELOW THIS LINE ////////////////////
+		// Bus protocol ports, do not add or delete. 
+		FSL_Clk,
+		FSL_Rst,
+		FSL_S_Clk,
+		FSL_S_Read,
+		FSL_S_Data,
+		FSL_S_Control,
+		FSL_S_Exists,
+		FSL_M_Clk,
+		FSL_M_Write,
+		FSL_M_Data,
+		FSL_M_Control,
+		FSL_M_Full
+		// DO NOT EDIT ABOVE THIS LINE ////////////////////
+	);
+
+// ADD USER PORTS BELOW THIS LINE 
+// -- USER ports added here 
+// ADD USER PORTS ABOVE THIS LINE 
+
+input                                     FSL_Clk;
+input                                     FSL_Rst;
+output                                    FSL_S_Clk;
+output                                    FSL_S_Read;
+input      [0 : 31]                       FSL_S_Data;
+input                                     FSL_S_Control;
+input                                     FSL_S_Exists;
+output                                    FSL_M_Clk;
+output                                    FSL_M_Write;
+output     [0 : 31]                       FSL_M_Data;
+output                                    FSL_M_Control;
+input                                     FSL_M_Full;
+
+// ADD USER PARAMETERS BELOW THIS LINE 
+// --USER parameters added here 
+// ADD USER PARAMETERS ABOVE THIS LINE
+
+
+//----------------------------------------
+// Implementation Section
+//----------------------------------------
+// In this section, we povide an example implementation of MODULE tlb_bram
+// that does the following:
+//
+// 1. Read all inputs
+// 2. Add each input to the contents of register 'sum' which
+//    acts as an accumulator
+// 3. After all the inputs have been read, write out the
+//    content of 'sum' into the output FSL bus NUMBER_OF_OUTPUT_WORDS times
+//
+// You will need to modify this example for
+// MODULE tlb_bram to implement your coprocessor
+
+   // Total number of input data.
+   localparam NUMBER_OF_INPUT_WORDS  = 8;
+
+   // Total number of output data
+   localparam NUMBER_OF_OUTPUT_WORDS = 8;
+
+   // Define the states of state machine
+   localparam init        = 0;
+   localparam cache_write = 1;
+   localparam cache_read  = 2;
+   
+   localparam dwidth      =     32;//data bus width
+   localparam awidth      =     11;//addr bus width, 2K
+   localparam size        =   2048;//Size of memory array
+
+   //    
+   //For a cache write , slave fifo will hold address ,which would be the index, way
+   //              next word will hold the data
+   //              Control line will be asserted for a write
+   //
+   //For a cache read, will hold only cache index
+   //Response returns 4 words, 1 for each way
+   //               
+
+   //zWidth [31:0] addr ;
+   //zWidth [31:0] data  ; 
+   //zWidth [1:0]  way ;
+   //zWidth [3:0]  wr ;
+   
+   //zReg
+   wire       clk = FSL_Clk;
+   wire       rst = FSL_Rst;
+   
+   reg [3:0] m_write_rc ;
+   reg  s_read_rc ;
+   reg [3:0] way_rc ;
+   reg [3:0] wr_rc ;
+   reg  s_read_wc ;
+   reg [3:0] way_wc ;
+   reg [3:0] wr_wc ;
+   reg [3:0] m_write_wc ;
+   reg [10:0] addr_rd ;
+   reg [10:0] addr_wd ;
+
+   reg [1:0]  fsm_cs,fsm_ns ;
+
+   reg [31:0] din ;
+   wire [31:0] dout_0, dout_1, dout_2, dout_3;
+
+   wire [0 : 31] FSL_S_Data;   
+   reg [0 : 31]  FSL_M_Data , FSL_M_Data_wd;
+   
+   wire [10:0] addr = addr_wd;
+   wire [3:0]       wr = wr_rc ;
+
+   assign FSL_M_Write = m_write_wc ;
+   assign FSL_S_Read  = s_read_wc ;
+   
+   always @(posedge clk)
+     if (rst)
+       begin
+	  fsm_cs <= init ;
+	  //zClkReset
+	  m_write_rc <= 0 ; 
+	  s_read_rc <= 0 ; 
+	  way_rc <= 0 ; 
+	  wr_rc <= 0 ; 
+       end
+     else
+       begin
+	  fsm_cs <= fsm_ns ;
+	  //zClkAssign
+	  m_write_rc <=  m_write_wc ; 
+	  s_read_rc <=  s_read_wc ; 
+	  way_rc <=  way_wc ; 
+	  wr_rc <=  wr_wc ; 
+	  addr_rd <=  addr_wd ;
+       end
+   
+   always @*
+     begin
+	fsm_ns = fsm_cs;
+	
+	//zWireAssign
+	s_read_wc  =  0 ;
+	m_write_wc =  0 ; 
+	wr_wc = wr_rc ;
+	
+	way_wc  =   way_rc ; 
+	addr_wd =  addr_rd ; 
+	//zEnd
+
+	FSL_M_Data = 0;
+	
+	case(fsm_cs)
+	  init:
+	    begin
+	       if ( FSL_S_Exists )
+		 begin
+		    s_read_wc = 1;
+		    addr_wd = FSL_S_Data ;		    
+		    
+		    if ( FSL_S_Control )
+		      begin
+			 //Based on way, wr_wc is a 4 bit vector
+			 wr_wc = FSL_S_Data[0:3];
+			 fsm_ns = cache_write ;
+		      end
+		    else
+		      begin
+			 way_wc = FSL_S_Data[0:3];
+			 fsm_ns = cache_read ;
+		      end
+		 end // if ( FSL_S_Exists )
+	    end
+	
+	  cache_write:
+	    begin
+	       if (FSL_S_Exists )
+		 begin
+		    s_read_wc = 1;
+		    wr_wc = 0;
+
+		    //wr enable asserted for only one way
+		    //so can have a single data in bus
+		    din  = FSL_S_Data ;
+		    
+		    fsm_ns = init ;
+		 end // if (FSL_S_Exists )
+	       
+	    end
+
+	  cache_read:
+	    begin
+	       if ( ~FSL_M_Full)
+		 begin
+
+		    m_write_wc = 1;
+		    //way_wc = way_rc + 1;	      
+ 
+		    case(1'b1)
+		      way_rc[0]: FSL_M_Data = dout_0;
+		      way_rc[1]: FSL_M_Data = dout_1;
+		      way_rc[2]: FSL_M_Data = dout_2;
+		      way_rc[3]: FSL_M_Data = dout_3;
+		    endcase // case (wr_rc)
+		    
+		    fsm_ns = init ;
+
+		 end // if ( ~FSL_M_Full)
+	    end
+	  
+	  default: fsm_ns = init;
+	  
+	endcase // case (fsm_cs)
+     end // always @ *
+   
+   smem way_0 (
+	       // Outputs
+	       .dout		(dout_0),
+	       // Inputs
+	       .clk		(clk),
+	       .din		(din),
+	       .addr		(addr[awidth-1:0]),
+	       .wr			(wr[0]));
+   smem way_1 (
+	       // Outputs
+	       .dout		(dout_1),
+	       // Inputs
+	       .clk		(clk),
+	       .din		(din),
+	       .addr		(addr[awidth-1:0]),
+	       .wr			(wr[1]));
+   smem way_2 (
+	       // Outputs
+	       .dout		(dout_2),
+	       // Inputs
+	       .clk		(clk),
+	       .din		(din),
+	       .addr		(addr[awidth-1:0]),
+	       .wr			(wr[2]));
+   smem way_3 (
+	       // Outputs
+	       .dout		(dout_3),
+	       // Inputs
+	       .clk		(clk),
+	       .din		(din),
+	       .addr		(addr[awidth-1:0]),
+	       .wr			(wr[3]));	
+	
+endmodule

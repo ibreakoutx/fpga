@@ -1,0 +1,39 @@
+m255
+13
+cModel Technology
+df:\fpga\proj\hfifo
+vhfifo
+Ih7A6Tj[9]Rdjk1l<dO>Gl3
+VQc7f2LV_=4GW95_@k;W0f3
+w1117493114
+Fhfifo.v
+L0 7
+OX;L;6.0a;29
+r1
+31
+o-O0
+tGenerateLoopIterationMax 100000
+vhfifo_stim
+I4aR1hOf7o6WjPgjO[[eZb2
+V`B=ScO@D]RJIgWW8>_kN62
+dF:\fpga\proj\hfifo
+w1117500902
+Ff:/fpga/proj/hfifo/hfifo_stim.v
+L0 21
+OX;L;6.0a;29
+r1
+31
+o-O0
+tGenerateLoopIterationMax 100000
+vhfifo_stim_test
+I4dSlm_J][FMDf:;IgaJ0P3
+VWz[b7aJY>gG<dSI@ChYcS3
+dF:\fpga\proj\hfifo
+w1117500774
+Ff:/fpga/proj/hfifo/hfifo_stim_test.v
+L0 22
+OX;L;6.0a;29
+r1
+31
+o-O0
+tGenerateLoopIterationMax 100000

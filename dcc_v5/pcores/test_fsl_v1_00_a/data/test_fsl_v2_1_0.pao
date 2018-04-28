@@ -1,0 +1,7 @@
+##############################################################################
+## Filename:          C:\work\fpga\dcc_v2p\pcores/test_fsl_v1_00_a/data/test_fsl_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Oct 27 21:24:21 2008 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib test_fsl_v1_00_a test_fsl verilog

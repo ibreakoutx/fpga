@@ -1,0 +1,11 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn C:\work\fpga\dcc_v2p\pcores/test_fsl_v1_00_a/devl/synthesis/test_fsl_xst.prj
+-top test_fsl
+-p virtex2p
+-ofn C:\work\fpga\dcc_v2p\pcores/test_fsl_v1_00_a/devl/synthesis/test_fsl_xst.ngc
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /

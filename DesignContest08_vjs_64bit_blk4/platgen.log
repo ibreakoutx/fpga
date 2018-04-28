@@ -1,0 +1,219 @@
+Release 7.1.01i - platgen EDK_H.12.5.1
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc2vp30ff896-7 -lang vhdl -st xst system.mhs 
+
+Parse system.mhs ...
+
+Read MPD definitions ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v2_00_c/data/ppc405_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_00_a/data/jtagppc_cntlr_v
+2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/isocm_v10_v2_00_a/data/isocm_v10_v2_1_0.tc
+l ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/isbram_if_cntlr_v3_00_a/data/isbram_if_cnt
+lr_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_v34_v1_02_a/data/plb_v34_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb2opb_bridge_v1_01_a/data/plb2opb_bridge
+_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_ddr_v1_11_a/data/plb_ddr_v2_1_0.tcl
+...
+
+Overriding IP level properties ...
+jtagppc_cntlr (jtagppc_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_00_a\data\jtagppc_cntlr_v
+2_1_0.mpd:33 - tool overriding c_device value X2VP4 to 2vp30
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:39 - tool overriding c_family value virtex2 to virtex2p
+plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_ddr_v1_11_a\data\plb_ddr_v2_1_0.mpd:42
+- tool overriding c_family value virtex2 to virtex2p
+dcm_module (dcm_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:56 - tool overriding c_family value virtex2 to virtex2p
+dcm_module (dcm_1) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:56 - tool overriding c_family value virtex2 to virtex2p
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ddr_v1_11_a/data/ddr_v2_1_0.tcl ...
+Address Map for Processor ppc405_0
+  (0x00000000-0x0fffffff) DDR_512MB_64Mx64_rank2_row13_col10_cl2_5	plb
+  (0x10000000-0x1fffffff) DDR_512MB_64Mx64_rank2_row13_col10_cl2_5	plb
+  (0x40600000-0x4060ffff) RS232_Uart_1	plb->plb2opb->opb
+  (0xcc800000-0xcc80ffff) accel_sort_plb_0	plb
+  (0xfffff000-0xffffffff) iocm_cntlr	iocm
+Address Map for Processor ppc405_1
+
+Check platform configuration ...
+WARNING:MDT - plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+   F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:163 - An example UCF
+   for this core is available and must be modified for use in the system. Please
+   refer to the EDK Getting Started guide for the location of this file.
+isocm_v10 (iocm) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:92 - 1
+master(s) : 1 slave(s)
+plb_v34 (plb) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:117 - 2
+master(s) : 3 slave(s)
+opb_v20 (opb) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:126 - 1
+master(s) : 1 slave(s)
+
+Check port drivers...
+
+Check platform address map ...
+
+Overriding system level properties ...
+isocm_v10 (iocm) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\isocm_v10_v2_00_a\data\isocm_v10_v2_1_0.mp
+d:35 - tcl overriding C_ISARCVALUE value 0x30 to 0xFF
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:35 - tool overriding c_memsize value 2048 to 4096
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:36 - tool overriding c_port_dwidth value 32 to 64
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:38 - tool overriding c_num_we value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:39
+- tool overriding c_plb_num_masters value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:40
+- tool overriding c_plb_num_slaves value 4 to 3
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:41
+- tool overriding c_plb_mid_width value 2 to 1
+opb_v20 (opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd:36
+- tool overriding c_num_masters value 4 to 1
+opb_v20 (opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd:37
+- tool overriding c_num_slaves value 4 to 1
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:48 - tool overriding c_plb_num_masters value 4 to 2
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:49 - tool overriding c_plb_mid_width value 4 to 1
+plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_ddr_v1_11_a\data\plb_ddr_v2_1_0.mpd:78
+- tool overriding c_plb_num_masters value 8 to 2
+accel_sort_plb (accel_sort_plb_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\pcores\accel_sort_plb_v1_00_a\data\a
+ccel_sort_plb_v2_1_0.mpd:33 - tool overriding c_plb_num_masters value 8 to 2
+accel_sort_plb (accel_sort_plb_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\pcores\accel_sort_plb_v1_00_a\data\a
+ccel_sort_plb_v2_1_0.mpd:34 - tool overriding c_plb_mid_width value 3 to 1
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ddr_v1_11_a/data/ddr_v2_1_0.tcl ...
+
+Performing System level DRCs on properties...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ddr_v1_11_a/data/ddr_v2_1_0.tcl ...
+
+Modify defaults ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+ppc405 (ppc405_0) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:45 -
+Copying cache implementation netlist
+ppc405 (ppc405_1) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:63 -
+Copying cache implementation netlist
+jtagppc_cntlr (jtagppc_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:69 - Copying cache
+implementation netlist
+proc_sys_reset (reset_block) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:76 - Copying cache
+implementation netlist
+isocm_v10 (iocm) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:92 -
+Copying cache implementation netlist
+isbram_if_cntlr (iocm_cntlr) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:100 - Copying cache
+implementation netlist
+bram_block (isocm_bram) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:110 - Copying cache
+implementation netlist
+plb_v34 (plb) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:117 -
+Copying cache implementation netlist
+opb_v20 (opb) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:126 -
+Copying cache implementation netlist
+plb2opb_bridge (plb2opb) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:134 - Copying cache
+implementation netlist
+opb_uartlite (rs232_uart_1) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:147 - Copying cache
+implementation netlist
+plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:163 - Copying cache
+implementation netlist
+util_vector_logic (sysclk_inv) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:209 - Copying cache
+implementation netlist
+util_vector_logic (clk90_inv) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:218 - Copying cache
+implementation netlist
+util_vector_logic (ddr_clk90_inv) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:227 - Copying cache
+implementation netlist
+dcm_module (dcm_0) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:236
+- Copying cache implementation netlist
+dcm_module (dcm_1) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:256
+- Copying cache implementation netlist
+accel_sort_plb (accel_sort_plb_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:274 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+bram_block (isocm_bram) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:110 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 5.00 seconds
+
+Constructing platform-level signal connectivity ...
+Completion time: 5.00 seconds
+
+Writing (top-level) BMM ...
+Writing BMM -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\implementation\system.bmm
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+INFO:MDT - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized.
+accel_sort_plb_0_wrapper (accel_sort_plb_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:274 - Running XST
+synthesis
+
+Running NGCBUILD ...
+
+Rebuilding cache ...
+Total run time: 413.00 seconds

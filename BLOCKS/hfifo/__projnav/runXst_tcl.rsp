@@ -1,0 +1,1 @@
+set allSynthModules {hfifo.MOD hfifo_stim.MOD}

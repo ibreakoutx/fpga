@@ -1,0 +1,212 @@
+Release 7.1.01i - libgen Xilinx EDK 7.1.2
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs system.mhs -p xc2vp30ff896-7 system.mss 
+
+Output Directory (-od)		: F:\fpga\proj\huffman_encode\
+Part (-p)			: virtex2p
+
+Software Specification file	: system.mss
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v2_00_c/data/ppc405_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_00_a/data/jtagppc_cntlr_v
+2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_v34_v1_02_a/data/plb_v34_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb2opb_bridge_v1_01_a/data/plb2opb_bridge
+_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_bram_if_cntlr_v1_00_b/data/plb_bram_if
+_cntlr_v2_1_0.tcl ...
+
+Overriding IP level properties ...
+jtagppc_cntlr (jtagppc_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_00_a\data\jtagppc_cntlr_v
+2_1_0.mpd:33 - tool overriding c_device value X2VP4 to 2vp30
+opb_gpio (leds_4bit) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.mpd:
+38 - tool overriding c_family value virtex2 to virtex2p
+opb_gpio (dipsws_4bit) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.mpd:
+38 - tool overriding c_family value virtex2 to virtex2p
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:39 - tool overriding c_family value virtex2 to virtex2p
+dcm_module (dcm_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:56 - tool overriding c_family value virtex2 to virtex2p
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc405_0
+  (0x40000000-0x4000ffff) LEDs_4Bit	plb->plb2opb->opb
+  (0x40020000-0x4002ffff) DIPSWs_4Bit	plb->plb2opb->opb
+  (0x40600000-0x4060ffff) RS232_Uart_1	plb->plb2opb->opb
+  (0x7ea00000-0x7ea0ffff) huffman_encode_testharness_0	plb->plb2opb->opb
+  (0xfffe0000-0xffffffff) plb_bram_if_cntlr_1	plb
+Address Map for Processor ppc405_1
+
+Check platform configuration ...
+plb_v34 (plb) - F:\fpga\proj\huffman_encode\system.mhs:73 - 2 master(s) : 2
+slave(s)
+opb_v20 (opb) - F:\fpga\proj\huffman_encode\system.mhs:82 - 1 master(s) : 4
+slave(s)
+
+Check port drivers...
+
+Check platform address map ...
+
+Overriding system level properties ...
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:39
+- tool overriding c_plb_num_masters value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:40
+- tool overriding c_plb_num_slaves value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:41
+- tool overriding c_plb_mid_width value 2 to 1
+opb_v20 (opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd:36
+- tool overriding c_num_masters value 4 to 1
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:48 - tool overriding c_plb_num_masters value 4 to 2
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:49 - tool overriding c_plb_mid_width value 4 to 1
+plb_bram_if_cntlr (plb_bram_if_cntlr_1) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_bram_if_cntlr_v1_00_b\data\plb_bram_if
+_cntlr_v2_1_0.mpd:40 - tool overriding c_num_masters value 8 to 2
+plb_bram_if_cntlr (plb_bram_if_cntlr_1) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_bram_if_cntlr_v1_00_b\data\plb_bram_if
+_cntlr_v2_1_0.mpd:47 - tool overriding c_plb_mid_width value 3 to 1
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:35 - tool overriding c_memsize value 2048 to 131072
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:36 - tool overriding c_port_dwidth value 32 to 64
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:38 - tool overriding c_num_we value 4 to 8
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Performing System level DRCs on properties...
+WARNING:MDT - Peripheral dcm_0 is not connected to any of the processors in the
+   system. Check for the following reasons.
+   1. dcm_0 is not connected to any of the buses connected to a processor. 
+   2. dcm_0 does not have adresses set correctly. 
+   3. dcm_0's address is not within any of the bridge windows connected to a
+   processor.
+INFO:MDT - List of peripherals addressable from processor instance ppc405_0 : 
+  - RS232_Uart_1
+  - LEDs_4Bit
+  - DIPSWs_4Bit
+  - huffman_encode_testharness_0
+  - plb_bram_if_cntlr_1
+INFO:MDT - List of peripherals addressable from processor instance ppc405_1 : 
+
+Building Directory Structure for ppc405_0
+
+Generating platform libraries and device drivers ...
+
+Running CopyFiles ...
+
+Copying files for os standalone_v1_00_a from
+C:\EDK\sw\lib\bsp\standalone_v1_00_a\src\ to
+F:\fpga\proj\huffman_encode\ppc405_0\libsrc\standalone_v1_00_a\ ...
+
+Copying files for driver uartlite_v1_00_b from
+C:\EDK\sw\XilinxProcessorIPLib\drivers\uartlite_v1_00_b\src\ to
+F:\fpga\proj\huffman_encode\ppc405_0\libsrc\uartlite_v1_00_b\ ...
+
+Copying files for driver gpio_v2_00_a from
+C:\EDK\sw\XilinxProcessorIPLib\drivers\gpio_v2_00_a\src\ to
+F:\fpga\proj\huffman_encode\ppc405_0\libsrc\gpio_v2_00_a\ ...
+
+Copying files for driver huffman_encode_testharness_v1_00_a from
+F:\fpga\proj\huffman_encode\drivers\huffman_encode_testharness_v1_00_a\src\ to
+F:\fpga\proj\huffman_encode\ppc405_0\libsrc\huffman_encode_testharness_v1_00_a\
+...
+
+Copying files for driver cpu_ppc405_v1_00_a from
+C:\EDK\sw\XilinxProcessorIPLib\drivers\cpu_ppc405_v1_00_a\src\ to
+F:\fpga\proj\huffman_encode\ppc405_0\libsrc\cpu_ppc405_v1_00_a\ ...
+
+Running DRCs for OSes, Drivers and Libraries ... 
+
+Running generate for OS'es, Drivers and Libraries ... 
+
+Running post_generate for OS'es, Drivers and Libraries ... 
+
+Running make for Drivers and Libraries ... 
+
+Configuring make for target include using:
+
+make -s include "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Configuring make for target libs using:
+
+make -s libs "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+Compiling commo
+powerpc-eabi-ar: creating ../../../lib/libxil.
+Compiling ipi
+Compiling bs
+Compiling uartlit
+Compiling gpi
+Compiling huffman_encode_testharnes
+Compiling cpu_ppc40
+
+Libraries generated in F:\fpga\proj\huffman_encode\ppc405_0\lib\ directory
+
+Running execs_generate for OS'es, Drivers and Libraries ... 
+
+Building Directory Structure for ppc405_1
+
+Generating platform libraries and device drivers ...
+
+Running CopyFiles ...
+
+Copying files for os standalone_v1_00_a from
+C:\EDK\sw\lib\bsp\standalone_v1_00_a\src\ to
+F:\fpga\proj\huffman_encode\ppc405_1\libsrc\standalone_v1_00_a\ ...
+
+Copying files for driver cpu_ppc405_v1_00_a from
+C:\EDK\sw\XilinxProcessorIPLib\drivers\cpu_ppc405_v1_00_a\src\ to
+F:\fpga\proj\huffman_encode\ppc405_1\libsrc\cpu_ppc405_v1_00_a\ ...
+
+Running DRCs for OSes, Drivers and Libraries ... 
+
+Running generate for OS'es, Drivers and Libraries ... 
+
+Running post_generate for OS'es, Drivers and Libraries ... 
+
+Running make for Drivers and Libraries ... 
+
+Configuring make for target include using:
+
+make -s include "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Configuring make for target libs using:
+
+make -s libs "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+Compiling commo
+powerpc-eabi-ar: creating ../../../lib/libxil.
+Compiling bs
+Compiling cpu_ppc40
+
+Libraries generated in F:\fpga\proj\huffman_encode\ppc405_1\lib\ directory
+
+Running execs_generate for OS'es, Drivers and Libraries ... 
+
+LibGen Done. 

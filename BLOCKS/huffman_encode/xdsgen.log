@@ -1,0 +1,121 @@
+Attempting use HTML Generation resources in c:\Xilinx.
+Attempting use HTML Generation resources in C:\EDK.
+HTML Generation Resources from C:\EDK\data\xdsgen\xsl.
+Creating image directory F:\fpga\proj\huffman_encode\report\imgs
+Creating datasheet work area in [F:\fpga\proj\huffman_encode\report\.dswkshop].
+Main working datasheet is MdtXdsGen_HTMLDatasheet.xsl
+The output filename F:\fpga\proj\huffman_encode\report\system.html
+Reading XMP file F:\fpga\proj\huffman_encode\system.xmp
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v2_00_c/data/ppc405_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_00_a/data/jtagppc_cntlr_v
+2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_v34_v1_02_a/data/plb_v34_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb2opb_bridge_v1_01_a/data/plb2opb_bridge
+_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_bram_if_cntlr_v1_00_b/data/plb_bram_if
+_cntlr_v2_1_0.tcl ...
+
+Overriding IP level properties ...
+jtagppc_cntlr (jtagppc_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_00_a\data\jtagppc_cntlr_v
+2_1_0.mpd:32 - tool overriding c_device value X2VP4 to 2vp30
+opb_gpio (leds_4bit) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.mpd:
+37 - tool overriding c_family value virtex2 to virtex2p
+opb_gpio (dipsws_4bit) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.mpd:
+37 - tool overriding c_family value virtex2 to virtex2p
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:38 - tool overriding c_family value virtex2 to virtex2p
+dcm_module (dcm_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:55 - tool overriding c_family value virtex2 to virtex2p
+Address Map for Processor ppc405_0
+  (0x40000000-0x4000ffff) LEDs_4Bit	plb->plb2opb->opb
+  (0x40020000-0x4002ffff) DIPSWs_4Bit	plb->plb2opb->opb
+  (0x40600000-0x4060ffff) RS232_Uart_1	plb->plb2opb->opb
+  (0x7ea00000-0x7ea0ffff) huffman_encode_testharness_0	plb->plb2opb->opb
+  (0xfffe0000-0xffffffff) plb_bram_if_cntlr_1	plb
+Address Map for Processor ppc405_1
+
+Check platform configuration ...
+plb_v34 (plb) - F:\fpga\proj\huffman_encode\system.mhs:73 - 2 master(s) : 2
+slave(s)
+opb_v20 (opb) - F:\fpga\proj\huffman_encode\system.mhs:82 - 1 master(s) : 4
+slave(s)
+
+Check port drivers...
+
+Check platform address map ...
+
+Overriding system level properties ...
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:38
+- tool overriding c_plb_num_masters value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:39
+- tool overriding c_plb_num_slaves value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:40
+- tool overriding c_plb_mid_width value 2 to 1
+opb_v20 (opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd:35
+- tool overriding c_num_masters value 4 to 1
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:47 - tool overriding c_plb_num_masters value 4 to 2
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:48 - tool overriding c_plb_mid_width value 4 to 1
+plb_bram_if_cntlr (plb_bram_if_cntlr_1) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_bram_if_cntlr_v1_00_b\data\plb_bram_if
+_cntlr_v2_1_0.mpd:39 - tool overriding c_num_masters value 8 to 2
+plb_bram_if_cntlr (plb_bram_if_cntlr_1) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_bram_if_cntlr_v1_00_b\data\plb_bram_if
+_cntlr_v2_1_0.mpd:46 - tool overriding c_plb_mid_width value 3 to 1
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:34 - tool overriding c_memsize value 2048 to 131072
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:35 - tool overriding c_port_dwidth value 32 to 64
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:37 - tool overriding c_num_we value 4 to 8
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Performing System level DRCs on properties...
+Initializing SVG Render
+Setting SVG workshop directory to [F:\fpga\proj\huffman_encode\report\.dswkshop]
+Attempting use SVG environment in [c:\Xilinx].
+Could not locate c:\Xilinx\data\xdsgen
+Attempting use SVG environment in [C:\EDK].
+Found valid SVG rendering enviroment in [C:\EDK\data\xdsgen\xsl]
+Attempting use JVM from c:\Xilinx\java\nt\jre\bin\client\jvm.dll.
+Located valid JVM in [c:\Xilinx\java\nt\jre\bin\client\jvm.dll]
+SVG Rendering work directory locked to
+[F:\fpga\proj\huffman_encode\report\.dswkshop]
+Rendering --- ppc405_0.jpg
+Rendering --- ppc405_1.jpg
+Rendering --- jtagppc_0.jpg
+Rendering --- reset_block.jpg
+Rendering --- plb.jpg
+Rendering --- opb.jpg
+Rendering --- plb2opb.jpg
+Rendering --- RS232_Uart_1.jpg
+Rendering --- LEDs_4Bit.jpg
+Rendering --- DIPSWs_4Bit.jpg
+Rendering --- plb_bram_if_cntlr_1.jpg
+Rendering --- plb_bram_if_cntlr_1_bram.jpg
+Rendering --- dcm_0.jpg
+Rendering --- huffman_encode_testharness_0.jpg
+The output file name is F:\fpga\proj\huffman_encode\report\system.html
+Datasheet generation completed.

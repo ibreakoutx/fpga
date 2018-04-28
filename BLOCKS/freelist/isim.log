@@ -1,0 +1,25 @@
+ command line:
+   c:\work\fpga\freelist\tb.exe
+     -tclbatch  run.tcl
+Release 9.1.03i - ISE Simulator Engine J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Thu May 29 11:45:03 2008
+
+Total Line Count : 153
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 113.82 Meg. 
+
+ Total Signals          : 29
+ Total Nets             : 66
+ Total Signal Drivers   : 16
+ Total Blocks           : 3
+ Total Primitive Blocks : 1
+ Total Processes        : 22
+ Total Traceable Variables  : 43
+ Total Scalar Nets and Variables : 2614
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

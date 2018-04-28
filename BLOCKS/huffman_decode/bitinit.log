@@ -1,0 +1,65 @@
+
+bitinit version Xilinx EDK 7.1.1 Build EDK_H.11.3
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v2_00_c/data/ppc405_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_00_a/data/jtagppc_cntlr_v
+2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_v34_v1_02_a/data/plb_v34_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb2opb_bridge_v1_01_a/data/plb2opb_bridge
+_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_bram_if_cntlr_v1_00_b/data/plb_bram_if
+_cntlr_v2_1_0.tcl ...
+
+Overriding IP level properties ...
+jtagppc_cntlr (jtagppc_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_00_a\data\jtagppc_cntlr_v
+2_1_0.mpd:32 - tool overriding c_device value X2VP4 to 
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:35 - tool overriding c_family value virtex2p to 
+opb_gpio (leds_4bit) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.mpd:
+37 - tool overriding c_family value virtex2 to 
+opb_gpio (dipsws_4bit) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_gpio_v3_01_b\data\opb_gpio_v2_1_0.mpd:
+37 - tool overriding c_family value virtex2 to 
+bram_block (plb_bram_if_cntlr_1_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:38 - tool overriding c_family value virtex2 to 
+dcm_module (dcm_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:55 - tool overriding c_family value virtex2 to 
+huffman_decoder (huffman_decoder_0) -
+F:\fpga\proj\huffman_decode\pcores\huffman_decoder_v1_00_a\data\huffman_decoder_
+v2_1_0.mpd:33 - tool overriding c_family value virtex2p to 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc405_0
+  (0x40000000-0x4000ffff) LEDs_4Bit	plb->plb2opb->opb
+  (0x40020000-0x4002ffff) DIPSWs_4Bit	plb->plb2opb->opb
+  (0x40600000-0x4060ffff) RS232_Uart_1	plb->plb2opb->opb
+  (0x7e200000-0x7e20ffff) huffman_decoder_0	plb->plb2opb->opb
+  (0xfffe0000-0xffffffff) plb_bram_if_cntlr_1	plb
+Address Map for Processor ppc405_1
+
+Initializing Memory...
+Checking ELFs associated with PPC405 instance ppc405_0 for overlap...
+
+
+Analyzing file TestApp_Peripheral/executable.elf...
+Running Data2Mem with the following command:
+data2mem -bm implementation/system_bd -bt implementation/system.bit  -bd
+TestApp_Peripheral/executable.elf tag plb_bram_if_cntlr_1_bram  -o b
+implementation/download.bit 
+Memory Initialization completed successfully.
+

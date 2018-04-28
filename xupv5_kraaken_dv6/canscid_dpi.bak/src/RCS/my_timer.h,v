@@ -1,0 +1,38 @@
+head	1.1;
+access;
+symbols
+	DMA_MEM2MEM_WORKS:1.1;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2010.03.30.15.12.42;	author Administrator;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#ifndef __MY_TIMER_H__
+#define __MY_TIMER_H__
+
+// Located in: microblaze_0/include/xparameters.h
+#include "xparameters.h"
+
+void startTiming();
+void endTiming();
+double getProcessingTime();
+
+//----------------------------------------------------------------------------
+
+#endif
+
+@

@@ -1,0 +1,14 @@
+-batch 
+-create test_fsl 
+-ver 1.00.a 
+-dir C:\work\fpga\dcc_v2p\ 
+-lang verilog 
+-bus fsl ms 
+-xps 
+-ise 
+-driver 
+-totalin 8
+-totalout 8
+-argin 1
+-argout 1
+-desc "new FSL core"

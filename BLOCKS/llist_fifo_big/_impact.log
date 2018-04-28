@@ -1,0 +1,145 @@
+iMPACT Version: H.40
+iMPACT log file started on 2005/05/30 23:58:23
+// *** BATCH CMD : setPreference -pref UserLevel:NOVICE
+// *** BATCH CMD : setPreference -pref MessageLevel:DETAILED
+// *** BATCH CMD : setPreference -pref ConcurrentMode:FALSE
+// *** BATCH CMD : setPreference -pref UseHighz:FALSE
+// *** BATCH CMD : setPreference -pref ConfigOnFailure:STOP
+// *** BATCH CMD : setPreference -pref StartupCLock:AUTO_CORRECTION
+// *** BATCH CMD : setPreference -pref AutoSignature:FALSE
+// *** BATCH CMD : setPreference -pref KeepSVF:FALSE
+// *** BATCH CMD : setPreference -pref svfUseTime:FALSE
+// *** BATCH CMD : setPreference -pref UserLevel:NOVICE
+// *** BATCH CMD : setPreference -pref MessageLevel:DETAILED
+// *** BATCH CMD : setPreference -pref ConcurrentMode:FALSE
+// *** BATCH CMD : setPreference -pref UseHighz:FALSE
+// *** BATCH CMD : setPreference -pref ConfigOnFailure:STOP
+// *** BATCH CMD : setPreference -pref StartupCLock:AUTO_CORRECTION
+// *** BATCH CMD : setPreference -pref AutoSignature:FALSE
+// *** BATCH CMD : setPreference -pref KeepSVF:FALSE
+// *** BATCH CMD : setPreference -pref svfUseTime:FALSE
+// *** BATCH CMD : setMode -bs
+GUI --- Boundary-Scan Mode selected
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+CB_PROGRESS_START - Starting Operation.
+Connecting to cable (USB Port).
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 6.2.2.2. LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 6.2.2.2.Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 6.2.2.2.Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 6.2.2.2.Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver xusbdfwu.sys version: 1018 (1018).
+ Driver windrvr6.sys version = 6.2.2.2. Max current requested during enumeration is 280 mA.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1018.
+CPLD file version = 0006h.
+CPLD version = 0006h.
+CB_PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : Identify
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc2vp30, Version : 1
+INFO:iMPACT:1777 - 
+Reading C:/Xilinx/virtex2p/data/xc2vp30.bsd...
+Reading C:/Xilinx/virtex2p/data/xc2vp30.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+Reading C:/Xilinx/acecf/data/xccace.bsd...
+Reading C:/Xilinx/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+Reading C:/Xilinx/xcfp/data/xcf32p.bsd...
+Reading C:/Xilinx/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT:1835 - Loading CFI file BYPASS.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : addDevice -position 3 -file "F:\fpga\proj\llist_fifo_big\stimulus.bit"
+'3': Loading file 'F:\fpga\proj\llist_fifo_big\stimulus.bit' ...
+done.
+WARNING:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream stored in memory,
+but the original bitstream file remains unchanged.
+but the original bitstream file remains unchanged.
+INFO:iMPACT:501 - '3': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 4
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 3 
+PROGRESS_START - Starting Operation.
+Validating chain...
+Boundary-scan chain validated successfully.
+'3':Programming  device...
+'3': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+legacy input error                                :         0
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from DONE pin                        :         1
+IDCODE not validated while trying to write FDRI   :         0
+write FDRI issued before or after decrypt operation:         0
+Decryptor keys not used in proper sequence        :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+done.
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT:580 - '3':Checking done pin ....done.
+'3': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+Reader for device 1 is not created yet.
+Reader for device 2 is not created yet.
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -bsfile
+// *** BATCH CMD : setMode -dtconfig
+// *** BATCH CMD : setMode -cf
+// *** BATCH CMD : setMode -mpm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+*****   Closing iMPACT program.   *****
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------

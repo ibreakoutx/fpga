@@ -1,0 +1,1 @@
+ -p virtex5 -lang vhdl   $(MICROBLAZE_0_BOOTLOOP)  -s mti -X G:/work/dcc_v5/ -E G:/work/dcc_v5/

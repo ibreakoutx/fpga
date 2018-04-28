@@ -1,0 +1,542 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+WARNING:Xst:1530 - You are using an evaluation version of Xilinx Software. In 43
+   days, this program will not operate. For more information about this product,
+   please refer to the Evaluation Agreement, which was shipped to you along with
+   the Evaluation CDs.
+   To purchase an annual license for this software, please contact your local
+   Field Applications Engineer (FAE) or salesperson. If you have any questions,
+   or if we can assist in any way, please send an email to: eval@xilinx.com
+   Thank You!
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "hfifo.v"
+Module <hfifo> compiled
+Compiling verilog file "mem.v"
+Module <mem> compiled
+Compiling verilog file "flist.v"
+Module <flist> compiled
+Compiling verilog file "stimulus.v"
+Module <stimulus> compiled
+No errors in compilation
+Analysis of file <"stimulus.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <stimulus>.
+Module <stimulus> is correct for synthesis.
+ 
+Analyzing module <hfifo>.
+	size = 16
+	pwidth = 4
+	swidth = 5
+	dwidth = 16
+Module <hfifo> is correct for synthesis.
+ 
+Analyzing module <flist>.
+	size = 65536
+	width = 16
+Module <flist> is correct for synthesis.
+ 
+Analyzing module <mem>.
+	dwidth = 16
+	awidth = 16
+	size = 65536
+WARNING:Xst:1464 - "mem.v" line 26: Exactly equal expression will be synthesized as an equal expression, simulation mismatch is possible.
+Module <mem> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mem>.
+    Related source file is "mem.v".
+    Found 65536x16-bit single-port block RAM for signal <mem>.
+    -----------------------------------------------------------------------
+    | mode               | no-change                           |          |
+    | aspect ratio       | 65536-word x 16-bit                 |          |
+    | clock              | connected to signal <clk>           | rise     |
+    | write enable       | connected to signal <wr>            | high     |
+    | address            | connected to signal <addr>          |          |
+    | data in            | connected to signal <din>           |          |
+    | data out           | connected to signal <dout>          |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 RAM(s).
+Unit <mem> synthesized.
+
+
+Synthesizing Unit <flist>.
+    Related source file is "flist.v".
+WARNING:Xst:1780 - Signal <dealloc_s3> is never used or assigned.
+WARNING:Xst:1780 - Signal <mem_busy> is never used or assigned.
+    Found 1-bit register for signal <init_done>.
+    Found 16-bit register for signal <alloc_id>.
+    Found 1-bit register for signal <dealloc_ack>.
+    Found 1-bit register for signal <alloc_ack>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0005>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0009>.
+    Found 1-bit 4-to-1 multiplexer for signal <$n0020>.
+    Found 16-bit comparator equal for signal <$n0021> created at line 121.
+    Found 16-bit comparator equal for signal <$n0024> created at line 164.
+    Found 1-bit register for signal <alloc_req_pend>.
+    Found 1-bit register for signal <alloc_s2>.
+    Found 1-bit register for signal <alloc_s3>.
+    Found 1-bit register for signal <allow_alloc>.
+    Found 1-bit register for signal <allow_dealloc>.
+    Found 1-bit register for signal <dealloc_req_pend>.
+    Found 1-bit register for signal <dealloc_s2>.
+    Found 16-bit register for signal <head>.
+    Found 16-bit register for signal <init_addr>.
+    Found 16-bit up counter for signal <init_din>.
+    Found 1-bit register for signal <init_wr>.
+    Found 16-bit register for signal <m_addr>.
+    Found 16-bit register for signal <m_din>.
+    Found 1-bit register for signal <m_wr>.
+    Found 16-bit register for signal <tail>.
+    Found 1-bit register for signal <token>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  93 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <flist> synthesized.
+
+
+Synthesizing Unit <hfifo>.
+    Related source file is "hfifo.v".
+    Found 1-bit 4-to-1 multiplexer for signal <not_full>.
+    Found 16-bit 16-to-1 multiplexer for signal <dout>.
+    Found 5-bit addsub for signal <$n0019>.
+    Found 5-bit register for signal <cnt>.
+    Found 256-bit register for signal <fmem>.
+    Found 1-bit 4-to-1 multiplexer for signal <not_empty>.
+    Found 4-bit up counter for signal <rd_ptr>.
+    Found 4-bit up counter for signal <wr_ptr>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <fmem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 261 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 Multiplexer(s).
+Unit <hfifo> synthesized.
+
+
+Synthesizing Unit <stimulus>.
+    Related source file is "stimulus.v".
+    Found 8-bit comparator greatequal for signal <$n0002> created at line 51.
+    Found 1-bit register for signal <alloc_req>.
+    Found 1-bit register for signal <clk_enable>.
+    Found 16-bit register for signal <dealloc_id>.
+    Found 1-bit register for signal <dealloc_req>.
+    Found 16-bit register for signal <din>.
+    Found 8-bit up counter for signal <div_count>.
+    Found 1-bit register for signal <pop>.
+    Found 1-bit register for signal <push>.
+    Found 1-bit register for signal <RESET>.
+    Found 1-bit register for signal <wait_for_alloc_ack>.
+    Found 1-bit register for signal <wait_for_dealloc_ack>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <stimulus> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Block RAMs                       : 1
+ 65536x16-bit single-port block RAM: 1
+# Adders/Subtractors               : 1
+ 5-bit addsub                      : 1
+# Counters                         : 4
+ 16-bit up counter                 : 1
+ 4-bit up counter                  : 2
+ 8-bit up counter                  : 1
+# Registers                        : 46
+ 1-bit register                    : 21
+ 16-bit register                   : 24
+ 5-bit register                    : 1
+# Comparators                      : 3
+ 16-bit comparator equal           : 2
+ 8-bit comparator greatequal       : 1
+# Multiplexers                     : 6
+ 1-bit 4-to-1 multiplexer          : 5
+ 16-bit 16-to-1 multiplexer        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stimulus> ...
+
+Optimizing unit <flist> ...
+
+Optimizing unit <hfifo> ...
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stimulus, actual ratio is 2.
+FlipFlop dut/flist_mem/Mram_mem_1 has been replicated 1 time(s)
+FlipFlop pop has been replicated 1 time(s)
+FlipFlop push has been replicated 1 time(s)
+FlipFlop dut/init_done has been replicated 1 time(s) to handle iob=true attribute.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                     351  out of  13696     2%  
+ Number of Slice Flip Flops:           448  out of  27392     1%  
+ Number of 4 input LUTs:               336  out of  27392     1%  
+ Number of bonded IOBs:                  5  out of    556     0%  
+ Number of BRAMs:                       64  out of    136    47%  
+ Number of GCLKs:                        1  out of     16     6%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SYSTEM_CLOCK                       | BUFGP                  | 448   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 4.236ns (Maximum Frequency: 236.055MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.415ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd f:\fpga\proj\llist_fifo_big/_ngo -nt
+timestamp -uc llist_fifo.ucf -p xc2vp30-ff896-7 stimulus.ngc stimulus.ngd 
+
+Reading NGO file 'F:/fpga/proj/llist_fifo_big/stimulus.ngc' ...
+
+Applying constraints in "llist_fifo.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "stimulus.ngd" ...
+
+Writing NGDBUILD log file "stimulus.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "2vp30ff896-7".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:         447 out of  27,392    1%
+  Number of 4 input LUTs:             316 out of  27,392    1%
+Logic Distribution:
+  Number of occupied Slices:          357 out of  13,696    2%
+  Number of Slices containing only related logic:     357 out of     357  100%
+  Number of Slices containing unrelated logic:          0 out of     357    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:            338 out of  27,392    1%
+  Number used as logic:               316
+  Number used as a route-thru:         22
+
+  Number of bonded IOBs:                5 out of     556    1%
+    IOB Flip Flops:                     1
+  Number of PPC405s:                   0 out of       2    0%
+  Number of Block RAMs:                64 out of     136   47%
+  Number of GCLKs:                      1 out of      16    6%
+  Number of GTs:                        0 out of       8    0%
+  Number of GT10s:                      0 out of       0    0%
+
+Total equivalent gate count for design:  4,200,354
+Additional JTAG gate count for IOBs:  240
+Peak Memory Usage:  168 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "stimulus_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: stimulus.pcf.
+WARNING:Par:331 - You are using an evaluation version of Xilinx Software. In 43
+   days, this program will not operate. For more information about this product,
+   please refer to the Evaluation Agreement, which was shipped to you along with
+   the Evaluation CDs.
+   To purchase an annual license for this software, please contact your local
+   Field Applications Engineer (FAE) or salesperson. If you have any questions,
+   or if we can assist in any way, please send an email to: eval@xilinx.com
+   Thank You!
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+C:/Xilinx.
+   "stimulus" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 1.500 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.91 2005-03-25".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                  1 out of 16      6%
+   Number of External IOBs             5 out of 556     1%
+      Number of LOCed IOBs             5 out of 5     100%
+
+   Number of RAMB16s                  64 out of 136    47%
+   Number of SLICEs                  357 out of 13696   2%
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:98a2d7) REAL time: 4 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 4 secs 
+
+Phase 3.2
+.
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 9 secs 
+
+Phase 4.30
+Phase 4.30 (Checksum:26259fc) REAL time: 9 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 9 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 9 secs 
+
+Phase 7.8
+..................................................
+................
+Phase 7.8 (Checksum:af527a) REAL time: 11 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 11 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 12 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 12 secs 
+
+Phase 11.27
+Phase 11.27 (Checksum:68e7775) REAL time: 12 secs 
+
+Phase 12.24
+Phase 12.24 (Checksum:7270df4) REAL time: 12 secs 
+
+Writing design to file stimulus.ncd
+
+
+Total REAL time to Placer completion: 13 secs 
+Total CPU time to Placer completion: 13 secs 
+
+Starting Router
+
+Phase 1: 3484 unrouted;       REAL time: 25 secs 
+
+Phase 2: 3084 unrouted;       REAL time: 25 secs 
+
+Phase 3: 674 unrouted;       REAL time: 26 secs 
+
+Phase 4: 674 unrouted; (0)      REAL time: 27 secs 
+
+Phase 5: 674 unrouted; (0)      REAL time: 27 secs 
+
+Phase 6: 674 unrouted; (0)      REAL time: 27 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 28 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 29 secs 
+
+
+Total REAL time to Router completion: 29 secs 
+Total CPU time to Router completion: 28 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|  SYSTEM_CLOCK_BUFGP |     BUFGMUX0P| No   |  318 |  0.253     |  1.255      |
++---------------------+--------------+------+------+------------+-------------+
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+--------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic 
+                                            |            |            | Levels
+--------------------------------------------------------------------------------
+  TS_SYSTEM_CLOCK = PERIOD TIMEGRP "SYSTEM_ | 10.000ns   | 8.282ns    | 2    
+  CLOCK" 10 ns HIGH 50%                     |            |            |      
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 30 secs 
+Total CPU time to PAR completion: 30 secs 
+
+Peak Memory Usage:  185 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 0
+
+Writing design to file stimulus.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment
+C:/Xilinx.
+   "stimulus" is an NCD, version 3.1, device xc2vp30, package ff896, speed -7
+
+Analysis completed Mon May 30 23:57:19 2005
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 4 secs 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+

@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vlx110tff1136-1
+-top aes_accel_0_wrapper
+-ifmt MIXED
+-ifn aes_accel_0_wrapper_xst.prj
+-ofn ../implementation/aes_accel_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/aes_accel_0_wrapper}
+-vlgincdir {"G:\work\dcc_v5\pcores\" "g:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "g:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }

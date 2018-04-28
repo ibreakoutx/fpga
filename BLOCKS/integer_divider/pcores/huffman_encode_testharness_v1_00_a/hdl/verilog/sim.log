@@ -1,0 +1,68 @@
+Command: vcs -sverilog +v2k com1a.v com1u.v dut_fifo_intf.v etl1.v ex_div.v ftl2.v \
+gate.v jg_div_fpga.v jg_div_top.v mux2e.v mux4d.v tb.v user_logic.v -P /tool/cbar/apps/sim/verdi-2008.10/share/PLI/vcsd/LINUX/vcsd.tab \
+/tool/cbar/apps/sim/verdi-2008.10/share/PLI/vcsd/LINUX/pli.a +vcsd +define+NOWAVES \
+-o simv -l sim.log
+                         Chronologic VCS (TM)
+          Version B-2008.12-B-E9 -- Wed Dec  8 20:22:50 2010
+               Copyright (c) 1991-2008 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[ACC_CLI_ON] ACC/CLI capabilities enabled
+  ACC/CLI capabilities have been enabled for the entire design. For faster 
+  performance enable module specific capability in pli.tab file
+
+Parsing design file 'com1a.v'
+Parsing design file 'com1u.v'
+Parsing design file 'dut_fifo_intf.v'
+Parsing design file 'etl1.v'
+Parsing design file 'ex_div.v'
+Parsing included file 'uc_field.d'.
+Back to file 'ex_div.v'.
+Parsing included file 'ccu_def.d'.
+Back to file 'ex_div.v'.
+Parsing included file 'ex_div.d'.
+Back to file 'ex_div.v'.
+Parsing design file 'ftl2.v'
+Parsing design file 'gate.v'
+Parsing design file 'jg_div_fpga.v'
+Parsing design file 'jg_div_top.v'
+Parsing design file 'mux2e.v'
+Parsing design file 'mux4d.v'
+Parsing design file 'tb.v'
+Parsing design file 'user_logic.v'
+Top Level Modules:
+       tb
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+6 modules and 0 UDP read.
+recompiling module com1u
+recompiling module etl1
+recompiling module gate
+recompiling module mux2e
+recompiling module mux4d
+recompiling module tb
+All of 6 modules done
+make[1]: Entering directory `/proj/ona_verif_scratch/vsananda/sdi/integer_divider/hdl/verilog/csrc' \
+
+gcc  -pipe -m32 -O -I/tool/cbar/apps/sim/vcs-2008.12-B-4/include   -c -o rmapats.o \
+rmapats.c
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv -melf_i386 -m32  5NrI_d.o 5NrIB_d.o jwHu_1_d.o S3LB_1_d.o U0vr_1_d.o \
+tMpg_1_d.o QdWX_1_d.o zGtD_1_d.o eKbT_1_d.o Fd6I_1_d.o o6nF_1_d.o tZRm_1_d.o Mo5q_1_d.o \
+7DOa_1_d.o y6ag_1_d.o NYIX_1_d.o yA8W_1_d.o UP0J_1_d.o tXIZ_1_d.o 8nMn_1_d.o j5SL_1_d.o \
+060Z_1_d.o ZAHf_1_d.o aY2m_1_d.o LiaK_1_d.o oOoU_1_d.o BsX5_1_d.o 8kKj_1_d.o RfOH_1_d.o \
+iQxW_1_d.o Llq8_1_d.o qbyw_1_d.o B5UE_1_d.o 2zS8_1_d.o rS9o_1_d.o kdFM_1_d.o OwCA_1_d.o \
+YFi7_1_d.o Fgmi_1_d.o uEku_1_d.o BRQO_1_d.o CshR_1_d.o VAo2_1_d.o W74v_1_d.o JnZl_1_d.o \
+HiuA_1_d.o jUh1_1_d.o rmapats_mop.o rmapats.o SIM_l.o   /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvirsim.a \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/librterrorinf.so /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libsnpsmalloc.so \
+/tool/cbar/apps/sim/verdi-2008.10/share/PLI/vcsd/LINUX/pli.a     /tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/libvcsnew.so \
+/tool/cbar/apps/sim/vcs-2008.12-B-4/linux/lib/ctype-stubs_32.a -ldl -lz -lm  -lc \
+-ldl    
+../simv up to date
+make[1]: Leaving directory `/proj/ona_verif_scratch/vsananda/sdi/integer_divider/hdl/verilog/csrc' \
+

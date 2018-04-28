@@ -1,0 +1,14 @@
+##############################################################################
+## Filename:          C:\work\s3\edk_trial2\pcores/aes_accel_v1_00_a/data/aes_accel_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Oct 24 10:13:55 2008 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib aes_accel_v1_00_a aes_accel verilog
+lib aes_accel_v1_00_a fifo_rd_32_to_128    verilog
+lib aes_accel_v1_00_a fifo_wr_128_to_32    verilog
+lib aes_accel_v1_00_a aes_cipher_top    verilog
+lib aes_accel_v1_00_a aes_key_expand_128    verilog
+lib aes_accel_v1_00_a aes_rcon    verilog
+lib aes_accel_v1_00_a aes_sbox    verilog
+

@@ -1,0 +1,25 @@
+ command line:
+   c:\work\fpga\llist_fifo\stimulus_test.exe
+     -tclbatch  run.tcl
+Release 9.1.03i - ISE Simulator Engine J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Thu May 22 16:34:02 2008
+
+Total Line Count : 199
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 113.832 Meg. 
+
+ Total Signals          : 38
+ Total Nets             : 73
+ Total Signal Drivers   : 24
+ Total Blocks           : 5
+ Total Primitive Blocks : 2
+ Total Processes        : 29
+ Total Traceable Variables  : 45
+ Total Scalar Nets and Variables : 2644
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

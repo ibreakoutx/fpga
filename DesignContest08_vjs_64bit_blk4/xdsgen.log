@@ -1,0 +1,152 @@
+Attempting use HTML Generation resources in c:\Xilinx.
+Attempting use HTML Generation resources in C:\EDK.
+HTML Generation Resources from C:\EDK\data\xdsgen\xsl.
+Creating image directory F:\fpga\proj\DesignContest08_vjs_64bit_blk4\report\imgs
+Creating datasheet work area in
+[F:\fpga\proj\DesignContest08_vjs_64bit_blk4\report\.dswkshop].
+Main working datasheet is MdtXdsGen_HTMLDatasheet.xsl
+The output filename
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\report\system.html
+Reading XMP file F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.xmp
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ppc405_v2_00_c/data/ppc405_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_00_a/data/jtagppc_cntlr_v
+2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/isocm_v10_v2_00_a/data/isocm_v10_v2_1_0.tc
+l ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/isbram_if_cntlr_v3_00_a/data/isbram_if_cnt
+lr_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_v34_v1_02_a/data/plb_v34_v2_1_0.tcl
+...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb2opb_bridge_v1_01_a/data/plb2opb_bridge
+_v2_1_0.tcl ...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/plb_ddr_v1_11_a/data/plb_ddr_v2_1_0.tcl
+...
+
+Overriding IP level properties ...
+jtagppc_cntlr (jtagppc_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_00_a\data\jtagppc_cntlr_v
+2_1_0.mpd:33 - tool overriding c_device value X2VP4 to 2vp30
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:39 - tool overriding c_family value virtex2 to virtex2p
+plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_ddr_v1_11_a\data\plb_ddr_v2_1_0.mpd:42
+- tool overriding c_family value virtex2 to virtex2p
+dcm_module (dcm_0) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:56 - tool overriding c_family value virtex2 to virtex2p
+dcm_module (dcm_1) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_a\data\dcm_module_v2_1_0.
+mpd:56 - tool overriding c_family value virtex2 to virtex2p
+Address Map for Processor ppc405_0
+  (0x00000000-0x0fffffff) DDR_512MB_64Mx64_rank2_row13_col10_cl2_5	plb
+  (0x10000000-0x1fffffff) DDR_512MB_64Mx64_rank2_row13_col10_cl2_5	plb
+  (0x40600000-0x4060ffff) RS232_Uart_1	plb->plb2opb->opb
+  (0xcc800000-0xcc80ffff) accel_sort_plb_0	plb
+  (0xfffff000-0xffffffff) iocm_cntlr	iocm
+Address Map for Processor ppc405_1
+
+Check platform configuration ...
+WARNING:MDT - plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+   F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:163 - An example UCF
+   for this core is available and must be modified for use in the system. Please
+   refer to the EDK Getting Started guide for the location of this file.
+isocm_v10 (iocm) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:92 - 1
+master(s) : 1 slave(s)
+plb_v34 (plb) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:117 - 2
+master(s) : 3 slave(s)
+opb_v20 (opb) - F:\fpga\proj\DesignContest08_vjs_64bit_blk4\system.mhs:126 - 1
+master(s) : 1 slave(s)
+
+Check port drivers...
+
+Check platform address map ...
+
+Overriding system level properties ...
+isocm_v10 (iocm) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\isocm_v10_v2_00_a\data\isocm_v10_v2_1_0.mp
+d:35 - tcl overriding C_ISARCVALUE value 0x30 to 0xFF
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:35 - tool overriding c_memsize value 2048 to 4096
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:36 - tool overriding c_port_dwidth value 32 to 64
+bram_block (isocm_bram) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.
+mpd:38 - tool overriding c_num_we value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:39
+- tool overriding c_plb_num_masters value 4 to 2
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:40
+- tool overriding c_plb_num_slaves value 4 to 3
+plb_v34 (plb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v34_v2_1_0.mpd:41
+- tool overriding c_plb_mid_width value 2 to 1
+opb_v20 (opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd:36
+- tool overriding c_num_masters value 4 to 1
+opb_v20 (opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v20_v2_1_0.mpd:37
+- tool overriding c_num_slaves value 4 to 1
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:48 - tool overriding c_plb_num_masters value 4 to 2
+plb2opb_bridge (plb2opb) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data\plb2opb_bridge
+_v2_1_0.mpd:49 - tool overriding c_plb_mid_width value 4 to 1
+plb_ddr (ddr_512mb_64mx64_rank2_row13_col10_cl2_5) -
+C:\EDK\hw\XilinxProcessorIPLib\pcores\plb_ddr_v1_11_a\data\plb_ddr_v2_1_0.mpd:78
+- tool overriding c_plb_num_masters value 8 to 2
+accel_sort_plb (accel_sort_plb_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\pcores\accel_sort_plb_v1_00_a\data\a
+ccel_sort_plb_v2_1_0.mpd:33 - tool overriding c_plb_num_masters value 8 to 2
+accel_sort_plb (accel_sort_plb_0) -
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\pcores\accel_sort_plb_v1_00_a\data\a
+ccel_sort_plb_v2_1_0.mpd:34 - tool overriding c_plb_mid_width value 3 to 1
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Sourcing tcl file
+C:/EDK/hw/XilinxProcessorIPLib/pcores/ddr_v1_11_a/data/ddr_v2_1_0.tcl ...
+
+Performing System level DRCs on properties...
+Initializing SVG Render
+Setting SVG workshop directory to
+[F:\fpga\proj\DesignContest08_vjs_64bit_blk4\report\.dswkshop]
+Attempting use SVG environment in [c:\Xilinx].
+Could not locate c:\Xilinx\data\xdsgen
+Attempting use SVG environment in [C:\EDK].
+Found valid SVG rendering enviroment in [C:\EDK\data\xdsgen\xsl]
+Attempting use JVM from c:\Xilinx\java\nt\jre\bin\client\jvm.dll.
+Located valid JVM in [c:\Xilinx\java\nt\jre\bin\client\jvm.dll]
+SVG Rendering work directory locked to
+[F:\fpga\proj\DesignContest08_vjs_64bit_blk4\report\.dswkshop]
+Rendering --- ppc405_0.jpg
+Rendering --- ppc405_1.jpg
+Rendering --- jtagppc_0.jpg
+Rendering --- reset_block.jpg
+Rendering --- iocm.jpg
+Rendering --- iocm_cntlr.jpg
+Rendering --- isocm_bram.jpg
+Rendering --- plb.jpg
+Rendering --- opb.jpg
+Rendering --- plb2opb.jpg
+Rendering --- RS232_Uart_1.jpg
+Rendering --- DDR_512MB_64Mx64_rank2_row13_col10_cl2_5.jpg
+Rendering --- sysclk_inv.jpg
+Rendering --- clk90_inv.jpg
+Rendering --- ddr_clk90_inv.jpg
+Rendering --- dcm_0.jpg
+Rendering --- dcm_1.jpg
+Rendering --- accel_sort_plb_0.jpg
+The output file name is
+F:\fpga\proj\DesignContest08_vjs_64bit_blk4\report\system.html
+Datasheet generation completed.

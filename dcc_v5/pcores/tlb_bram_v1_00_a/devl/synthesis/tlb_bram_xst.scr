@@ -1,0 +1,11 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn C:\work\fpga\dcc_v2p\pcores/tlb_bram_v1_00_a/devl/synthesis/tlb_bram_xst.prj
+-top tlb_bram
+-p virtex2p
+-ofn C:\work\fpga\dcc_v2p\pcores/tlb_bram_v1_00_a/devl/synthesis/tlb_bram_xst.ngc
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /

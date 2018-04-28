@@ -1,0 +1,736 @@
+Release 10.1.03 - libgen Xilinx EDK 10.1.03
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs system.mhs -p xc5vlx110tff1136-1 system.mss 
+
+Output Directory (-od)		: E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\
+Part (-p)			: virtex5
+
+Software Specification file	: system.mss
+
+Overriding IP level properties ...
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 164 - tcl is overriding PARAMETER C_ADDR_TAG_BITS
+   value to 0
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 173 - tcl is overriding PARAMETER C_DCACHE_ADDR_TAG
+   value to 0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 153 - tcl is overriding PARAMETER C_MEM_PART_DATA_DEPTH value to
+   32
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 154 - tcl is overriding PARAMETER C_MEM_PART_DATA_WIDTH value to
+   16
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 157 - tcl is overriding PARAMETER C_MEM_PART_NUM_COL_BITS value
+   to 10
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 158 - tcl is overriding PARAMETER C_MEM_PART_TRAS value to 40000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 159 - tcl is overriding PARAMETER C_MEM_PART_TRASMAX value to
+   70000000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 160 - tcl is overriding PARAMETER C_MEM_PART_TRC value to 55000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 161 - tcl is overriding PARAMETER C_MEM_PART_TRCD value to 15000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 163 - tcl is overriding PARAMETER C_MEM_PART_TWR value to 15000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 164 - tcl is overriding PARAMETER C_MEM_PART_TRP value to 15000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 165 - tcl is overriding PARAMETER C_MEM_PART_TMRD value to 2
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 166 - tcl is overriding PARAMETER C_MEM_PART_TRRD value to 10000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 167 - tcl is overriding PARAMETER C_MEM_PART_TRFC value to 105000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 168 - tcl is overriding PARAMETER C_MEM_PART_TREFI value to
+   7800000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 170 - tcl is overriding PARAMETER C_MEM_PART_TCCD value to 2
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 171 - tcl is overriding PARAMETER C_MEM_PART_TWTR value to 7500
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 173 - tcl is overriding PARAMETER C_MEM_PART_CAS_A_FMAX value to
+   200
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 174 - tcl is overriding PARAMETER C_MEM_PART_CAS_A value to 3
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 175 - tcl is overriding PARAMETER C_MEM_PART_CAS_B_FMAX value to
+   266
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 176 - tcl is overriding PARAMETER C_MEM_PART_CAS_B value to 4
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x80200000-0x8020ffff) xps_central_dma_0	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84000000-0x8400ffff) RS232_Uart_1	mb_plb
+  (0x84400000-0x8440ffff) debug_module	mb_plb
+  (0x90000000-0x9fffffff) DDR2_SDRAM	mb_plb
+  (0xc0a00000-0xc0a0ffff) my_timer_0	mb_plb
+  (0xc3c00000-0xc3c0ffff) kraaken_dpi_0	mb_plb
+
+Check platform address map ...
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 225 - tool is overriding PARAMETER C_SPLB0_P2P value to 0
+
+Computing clock values...
+
+Overriding system level properties ...
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 117 - tool is overriding PARAMETER C_DPLB_DWIDTH
+   value to 64
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 121 - tool is overriding PARAMETER C_IPLB_DWIDTH
+   value to 64
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 125 - tcl is overriding PARAMETER C_D_PLB value to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 126 - tcl is overriding PARAMETER C_D_OPB value to 0
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 128 - tcl is overriding PARAMETER C_I_PLB value to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 129 - tcl is overriding PARAMETER C_I_OPB value to 0
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 183 - tcl is overriding PARAMETER C_USE_INTERRUPT
+   value to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 184 - tcl is overriding PARAMETER C_USE_EXT_BRK value
+   to 1
+INFO:MDT - IPNAME:microblaze_0 INSTANCE:microblaze -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 185 - tcl is overriding PARAMETER C_USE_EXT_NM_BRK
+   value to 1
+INFO:MDT - IPNAME:mb_plb INSTANCE:plb_v46 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_03_a\data\plb_v4
+   6_v2_1_0.mpd line 34 - tool is overriding PARAMETER C_PLBV46_NUM_MASTERS
+   value to 3
+INFO:MDT - IPNAME:mb_plb INSTANCE:plb_v46 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_03_a\data\plb_v4
+   6_v2_1_0.mpd line 35 - tool is overriding PARAMETER C_PLBV46_NUM_SLAVES value
+   to 7
+INFO:MDT - IPNAME:ilmb INSTANCE:lmb_v10 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v1
+   0_v2_1_0.mpd line 37 - tool is overriding PARAMETER C_LMB_NUM_SLAVES value to
+   1
+INFO:MDT - IPNAME:dlmb INSTANCE:lmb_v10 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data\lmb_v1
+   0_v2_1_0.mpd line 37 - tool is overriding PARAMETER C_LMB_NUM_SLAVES value to
+   1
+INFO:MDT - IPNAME:dlmb_cntlr INSTANCE:lmb_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_10_a\d
+   ata\lmb_bram_if_cntlr_v2_1_0.mpd line 43 - tcl is overriding PARAMETER C_MASK
+   value to 0x80000000
+INFO:MDT - IPNAME:ilmb_cntlr INSTANCE:lmb_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2_10_a\d
+   ata\lmb_bram_if_cntlr_v2_1_0.mpd line 43 - tcl is overriding PARAMETER C_MASK
+   value to 0x80000000
+INFO:MDT - IPNAME:lmb_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x2000
+INFO:MDT - IPNAME:RS232_Uart_1 INSTANCE:xps_uartlite -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_00_a\data\x
+   ps_uartlite_v2_1_0.mpd line 42 - tool is overriding PARAMETER C_SPLB_DWIDTH
+   value to 64
+INFO:MDT - IPNAME:RS232_Uart_1 INSTANCE:xps_uartlite -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_00_a\data\x
+   ps_uartlite_v2_1_0.mpd line 44 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 2
+INFO:MDT - IPNAME:RS232_Uart_1 INSTANCE:xps_uartlite -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_00_a\data\x
+   ps_uartlite_v2_1_0.mpd line 45 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 3
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 223 - tool is overriding PARAMETER C_SPLB0_NUM_MASTERS value to 3
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 224 - tool is overriding PARAMETER C_SPLB0_MID_WIDTH value to 2
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 602 - tcl is overriding PARAMETER
+   C_CTRL_DP_RDFIFO_WHICHPORT_DELAY value to 0xc
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 604 - tcl is overriding PARAMETER
+   C_CTRL_DP_WRFIFO_WHICHPORT_DELAY value to 0x4
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 605 - tcl is overriding PARAMETER
+   C_CTRL_PHYIF_DUMMYREADSTART_DELAY value to 0x5
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 612 - tcl is overriding PARAMETER C_CTRL_Q6_DELAY value to 0x5
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 613 - tcl is overriding PARAMETER C_CTRL_Q7_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 614 - tcl is overriding PARAMETER C_CTRL_Q8_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 615 - tcl is overriding PARAMETER C_CTRL_Q9_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 617 - tcl is overriding PARAMETER C_CTRL_Q11_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 618 - tcl is overriding PARAMETER C_CTRL_Q12_DELAY value to 0x1
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 619 - tcl is overriding PARAMETER C_CTRL_Q13_DELAY value to 0x1
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 623 - tcl is overriding PARAMETER C_CTRL_Q17_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 624 - tcl is overriding PARAMETER C_CTRL_Q18_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 625 - tcl is overriding PARAMETER C_CTRL_Q19_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 626 - tcl is overriding PARAMETER C_CTRL_Q20_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 627 - tcl is overriding PARAMETER C_CTRL_Q21_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 628 - tcl is overriding PARAMETER C_CTRL_Q22_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 629 - tcl is overriding PARAMETER C_CTRL_Q23_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 630 - tcl is overriding PARAMETER C_CTRL_Q24_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 631 - tcl is overriding PARAMETER C_CTRL_Q25_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 632 - tcl is overriding PARAMETER C_CTRL_Q26_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 633 - tcl is overriding PARAMETER C_CTRL_Q27_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 634 - tcl is overriding PARAMETER C_CTRL_Q28_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 635 - tcl is overriding PARAMETER C_CTRL_Q29_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 636 - tcl is overriding PARAMETER C_CTRL_Q30_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 637 - tcl is overriding PARAMETER C_CTRL_Q31_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 638 - tcl is overriding PARAMETER C_CTRL_Q32_DELAY value to 0x2
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 639 - tcl is overriding PARAMETER C_CTRL_Q33_DELAY value to 0x1
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 640 - tcl is overriding PARAMETER C_CTRL_Q34_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 641 - tcl is overriding PARAMETER C_CTRL_Q35_DELAY value to 0x0
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 642 - tcl is overriding PARAMETER C_SKIP_1_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 643 - tcl is overriding PARAMETER C_SKIP_2_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 644 - tcl is overriding PARAMETER C_SKIP_3_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 645 - tcl is overriding PARAMETER C_SKIP_4_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 646 - tcl is overriding PARAMETER C_SKIP_5_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 647 - tcl is overriding PARAMETER C_SKIP_6_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 648 - tcl is overriding PARAMETER C_SKIP_7_VALUE value to 0x001
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 651 - tcl is overriding PARAMETER C_B64_REPEAT_CNT value to 2
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 653 - tcl is overriding PARAMETER C_HIGHADDR_CTRL0 value to 0x00b
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 654 - tcl is overriding PARAMETER C_BASEADDR_CTRL1 value to 0x00c
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 655 - tcl is overriding PARAMETER C_HIGHADDR_CTRL1 value to 0x013
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 656 - tcl is overriding PARAMETER C_BASEADDR_CTRL2 value to 0x014
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 657 - tcl is overriding PARAMETER C_HIGHADDR_CTRL2 value to 0x01f
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 658 - tcl is overriding PARAMETER C_BASEADDR_CTRL3 value to 0x020
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 659 - tcl is overriding PARAMETER C_HIGHADDR_CTRL3 value to 0x027
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 660 - tcl is overriding PARAMETER C_BASEADDR_CTRL4 value to 0x028
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 661 - tcl is overriding PARAMETER C_HIGHADDR_CTRL4 value to 0x033
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 662 - tcl is overriding PARAMETER C_BASEADDR_CTRL5 value to 0x034
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 663 - tcl is overriding PARAMETER C_HIGHADDR_CTRL5 value to 0x03b
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 664 - tcl is overriding PARAMETER C_BASEADDR_CTRL6 value to 0x03c
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 665 - tcl is overriding PARAMETER C_HIGHADDR_CTRL6 value to 0x047
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 666 - tcl is overriding PARAMETER C_BASEADDR_CTRL7 value to 0x048
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 667 - tcl is overriding PARAMETER C_HIGHADDR_CTRL7 value to 0x04f
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 668 - tcl is overriding PARAMETER C_BASEADDR_CTRL8 value to 0x050
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 669 - tcl is overriding PARAMETER C_HIGHADDR_CTRL8 value to 0x05d
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 670 - tcl is overriding PARAMETER C_BASEADDR_CTRL9 value to 0x05e
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 671 - tcl is overriding PARAMETER C_HIGHADDR_CTRL9 value to 0x066
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 672 - tcl is overriding PARAMETER C_BASEADDR_CTRL10 value to
+   0x067
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 673 - tcl is overriding PARAMETER C_HIGHADDR_CTRL10 value to
+   0x078
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 674 - tcl is overriding PARAMETER C_BASEADDR_CTRL11 value to
+   0x079
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 675 - tcl is overriding PARAMETER C_HIGHADDR_CTRL11 value to
+   0x085
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 676 - tcl is overriding PARAMETER C_BASEADDR_CTRL12 value to
+   0x086
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 677 - tcl is overriding PARAMETER C_HIGHADDR_CTRL12 value to
+   0x097
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 678 - tcl is overriding PARAMETER C_BASEADDR_CTRL13 value to
+   0x098
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 679 - tcl is overriding PARAMETER C_HIGHADDR_CTRL13 value to
+   0x0a4
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 680 - tcl is overriding PARAMETER C_BASEADDR_CTRL14 value to
+   0x0a5
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 681 - tcl is overriding PARAMETER C_HIGHADDR_CTRL14 value to
+   0x0b5
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 682 - tcl is overriding PARAMETER C_BASEADDR_CTRL15 value to
+   0x0b6
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 683 - tcl is overriding PARAMETER C_HIGHADDR_CTRL15 value to
+   0x0b7
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 722 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_19 value to
+   0x000002FC000002FC000002FC000002FC000002FC000002FC000002FC000002FC
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 723 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_18 value to
+   0x000002FC000002FC000002FC000002FC000002FC000002FC000002FC000002FC
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 724 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_17 value to
+   0x000002FC000002FC000002FC000002FC000002FC000002FC000002FC000002FC
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 725 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_16 value to
+   0x0000003C0000003C0000003C0000003C0000003C0000003C0000003C0000003D
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 726 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_15 value to
+   0x0000003C0000003C0000003C0000003C0000003C0000003C0000003C00000030
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 727 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_14 value to
+   0x0000003C0000003C000040280000003C0000003C000040280000003C00000434
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 728 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_13 value to
+   0x0000243D000004340000243C000004340000243C000004340000943C00008038
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 729 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_12 value to
+   0x0001003C0001003C0001003C000140280001003C0001003D0001003C0001003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 730 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_11 value to
+   0x0001003C000101240001213C000101240001213C000101240001213C00010124
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 731 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_10 value to
+   0x0001913C000180380000003C0000003C000040280000003C000004340000243D
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 732 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_0F value to
+   0x000004340000243C000004340000243C000004340000943C000080380001003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 733 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_0E value to
+   0x0001003C0001003C000140280001003C0001003D0001003C0001003C0001003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 734 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_0D value to
+   0x000101240001213C000101240001213C000101240001213C000101240001913C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 735 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_0C value to
+   0x000180380000003C0000003C000040280000003C000004340000243D00000434
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 736 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_0B value to
+   0x0000943C000080380001003C0001003C0001003C000140280001003C0001003D
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 737 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_0A value to
+   0x0001003C0001003C0001003C000101240001213C000101240001913C00018038
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 738 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_09 value to
+   0x0000003C0000003C000040280000003C0000003C000004350000943C00008038
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 739 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_08 value to
+   0x0001003C0001003C0001003C000140280001003C0001003D0001003C0001003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 740 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_07 value to
+   0x0001003C000101240001913C000180380000003C0000003C000040280000003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 741 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_06 value to
+   0x0000003C000000350000943C000080380001003C0001003C0001003C00014028
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 742 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_05 value to
+   0x0001003C0001003D0001003C0001003C0001003C000101240001913C00018038
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 743 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_04 value to
+   0x0000003C0000003C000040280000003C0000003C000000350000943C00008038
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 744 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_03 value to
+   0x0001003C0001003C0001003C000140280001003C0001003D0001003C0001003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 745 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_02 value to
+   0x0001003C000101240001913C000180380000003C0000003C000040280000003C
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 746 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_01 value to
+   0x0000003C000000350000943C000080380001003C0001003C0001003C00014028
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 747 - tcl is overriding PARAMETER C_CTRL_BRAM_INIT_00 value to
+   0x0001003C0001003D0001003C0001003C0001003C000101240001913C00018038
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 753 - tcl is overriding PARAMETER C_CTRL_BRAM_INITP_03 value to
+   0x0000000000000000000000000000000000000000000000000000000000000000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 754 - tcl is overriding PARAMETER C_CTRL_BRAM_INITP_02 value to
+   0x0000000000000000000000000000000000002000000000111100002000000000
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 755 - tcl is overriding PARAMETER C_CTRL_BRAM_INITP_01 value to
+   0x0002000000000111100002000000000000000000111100000000000000000011
+INFO:MDT - IPNAME:DDR2_SDRAM INSTANCE:mpmc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v4_03_a\data\mpmc_v2_1
+   _0.mpd line 756 - tcl is overriding PARAMETER C_CTRL_BRAM_INITP_00 value to
+   0x1100000000000000001111100000000000000011111000000000000000111110
+INFO:MDT - IPNAME:debug_module INSTANCE:mdm -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 53 - tool is overriding PARAMETER C_SPLB_DWIDTH value to 64
+INFO:MDT - IPNAME:debug_module INSTANCE:mdm -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 55 - tool is overriding PARAMETER C_SPLB_MID_WIDTH value to 2
+INFO:MDT - IPNAME:debug_module INSTANCE:mdm -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 56 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS value to 3
+INFO:MDT - IPNAME:my_timer_0 INSTANCE:my_timer -
+   E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\pcores\my_timer_v1_00_a\data\my_
+   timer_v2_1_0.mpd line 27 - tool is overriding PARAMETER C_SPLB_DWIDTH value
+   to 64
+INFO:MDT - IPNAME:my_timer_0 INSTANCE:my_timer -
+   E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\pcores\my_timer_v1_00_a\data\my_
+   timer_v2_1_0.mpd line 28 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS
+   value to 3
+INFO:MDT - IPNAME:my_timer_0 INSTANCE:my_timer -
+   E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\pcores\my_timer_v1_00_a\data\my_
+   timer_v2_1_0.mpd line 29 - tool is overriding PARAMETER C_SPLB_MID_WIDTH
+   value to 2
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 42 - tool is overriding PARAMETER C_SPLB_DWIDTH value to
+   64
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 44 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS
+   value to 3
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 45 - tool is overriding PARAMETER C_SPLB_MID_WIDTH value
+   to 2
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 49 - tcl is overriding PARAMETER C_KIND_OF_INTR value to
+   0b00000000000000000000000000000000
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 50 - tcl is overriding PARAMETER C_KIND_OF_EDGE value to
+   0b00000000000000000000000000000000
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 51 - tcl is overriding PARAMETER C_KIND_OF_LVL value to
+   0b00000000000000000000000000000011
+INFO:MDT - IPNAME:xps_central_dma_0 INSTANCE:xps_central_dma -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_central_dma_v2_00_b\dat
+   a\xps_central_dma_v2_1_0.mpd line 40 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:MDT - IPNAME:xps_central_dma_0 INSTANCE:xps_central_dma -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_central_dma_v2_00_b\dat
+   a\xps_central_dma_v2_1_0.mpd line 42 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 3
+INFO:MDT - IPNAME:xps_central_dma_0 INSTANCE:xps_central_dma -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_central_dma_v2_00_b\dat
+   a\xps_central_dma_v2_1_0.mpd line 43 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 2
+INFO:MDT - IPNAME:xps_central_dma_0 INSTANCE:xps_central_dma -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_central_dma_v2_00_b\dat
+   a\xps_central_dma_v2_1_0.mpd line 49 - tool is overriding PARAMETER
+   C_MPLB_DWIDTH value to 64
+INFO:MDT - IPNAME:kraaken_dpi_0 INSTANCE:kraaken_dpi -
+   E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\pcores\kraaken_dpi_v3_00_a\data\
+   kraaken_dpi_v2_1_0.mpd line 29 - tool is overriding PARAMETER C_SPLB_DWIDTH
+   value to 64
+INFO:MDT - IPNAME:kraaken_dpi_0 INSTANCE:kraaken_dpi -
+   E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\pcores\kraaken_dpi_v3_00_a\data\
+   kraaken_dpi_v2_1_0.mpd line 30 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 3
+INFO:MDT - IPNAME:kraaken_dpi_0 INSTANCE:kraaken_dpi -
+   E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\pcores\kraaken_dpi_v3_00_a\data\
+   kraaken_dpi_v2_1_0.mpd line 31 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 2
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Check platform configuration ...
+IPNAME:plb_v46 INSTANCE:mb_plb -
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\system.mhs line 53 - 3 master(s) :
+7 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb -
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\system.mhs line 60 - 1 master(s) :
+1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb -
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\system.mhs line 67 - 1 master(s) :
+1 slave(s)
+
+Check port drivers...
+WARNING:MDT - PORT:IWAIT CONNECTOR:ilmb_LMB_Wait -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 199 - No driver found. Port will be driven to GND!
+WARNING:MDT - PORT:DWAIT CONNECTOR:dlmb_LMB_Wait -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 235 - No driver found. Port will be driven to GND!
+WARNING:MDT - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 197 - No driver found. Port will be driven to GND!
+WARNING:MDT - PORT:I_ADDRTAG CONNECTOR:ilmb_M_ADDRTAG -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 197 - floating connection!
+WARNING:MDT - PORT:D_ADDRTAG CONNECTOR:dlmb_M_ADDRTAG -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_10_d\data\mic
+   roblaze_v2_1_0.mpd line 238 - floating connection!
+WARNING:MDT - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 190 - floating connection!
+WARNING:MDT - PORT:bscan_reset CONNECTOR:bscan_reset -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 191 - floating connection!
+WARNING:MDT - PORT:bscan_shift CONNECTOR:bscan_shift -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 192 - floating connection!
+WARNING:MDT - PORT:bscan_update CONNECTOR:bscan_update -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 193 - floating connection!
+WARNING:MDT - PORT:bscan_capture CONNECTOR:bscan_capture -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 194 - floating connection!
+WARNING:MDT - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 195 - floating connection!
+WARNING:MDT - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_d\data\mdm_v2_1_0
+   .mpd line 196 - floating connection!
+
+Performing Clock DRCs...
+
+INFO:MDT - List of peripherals addressable from processor instance microblaze_0
+   : 
+  - dlmb_cntlr
+  - ilmb_cntlr
+  - RS232_Uart_1
+  - DDR2_SDRAM
+  - debug_module
+  - my_timer_0
+  - xps_intc_0
+  - xps_central_dma_0
+  - kraaken_dpi_0
+
+Building Directory Structure for microblaze_0
+
+Generating platform libraries and device drivers ...
+
+Running CopyFiles ...
+
+Copying files for os standalone_v2_00_a from
+C:\Xilinx\10.1\EDK\sw\lib\bsp\standalone_v2_00_a\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\standalone_v2_0
+0_a\ ...
+
+Copying files for driver uartlite_v1_13_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\uartlite_v1_13_a\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\uartlite_v1_13_
+a\ ...
+
+Copying files for driver mpmc_v2_00_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\mpmc_v2_00_a\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\mpmc_v2_00_a\
+...
+
+Copying files for driver intc_v1_11_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\intc_v1_11_a\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\intc_v1_11_a\
+...
+
+Copying files for driver dmacentral_v1_11_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\dmacentral_v1_11_a\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\dmacentral_v1_1
+1_a\ ...
+
+Copying files for driver kraaken_dpi_v3_00_a from
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\drivers\kraaken_dpi_v3_00_a\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\kraaken_dpi_v3_
+00_a\ ...
+
+Copying files for driver cpu_v1_11_b from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\cpu_v1_11_b\src\ to
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\libsrc\cpu_v1_11_b\
+...
+
+Running DRCs for OSes, Drivers and Libraries ... 
+
+Running generate for OS'es, Drivers and Libraries ... 
+Copying Library Files ...
+
+Running post_generate for OS'es, Drivers and Libraries ... 
+
+Running make for Drivers and Libraries ... 
+
+Configuring make for target include using:
+
+make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.10.d  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g" 
+
+Configuring make for target libs using:
+
+make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.10.d  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g" 
+
+Libraries generated in
+E:\work\FPGA_PROJECTS\ML509\xupv5_kraaken_v1\microblaze_0\lib\ directory
+
+Running execs_generate for OS'es, Drivers and Libraries ... 
+
+LibGen Done. 

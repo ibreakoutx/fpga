@@ -1,0 +1,51 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2012.10.22.16.35.25;	author vsananda;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@
+module shiftreg #(
+		  parameter int width=8
+)
+( input clk,rst,
+  input [width-1:0] din,
+  input valid_in,
+  output logic [width-1:0] dout,
+  output logic  valid_out
+  );
+
+   logic [width:0] sreg[0:3];
+   
+   always @@(posedge clk)
+   if (rst)
+     for (int i=0;i<4;i=i+1)
+       sreg[i] <= 'b0;
+   else
+     begin
+	sreg[0] <= {valid_in,din};
+	  
+	for (int i=0;i<3;i=i+1)
+	  sreg[i+1] <= sreg[i];
+	
+	{valid_out,dout} <= sreg[3];
+     end
+	  
+endmodule // shiftreg
+@

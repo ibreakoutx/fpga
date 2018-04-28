@@ -1,0 +1,14 @@
+-batch 
+-create aes_accel 
+-ver 1.00.a 
+-dir C:\work\fpga\dcc_v2p\ 
+-lang verilog 
+-bus fsl ms 
+-xps 
+-ise 
+-driver 
+-totalin 12
+-totalout 12
+-argin 1
+-argout 1
+-desc "AES128 accelerator"

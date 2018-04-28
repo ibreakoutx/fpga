@@ -1,0 +1,99 @@
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+xst -intstyle ise -ifn __projnav/hfifo_stim.xst -ofn hfifo_stim.syr
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
+map -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o hfifo_stim_map.ncd hfifo_stim.ngd hfifo_stim.pcf
+par -w -intstyle ise -ol std -t 1 hfifo_stim_map.ncd hfifo_stim.ncd hfifo_stim.pcf
+trce -intstyle ise -e 3 -l 3 -s 7 -xml hfifo_stim hfifo_stim.ncd -o hfifo_stim.twr hfifo_stim.pcf
+bitgen -intstyle ise -f hfifo_stim.ut hfifo_stim.ncd
+ngdbuild -intstyle ise -dd "f:\fpga\proj\hfifo/_ngo" -nt timestamp -uc hfifo_stim.ucf  -p xc2vp30-ff896-7 hfifo_stim_cs.ngc hfifo_stim.ngd
